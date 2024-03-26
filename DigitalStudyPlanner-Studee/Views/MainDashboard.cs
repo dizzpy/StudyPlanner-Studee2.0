@@ -20,29 +20,65 @@ namespace DigitalStudyPlanner_Studee.Views
             InitializeComponent();
         }
 
-
-        //creating border radius
-
-        private void SetRoundedCorners(Panel control, int radius)
+        private void MainDashboard_Load(object sender, EventArgs e)
         {
-            GraphicsPath path = new GraphicsPath();
-            path.AddArc(0, 0, radius, radius, 180, 90);
-            path.AddArc(control.Width - radius, 0, radius, radius, 270, 90);
-            path.AddArc(control.Width - radius, control.Height - radius, radius, radius, 0, 90);
-            path.AddArc(0, control.Height - radius, radius, radius, 90, 90);
-            control.Region = new Region(path);
+            userDashboard1.Show();
+            userDashboard1.BringToFront();
+            userEvent1.Hide();
+            userNoteLib1.Hide();
+            userTimer1.Hide();
+            userToDoList1.Hide();
         }
 
+        private void btn_dashboard_Click(object sender, EventArgs e)
+        {
+            userDashboard1.Show();
+            userDashboard1.BringToFront();
+            userEvent1.Hide();
+            userNoteLib1.Hide();
+            userTimer1.Hide();
+            userToDoList1.Hide();
+        }
 
+        private void btn_toDoList_Click(object sender, EventArgs e)
+        {
+            userDashboard1.Hide();
+            userEvent1.Hide();
+            userNoteLib1.Hide();
+            userTimer1.Hide();
+            userToDoList1.Show();
+            userToDoList1.BringToFront();
+        }
 
+        private void btn_events_Click(object sender, EventArgs e)
+        {
+            userDashboard1.Hide();
+            userEvent1.Show();
+            userEvent1.BringToFront();
+            userNoteLib1.Hide();
+            userTimer1.Hide();
+            userToDoList1.Hide();
+        }
 
+        private void btn_timer_Click(object sender, EventArgs e)
+        {
+            userDashboard1.Hide();
+            userEvent1.Hide();
+            userNoteLib1.Hide();
+            userTimer1.Show();
+            userTimer1.BringToFront();
+            userToDoList1.Hide();
+        }
 
-
-        
-
-
-
-
+        private void btn_noteLibrary_Click(object sender, EventArgs e)
+        {
+            userDashboard1.Hide();
+            userEvent1.Hide();
+            userNoteLib1.Show();
+            userNoteLib1.BringToFront();
+            userTimer1.Hide();
+            userToDoList1.Hide();
+        }
     }
 }
 

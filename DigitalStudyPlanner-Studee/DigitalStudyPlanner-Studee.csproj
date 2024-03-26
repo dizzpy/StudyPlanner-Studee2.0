@@ -64,6 +64,36 @@
     <Compile Include="Views\MainDashboard.Designer.cs">
       <DependentUpon>MainDashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\UserControlViews\UserDashboard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\UserControlViews\UserDashboard.Designer.cs">
+      <DependentUpon>UserDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UserControlViews\UserEvent.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\UserControlViews\UserEvent.Designer.cs">
+      <DependentUpon>UserEvent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UserControlViews\UserNoteLib.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\UserControlViews\UserNoteLib.Designer.cs">
+      <DependentUpon>UserNoteLib.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UserControlViews\UserTimer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\UserControlViews\UserTimer.Designer.cs">
+      <DependentUpon>UserTimer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UserControlViews\UserToDoList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\UserControlViews\UserToDoList.Designer.cs">
+      <DependentUpon>UserToDoList.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -76,6 +106,21 @@
     </Compile>
     <EmbeddedResource Include="Views\MainDashboard.resx">
       <DependentUpon>MainDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\UserControlViews\UserDashboard.resx">
+      <DependentUpon>UserDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\UserControlViews\UserEvent.resx">
+      <DependentUpon>UserEvent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\UserControlViews\UserNoteLib.resx">
+      <DependentUpon>UserNoteLib.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\UserControlViews\UserTimer.resx">
+      <DependentUpon>UserTimer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\UserControlViews\UserToDoList.resx">
+      <DependentUpon>UserToDoList.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
