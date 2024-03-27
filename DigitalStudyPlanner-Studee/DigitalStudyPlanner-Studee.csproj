@@ -64,6 +64,12 @@
     <Compile Include="Views\MainDashboard.Designer.cs">
       <DependentUpon>MainDashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\ToDoList\ToDoItemRow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\ToDoList\ToDoItemRow.Designer.cs">
+      <DependentUpon>ToDoItemRow.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\UserControlViews\UserDashboard.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -106,6 +112,9 @@
     </Compile>
     <EmbeddedResource Include="Views\MainDashboard.resx">
       <DependentUpon>MainDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ToDoList\ToDoItemRow.resx">
+      <DependentUpon>ToDoItemRow.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\UserControlViews\UserDashboard.resx">
       <DependentUpon>UserDashboard.cs</DependentUpon>

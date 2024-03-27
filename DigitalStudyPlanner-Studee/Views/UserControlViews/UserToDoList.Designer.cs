@@ -67,9 +67,9 @@
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(18, 90);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(15, 84);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(925, 561);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(928, 580);
             this.flowLayoutPanel1.TabIndex = 2;
             // 
             // UserToDoList
