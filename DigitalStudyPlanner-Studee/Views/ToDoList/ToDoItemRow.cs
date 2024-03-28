@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DigitalStudyPlanner_Studee.Views.UserControlViews;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,17 @@ namespace DigitalStudyPlanner_Studee.Views.ToDoList
         public ToDoItemRow()
         {
             InitializeComponent();
+        }
+
+        private void gunaAdvenceButton1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gunaElipsePanel1_Paint(object sender, PaintEventArgs e)
+        {
+            ToDoListItem toDoListItem = new ToDoListItem();
+            toDoListItem.Show();
         }
     }
 }

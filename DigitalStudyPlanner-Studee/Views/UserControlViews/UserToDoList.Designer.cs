@@ -64,6 +64,7 @@
             this.gunaAdvenceButton1.TabIndex = 1;
             this.gunaAdvenceButton1.Text = "+   Add task";
             this.gunaAdvenceButton1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.gunaAdvenceButton1.Click += new System.EventHandler(this.gunaAdvenceButton1_Click);
             // 
             // flowLayoutPanel1
             // 

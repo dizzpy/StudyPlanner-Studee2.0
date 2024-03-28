@@ -28,24 +28,27 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label2 = new System.Windows.Forms.Label();
+            this.label_hello = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // label2
+            // label_hello
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Poppins", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(390, 287);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(127, 48);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Note Lib";
+            this.label_hello.AutoSize = true;
+            this.label_hello.Font = new System.Drawing.Font("Poppins SemiBold", 29.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_hello.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(68)))), ((int)(((byte)(76)))));
+            this.label_hello.Location = new System.Drawing.Point(27, 34);
+            this.label_hello.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label_hello.Name = "label_hello";
+            this.label_hello.Size = new System.Drawing.Size(268, 68);
+            this.label_hello.TabIndex = 2;
+            this.label_hello.Text = "Note Library";
             // 
             // UserNoteLib
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.label2);
+            this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.label_hello);
             this.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "UserNoteLib";
@@ -57,6 +60,6 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label_hello;
     }
 }
