@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.label_goodMorning = new System.Windows.Forms.Label();
-            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.gunaAdvenceButton1 = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.CateTextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.PriorityBox = new System.Windows.Forms.ComboBox();
+            this.AddTask2 = new Guna.UI.WinForms.GunaAdvenceButton();
             this.gunaAdvenceButton2 = new Guna.UI.WinForms.GunaAdvenceButton();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -53,98 +53,99 @@
             this.label_goodMorning.Text = "What are you planning ?";
             this.label_goodMorning.Click += new System.EventHandler(this.label_goodMorning_Click);
             // 
-            // guna2TextBox1
+            // TextBox1
             // 
-            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox1.DefaultText = "Lorem ipsum dolor consectetur adipiscing elitefr Suspendisse eleifend";
-            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Font = new System.Drawing.Font("Poppins", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Location = new System.Drawing.Point(22, 48);
-            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.guna2TextBox1.Name = "guna2TextBox1";
-            this.guna2TextBox1.PasswordChar = '\0';
-            this.guna2TextBox1.PlaceholderText = "";
-            this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.Size = new System.Drawing.Size(641, 52);
-            this.guna2TextBox1.TabIndex = 4;
+            this.TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TextBox1.DefaultText = "Lorem ipsum dolor consectetur adipiscing elitefr Suspendisse eleifend";
+            this.TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TextBox1.Font = new System.Drawing.Font("Poppins", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TextBox1.Location = new System.Drawing.Point(22, 48);
+            this.TextBox1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.TextBox1.Name = "TextBox1";
+            this.TextBox1.PasswordChar = '\0';
+            this.TextBox1.PlaceholderText = "";
+            this.TextBox1.SelectedText = "";
+            this.TextBox1.Size = new System.Drawing.Size(641, 52);
+            this.TextBox1.TabIndex = 4;
             // 
-            // guna2TextBox2
+            // CateTextBox1
             // 
-            this.guna2TextBox2.BackColor = System.Drawing.Color.White;
-            this.guna2TextBox2.BorderRadius = 5;
-            this.guna2TextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox2.DefaultText = "University";
-            this.guna2TextBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(47)))), ((int)(((byte)(100)))));
-            this.guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.Font = new System.Drawing.Font("Poppins Medium", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox2.ForeColor = System.Drawing.Color.White;
-            this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.Location = new System.Drawing.Point(48, 174);
-            this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            this.guna2TextBox2.Name = "guna2TextBox2";
-            this.guna2TextBox2.PasswordChar = '\0';
-            this.guna2TextBox2.PlaceholderText = "";
-            this.guna2TextBox2.SelectedText = "";
-            this.guna2TextBox2.Size = new System.Drawing.Size(129, 37);
-            this.guna2TextBox2.TabIndex = 6;
-            this.guna2TextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.CateTextBox1.BackColor = System.Drawing.Color.White;
+            this.CateTextBox1.BorderRadius = 5;
+            this.CateTextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.CateTextBox1.DefaultText = "University";
+            this.CateTextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.CateTextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.CateTextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.CateTextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.CateTextBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(47)))), ((int)(((byte)(100)))));
+            this.CateTextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.CateTextBox1.Font = new System.Drawing.Font("Poppins Medium", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CateTextBox1.ForeColor = System.Drawing.Color.White;
+            this.CateTextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.CateTextBox1.Location = new System.Drawing.Point(48, 174);
+            this.CateTextBox1.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.CateTextBox1.Name = "CateTextBox1";
+            this.CateTextBox1.PasswordChar = '\0';
+            this.CateTextBox1.PlaceholderText = "";
+            this.CateTextBox1.SelectedText = "";
+            this.CateTextBox1.Size = new System.Drawing.Size(129, 37);
+            this.CateTextBox1.TabIndex = 6;
+            this.CateTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // comboBox2
+            // PriorityBox
             // 
-            this.comboBox2.BackColor = System.Drawing.Color.White;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.PriorityBox.BackColor = System.Drawing.Color.White;
+            this.PriorityBox.FormattingEnabled = true;
+            this.PriorityBox.Items.AddRange(new object[] {
             "Low",
             "Medium",
             "High",
             "Very High"});
-            this.comboBox2.Location = new System.Drawing.Point(48, 299);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(129, 31);
-            this.comboBox2.TabIndex = 9;
-            this.comboBox2.Text = "   High";
+            this.PriorityBox.Location = new System.Drawing.Point(48, 299);
+            this.PriorityBox.Name = "PriorityBox";
+            this.PriorityBox.Size = new System.Drawing.Size(129, 31);
+            this.PriorityBox.TabIndex = 9;
+            this.PriorityBox.Text = "   High";
             // 
-            // gunaAdvenceButton1
+            // AddTask2
             // 
-            this.gunaAdvenceButton1.AnimationHoverSpeed = 0.07F;
-            this.gunaAdvenceButton1.AnimationSpeed = 0.03F;
-            this.gunaAdvenceButton1.BackColor = System.Drawing.Color.Transparent;
-            this.gunaAdvenceButton1.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(156)))), ((int)(((byte)(116)))));
-            this.gunaAdvenceButton1.BorderColor = System.Drawing.Color.Black;
-            this.gunaAdvenceButton1.CheckedBaseColor = System.Drawing.Color.Gray;
-            this.gunaAdvenceButton1.CheckedBorderColor = System.Drawing.Color.Black;
-            this.gunaAdvenceButton1.CheckedForeColor = System.Drawing.Color.White;
-            this.gunaAdvenceButton1.CheckedImage = null;
-            this.gunaAdvenceButton1.CheckedLineColor = System.Drawing.Color.DimGray;
-            this.gunaAdvenceButton1.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaAdvenceButton1.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaAdvenceButton1.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaAdvenceButton1.ForeColor = System.Drawing.Color.White;
-            this.gunaAdvenceButton1.Image = null;
-            this.gunaAdvenceButton1.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaAdvenceButton1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.gunaAdvenceButton1.Location = new System.Drawing.Point(359, 531);
-            this.gunaAdvenceButton1.Name = "gunaAdvenceButton1";
-            this.gunaAdvenceButton1.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.gunaAdvenceButton1.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.gunaAdvenceButton1.OnHoverForeColor = System.Drawing.Color.White;
-            this.gunaAdvenceButton1.OnHoverImage = null;
-            this.gunaAdvenceButton1.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.gunaAdvenceButton1.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaAdvenceButton1.Radius = 8;
-            this.gunaAdvenceButton1.Size = new System.Drawing.Size(153, 41);
-            this.gunaAdvenceButton1.TabIndex = 12;
-            this.gunaAdvenceButton1.Text = "Add Task";
-            this.gunaAdvenceButton1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.AddTask2.AnimationHoverSpeed = 0.07F;
+            this.AddTask2.AnimationSpeed = 0.03F;
+            this.AddTask2.BackColor = System.Drawing.Color.Transparent;
+            this.AddTask2.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(156)))), ((int)(((byte)(116)))));
+            this.AddTask2.BorderColor = System.Drawing.Color.Black;
+            this.AddTask2.CheckedBaseColor = System.Drawing.Color.Gray;
+            this.AddTask2.CheckedBorderColor = System.Drawing.Color.Black;
+            this.AddTask2.CheckedForeColor = System.Drawing.Color.White;
+            this.AddTask2.CheckedImage = null;
+            this.AddTask2.CheckedLineColor = System.Drawing.Color.DimGray;
+            this.AddTask2.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.AddTask2.FocusedColor = System.Drawing.Color.Empty;
+            this.AddTask2.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddTask2.ForeColor = System.Drawing.Color.White;
+            this.AddTask2.Image = null;
+            this.AddTask2.ImageSize = new System.Drawing.Size(20, 20);
+            this.AddTask2.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.AddTask2.Location = new System.Drawing.Point(359, 531);
+            this.AddTask2.Name = "AddTask2";
+            this.AddTask2.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.AddTask2.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.AddTask2.OnHoverForeColor = System.Drawing.Color.White;
+            this.AddTask2.OnHoverImage = null;
+            this.AddTask2.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.AddTask2.OnPressedColor = System.Drawing.Color.Black;
+            this.AddTask2.Radius = 8;
+            this.AddTask2.Size = new System.Drawing.Size(153, 41);
+            this.AddTask2.TabIndex = 12;
+            this.AddTask2.Text = "Add Task";
+            this.AddTask2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.AddTask2.Click += new System.EventHandler(this.gunaAdvenceButton1_Click);
             // 
             // gunaAdvenceButton2
             // 
@@ -243,13 +244,13 @@
             this.ClientSize = new System.Drawing.Size(682, 603);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.gunaAdvenceButton2);
-            this.Controls.Add(this.gunaAdvenceButton1);
+            this.Controls.Add(this.AddTask2);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.PriorityBox);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.guna2TextBox2);
+            this.Controls.Add(this.CateTextBox1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.guna2TextBox1);
+            this.Controls.Add(this.TextBox1);
             this.Controls.Add(this.label_goodMorning);
             this.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -264,13 +265,13 @@
         #endregion
 
         private System.Windows.Forms.Label label_goodMorning;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
+        private Guna.UI2.WinForms.Guna2TextBox TextBox1;
         private System.Windows.Forms.Label label1;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
+        private Guna.UI2.WinForms.Guna2TextBox CateTextBox1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox PriorityBox;
         private System.Windows.Forms.Label label3;
-        private Guna.UI.WinForms.GunaAdvenceButton gunaAdvenceButton1;
+        private Guna.UI.WinForms.GunaAdvenceButton AddTask2;
         private Guna.UI.WinForms.GunaAdvenceButton gunaAdvenceButton2;
         private System.Windows.Forms.CheckBox checkBox1;
     }
