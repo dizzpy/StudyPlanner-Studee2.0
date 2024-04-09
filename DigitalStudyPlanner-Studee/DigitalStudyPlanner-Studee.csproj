@@ -34,7 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Guna.UI">
-      <HintPath>..\..\..\Downloads\New folder\Guna.UI-Framework-Lib-master\Guna.UI-Framework-Lib-master\Guna.UI WinForms\.net 4.0\Guna.UI.dll</HintPath>
+      <HintPath>..\..\..\..\..\Downloads\Guna Ui\Guna_UI_Framework_Ultimate_2\Guna UI Framework Ultimate v2.0.0.1 Lib-Master\Guna.UI WinForms\.net 4.0\Guna.UI.dll</HintPath>
     </Reference>
     <Reference Include="Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
       <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.6\lib\net472\Guna.UI2.dll</HintPath>
@@ -63,6 +63,30 @@
     </Compile>
     <Compile Include="Views\MainDashboard.Designer.cs">
       <DependentUpon>MainDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\NoteLibrary\userNoteLibrary1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\NoteLibrary\userNoteLibrary1.Designer.cs">
+      <DependentUpon>userNoteLibrary1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ToDoList\ToDoItemRow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\ToDoList\ToDoItemRow.Designer.cs">
+      <DependentUpon>ToDoItemRow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UserControlViews\ToDoListDiscardWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\UserControlViews\ToDoListDiscardWindow.Designer.cs">
+      <DependentUpon>ToDoListDiscardWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UserControlViews\ToDoListItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\UserControlViews\ToDoListItem.Designer.cs">
+      <DependentUpon>ToDoListItem.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\UserControlViews\UserDashboard.cs">
       <SubType>UserControl</SubType>
@@ -106,6 +130,18 @@
     </Compile>
     <EmbeddedResource Include="Views\MainDashboard.resx">
       <DependentUpon>MainDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\NoteLibrary\userNoteLibrary1.resx">
+      <DependentUpon>userNoteLibrary1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ToDoList\ToDoItemRow.resx">
+      <DependentUpon>ToDoItemRow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\UserControlViews\ToDoListDiscardWindow.resx">
+      <DependentUpon>ToDoListDiscardWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\UserControlViews\ToDoListItem.resx">
+      <DependentUpon>ToDoListItem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\UserControlViews\UserDashboard.resx">
       <DependentUpon>UserDashboard.cs</DependentUpon>
@@ -164,7 +200,14 @@
     <None Include="Resources\Images\dashboard-icons\logout.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\tag-22.png" />
+    <None Include="Resources\tag-21.png" />
+    <None Include="Resources\tag-2.png" />
+    <None Include="Resources\Group 200.png" />
+    <None Include="Resources\crown.png" />
+    <None Include="Resources\calendar-2.png" />
     <Content Include="Resources\Images\other-icons\Group 199.png" />
+    <None Include="Resources\trash-2.png" />
     <None Include="Resources\Images\Rectangles\Rectangle 15.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

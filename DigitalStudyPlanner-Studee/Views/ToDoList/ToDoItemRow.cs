@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DigitalStudyPlanner_Studee.Views.UserControlViews;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,16 +9,21 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace DigitalStudyPlanner_Studee.Views.UserControlViews
+namespace DigitalStudyPlanner_Studee.Views.ToDoList
 {
-    public partial class UserToDoList : UserControl
+    public partial class ToDoItemRow : UserControl
     {
-        public UserToDoList()
+        public ToDoItemRow()
         {
             InitializeComponent();
         }
 
         private void gunaAdvenceButton1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gunaElipsePanel1_Paint(object sender, PaintEventArgs e)
         {
             ToDoListItem toDoListItem = new ToDoListItem();
             toDoListItem.Show();

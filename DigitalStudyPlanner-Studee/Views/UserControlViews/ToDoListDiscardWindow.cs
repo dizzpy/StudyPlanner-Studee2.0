@@ -10,17 +10,11 @@ using System.Windows.Forms;
 
 namespace DigitalStudyPlanner_Studee.Views.UserControlViews
 {
-    public partial class UserToDoList : UserControl
+    public partial class ToDoListDiscardWindow : Form
     {
-        public UserToDoList()
+        public ToDoListDiscardWindow()
         {
             InitializeComponent();
-        }
-
-        private void gunaAdvenceButton1_Click(object sender, EventArgs e)
-        {
-            ToDoListItem toDoListItem = new ToDoListItem();
-            toDoListItem.Show();
         }
     }
 }
