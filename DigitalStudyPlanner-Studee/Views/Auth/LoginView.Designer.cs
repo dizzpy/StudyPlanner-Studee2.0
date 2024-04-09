@@ -36,9 +36,9 @@
             this.passText = new Guna.UI.WinForms.GunaTextBox();
             this.gunaMediumRadioButton1 = new Guna.UI.WinForms.GunaMediumRadioButton();
             this.label5 = new System.Windows.Forms.Label();
-            this.btnLogin = new Guna.UI.WinForms.GunaButton();
+            this.LoginButton = new Guna.UI.WinForms.GunaButton();
             this.label6 = new System.Windows.Forms.Label();
-            this.toReg = new System.Windows.Forms.Label();
+            this.ToReg = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -157,32 +157,32 @@
             this.label5.TabIndex = 9;
             this.label5.Text = "Remember me";
             // 
-            // btnLogin
+            // LoginButton
             // 
-            this.btnLogin.AnimationHoverSpeed = 0.07F;
-            this.btnLogin.AnimationSpeed = 0.03F;
-            this.btnLogin.BackColor = System.Drawing.Color.Transparent;
-            this.btnLogin.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(156)))), ((int)(((byte)(116)))));
-            this.btnLogin.BorderColor = System.Drawing.Color.Black;
-            this.btnLogin.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnLogin.FocusedColor = System.Drawing.Color.Empty;
-            this.btnLogin.Font = new System.Drawing.Font("Poppins SemiBold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogin.ForeColor = System.Drawing.Color.White;
-            this.btnLogin.Image = null;
-            this.btnLogin.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnLogin.Location = new System.Drawing.Point(552, 427);
-            this.btnLogin.Margin = new System.Windows.Forms.Padding(2);
-            this.btnLogin.Name = "btnLogin";
-            this.btnLogin.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(156)))), ((int)(((byte)(116)))));
-            this.btnLogin.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnLogin.OnHoverForeColor = System.Drawing.Color.White;
-            this.btnLogin.OnHoverImage = null;
-            this.btnLogin.OnPressedColor = System.Drawing.Color.Black;
-            this.btnLogin.Radius = 10;
-            this.btnLogin.Size = new System.Drawing.Size(254, 43);
-            this.btnLogin.TabIndex = 10;
-            this.btnLogin.Text = "Login";
-            this.btnLogin.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.LoginButton.AnimationHoverSpeed = 0.07F;
+            this.LoginButton.AnimationSpeed = 0.03F;
+            this.LoginButton.BackColor = System.Drawing.Color.Transparent;
+            this.LoginButton.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(156)))), ((int)(((byte)(116)))));
+            this.LoginButton.BorderColor = System.Drawing.Color.Black;
+            this.LoginButton.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.LoginButton.FocusedColor = System.Drawing.Color.Empty;
+            this.LoginButton.Font = new System.Drawing.Font("Poppins SemiBold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LoginButton.ForeColor = System.Drawing.Color.White;
+            this.LoginButton.Image = null;
+            this.LoginButton.ImageSize = new System.Drawing.Size(20, 20);
+            this.LoginButton.Location = new System.Drawing.Point(552, 427);
+            this.LoginButton.Margin = new System.Windows.Forms.Padding(2);
+            this.LoginButton.Name = "LoginButton";
+            this.LoginButton.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(156)))), ((int)(((byte)(116)))));
+            this.LoginButton.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.LoginButton.OnHoverForeColor = System.Drawing.Color.White;
+            this.LoginButton.OnHoverImage = null;
+            this.LoginButton.OnPressedColor = System.Drawing.Color.Black;
+            this.LoginButton.Radius = 10;
+            this.LoginButton.Size = new System.Drawing.Size(254, 43);
+            this.LoginButton.TabIndex = 10;
+            this.LoginButton.Text = "Login";
+            this.LoginButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label6
             // 
@@ -196,18 +196,19 @@
             this.label6.TabIndex = 11;
             this.label6.Text = "Doesn’t have an account yet ?";
             // 
-            // toReg
+            // ToReg
             // 
-            this.toReg.AutoSize = true;
-            this.toReg.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.toReg.Font = new System.Drawing.Font("Poppins SemiBold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toReg.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(209)))), ((int)(((byte)(172)))));
-            this.toReg.Location = new System.Drawing.Point(765, 497);
-            this.toReg.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.toReg.Name = "toReg";
-            this.toReg.Size = new System.Drawing.Size(65, 25);
-            this.toReg.TabIndex = 13;
-            this.toReg.Text = "Sing Up";
+            this.ToReg.AutoSize = true;
+            this.ToReg.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ToReg.Font = new System.Drawing.Font("Poppins SemiBold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ToReg.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(209)))), ((int)(((byte)(172)))));
+            this.ToReg.Location = new System.Drawing.Point(765, 497);
+            this.ToReg.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.ToReg.Name = "ToReg";
+            this.ToReg.Size = new System.Drawing.Size(65, 25);
+            this.ToReg.TabIndex = 13;
+            this.ToReg.Text = "Sing Up";
+            this.ToReg.Click += new System.EventHandler(this.ToReg_Click);
             // 
             // pictureBox1
             // 
@@ -225,9 +226,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(886, 596);
-            this.Controls.Add(this.toReg);
+            this.Controls.Add(this.ToReg);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.btnLogin);
+            this.Controls.Add(this.LoginButton);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.gunaMediumRadioButton1);
             this.Controls.Add(this.passText);
@@ -261,8 +262,8 @@
         private Guna.UI.WinForms.GunaTextBox passText;
         private Guna.UI.WinForms.GunaMediumRadioButton gunaMediumRadioButton1;
         private System.Windows.Forms.Label label5;
-        private Guna.UI.WinForms.GunaButton btnLogin;
+        private Guna.UI.WinForms.GunaButton LoginButton;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label toReg;
+        private System.Windows.Forms.Label ToReg;
     }
 }

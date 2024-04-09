@@ -16,5 +16,12 @@ namespace DigitalStudyPlanner_Studee.Views.Auth
         {
             InitializeComponent();
         }
+
+        private void ToReg_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            RegisterView registerView = new RegisterView();
+            registerView.Show();
+        }
     }
 }

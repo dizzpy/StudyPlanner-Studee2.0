@@ -79,6 +79,18 @@ namespace DigitalStudyPlanner_Studee.Views
             userTimer1.Hide();
             userToDoList1.Hide();
         }
+
+        private void ProfileButton_Click(object sender, EventArgs e)
+        {
+            ProfileView profileView = new ProfileView();
+            profileView.Show();
+        }
+
+        private void SettingButton_Click(object sender, EventArgs e)
+        {
+            SettingView settingView = new SettingView();
+            settingView.Show();
+        }
     }
 }
 

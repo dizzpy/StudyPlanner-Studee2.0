@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnRegister = new Guna.UI.WinForms.GunaButton();
+            this.RegisterButton = new Guna.UI.WinForms.GunaButton();
             this.fullText = new Guna.UI.WinForms.GunaTextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -41,7 +41,7 @@
             this.passText = new Guna.UI.WinForms.GunaTextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.toLogin = new System.Windows.Forms.Label();
+            this.ToLogin = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.btnUploard = new Guna.UI.WinForms.GunaButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -51,39 +51,39 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.White;
             this.pictureBox1.Location = new System.Drawing.Point(431, 85);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(421, 470);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // btnRegister
+            // RegisterButton
             // 
-            this.btnRegister.AnimationHoverSpeed = 0.07F;
-            this.btnRegister.AnimationSpeed = 0.03F;
-            this.btnRegister.BackColor = System.Drawing.Color.Transparent;
-            this.btnRegister.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(156)))), ((int)(((byte)(116)))));
-            this.btnRegister.BorderColor = System.Drawing.Color.Black;
-            this.btnRegister.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnRegister.FocusedColor = System.Drawing.Color.Empty;
-            this.btnRegister.Font = new System.Drawing.Font("Poppins SemiBold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegister.ForeColor = System.Drawing.Color.White;
-            this.btnRegister.Image = null;
-            this.btnRegister.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnRegister.Location = new System.Drawing.Point(66, 535);
-            this.btnRegister.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnRegister.Name = "btnRegister";
-            this.btnRegister.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(156)))), ((int)(((byte)(116)))));
-            this.btnRegister.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnRegister.OnHoverForeColor = System.Drawing.Color.White;
-            this.btnRegister.OnHoverImage = null;
-            this.btnRegister.OnPressedColor = System.Drawing.Color.Black;
-            this.btnRegister.Radius = 10;
-            this.btnRegister.Size = new System.Drawing.Size(254, 43);
-            this.btnRegister.TabIndex = 19;
-            this.btnRegister.Text = "Register";
-            this.btnRegister.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.RegisterButton.AnimationHoverSpeed = 0.07F;
+            this.RegisterButton.AnimationSpeed = 0.03F;
+            this.RegisterButton.BackColor = System.Drawing.Color.Transparent;
+            this.RegisterButton.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(156)))), ((int)(((byte)(116)))));
+            this.RegisterButton.BorderColor = System.Drawing.Color.Black;
+            this.RegisterButton.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.RegisterButton.FocusedColor = System.Drawing.Color.Empty;
+            this.RegisterButton.Font = new System.Drawing.Font("Poppins SemiBold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RegisterButton.ForeColor = System.Drawing.Color.White;
+            this.RegisterButton.Image = null;
+            this.RegisterButton.ImageSize = new System.Drawing.Size(20, 20);
+            this.RegisterButton.Location = new System.Drawing.Point(66, 535);
+            this.RegisterButton.Margin = new System.Windows.Forms.Padding(2);
+            this.RegisterButton.Name = "RegisterButton";
+            this.RegisterButton.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(156)))), ((int)(((byte)(116)))));
+            this.RegisterButton.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.RegisterButton.OnHoverForeColor = System.Drawing.Color.White;
+            this.RegisterButton.OnHoverImage = null;
+            this.RegisterButton.OnPressedColor = System.Drawing.Color.Black;
+            this.RegisterButton.Radius = 10;
+            this.RegisterButton.Size = new System.Drawing.Size(254, 43);
+            this.RegisterButton.TabIndex = 19;
+            this.RegisterButton.Text = "Register";
+            this.RegisterButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // fullText
             // 
@@ -98,7 +98,7 @@
             this.fullText.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.fullText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(156)))), ((int)(((byte)(116)))));
             this.fullText.Location = new System.Drawing.Point(66, 142);
-            this.fullText.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.fullText.Margin = new System.Windows.Forms.Padding(2);
             this.fullText.Name = "fullText";
             this.fullText.PasswordChar = '\0';
             this.fullText.Radius = 10;
@@ -156,7 +156,7 @@
             this.UserOccupation.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.UserOccupation.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(156)))), ((int)(((byte)(116)))));
             this.UserOccupation.Location = new System.Drawing.Point(66, 221);
-            this.UserOccupation.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.UserOccupation.Margin = new System.Windows.Forms.Padding(2);
             this.UserOccupation.Name = "UserOccupation";
             this.UserOccupation.PasswordChar = '\0';
             this.UserOccupation.Radius = 10;
@@ -190,7 +190,7 @@
             this.userEmail.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.userEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(156)))), ((int)(((byte)(116)))));
             this.userEmail.Location = new System.Drawing.Point(66, 304);
-            this.userEmail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.userEmail.Margin = new System.Windows.Forms.Padding(2);
             this.userEmail.Name = "userEmail";
             this.userEmail.PasswordChar = '\0';
             this.userEmail.Radius = 10;
@@ -224,7 +224,7 @@
             this.passText.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.passText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(156)))), ((int)(((byte)(116)))));
             this.passText.Location = new System.Drawing.Point(66, 386);
-            this.passText.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.passText.Margin = new System.Windows.Forms.Padding(2);
             this.passText.Name = "passText";
             this.passText.PasswordChar = '\0';
             this.passText.Radius = 10;
@@ -257,18 +257,19 @@
             this.label7.TabIndex = 26;
             this.label7.Text = "Profile Pic";
             // 
-            // toLogin
+            // ToLogin
             // 
-            this.toLogin.AutoSize = true;
-            this.toLogin.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.toLogin.Font = new System.Drawing.Font("Poppins SemiBold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toLogin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(209)))), ((int)(((byte)(172)))));
-            this.toLogin.Location = new System.Drawing.Point(250, 588);
-            this.toLogin.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.toLogin.Name = "toLogin";
-            this.toLogin.Size = new System.Drawing.Size(49, 25);
-            this.toLogin.TabIndex = 29;
-            this.toLogin.Text = "Login";
+            this.ToLogin.AutoSize = true;
+            this.ToLogin.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ToLogin.Font = new System.Drawing.Font("Poppins SemiBold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ToLogin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(209)))), ((int)(((byte)(172)))));
+            this.ToLogin.Location = new System.Drawing.Point(250, 588);
+            this.ToLogin.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.ToLogin.Name = "ToLogin";
+            this.ToLogin.Size = new System.Drawing.Size(49, 25);
+            this.ToLogin.TabIndex = 29;
+            this.ToLogin.Text = "Login";
+            this.ToLogin.Click += new System.EventHandler(this.ToLogin_Click);
             // 
             // label8
             // 
@@ -297,7 +298,7 @@
             this.btnUploard.Image = null;
             this.btnUploard.ImageSize = new System.Drawing.Size(20, 20);
             this.btnUploard.Location = new System.Drawing.Point(66, 467);
-            this.btnUploard.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnUploard.Margin = new System.Windows.Forms.Padding(2);
             this.btnUploard.Name = "btnUploard";
             this.btnUploard.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(156)))), ((int)(((byte)(116)))));
             this.btnUploard.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(156)))), ((int)(((byte)(116)))));
@@ -316,7 +317,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(913, 645);
             this.Controls.Add(this.btnUploard);
-            this.Controls.Add(this.toLogin);
+            this.Controls.Add(this.ToLogin);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.passText);
@@ -325,14 +326,14 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.UserOccupation);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.btnRegister);
+            this.Controls.Add(this.RegisterButton);
             this.Controls.Add(this.fullText);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.Name = "RegisterView";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -346,7 +347,7 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private Guna.UI.WinForms.GunaButton btnRegister;
+        private Guna.UI.WinForms.GunaButton RegisterButton;
         private Guna.UI.WinForms.GunaTextBox fullText;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
@@ -358,7 +359,7 @@
         private Guna.UI.WinForms.GunaTextBox passText;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label toLogin;
+        private System.Windows.Forms.Label ToLogin;
         private System.Windows.Forms.Label label8;
         private Guna.UI.WinForms.GunaButton btnUploard;
     }

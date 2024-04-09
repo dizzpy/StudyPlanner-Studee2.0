@@ -30,7 +30,14 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.SettingButton = new System.Windows.Forms.Button();
+            this.ProfileButton = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.btn_noteLibrary = new System.Windows.Forms.Button();
+            this.btn_timer = new System.Windows.Forms.Button();
+            this.btn_events = new System.Windows.Forms.Button();
+            this.btn_toDoList = new System.Windows.Forms.Button();
+            this.btn_dashboard = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label_goodMorning = new System.Windows.Forms.Label();
             this.label_hello = new System.Windows.Forms.Label();
@@ -40,13 +47,6 @@
             this.userEvent1 = new DigitalStudyPlanner_Studee.Views.UserControlViews.UserEvent();
             this.userDashboard2 = new DigitalStudyPlanner_Studee.Views.UserControlViews.UserDashboard();
             this.userDashboard1 = new DigitalStudyPlanner_Studee.Views.UserControlViews.UserDashboard();
-            this.btn_setting = new System.Windows.Forms.Button();
-            this.btn_profile = new System.Windows.Forms.Button();
-            this.btn_noteLibrary = new System.Windows.Forms.Button();
-            this.btn_timer = new System.Windows.Forms.Button();
-            this.btn_events = new System.Windows.Forms.Button();
-            this.btn_toDoList = new System.Windows.Forms.Button();
-            this.btn_dashboard = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -67,14 +67,58 @@
             // 
             // panel5
             // 
-            this.panel5.Controls.Add(this.btn_setting);
-            this.panel5.Controls.Add(this.btn_profile);
+            this.panel5.Controls.Add(this.SettingButton);
+            this.panel5.Controls.Add(this.ProfileButton);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel5.Location = new System.Drawing.Point(0, 563);
             this.panel5.Margin = new System.Windows.Forms.Padding(2);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(302, 118);
             this.panel5.TabIndex = 3;
+            // 
+            // SettingButton
+            // 
+            this.SettingButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.SettingButton.Dock = System.Windows.Forms.DockStyle.Top;
+            this.SettingButton.FlatAppearance.BorderSize = 0;
+            this.SettingButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.SettingButton.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SettingButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(68)))), ((int)(((byte)(76)))));
+            this.SettingButton.Image = global::DigitalStudyPlanner_Studee.Properties.Resources.settings;
+            this.SettingButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.SettingButton.Location = new System.Drawing.Point(0, 57);
+            this.SettingButton.Margin = new System.Windows.Forms.Padding(2);
+            this.SettingButton.Name = "SettingButton";
+            this.SettingButton.Padding = new System.Windows.Forms.Padding(28, 0, 0, 0);
+            this.SettingButton.Size = new System.Drawing.Size(302, 57);
+            this.SettingButton.TabIndex = 3;
+            this.SettingButton.Text = "Settings";
+            this.SettingButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.SettingButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.SettingButton.UseVisualStyleBackColor = true;
+            this.SettingButton.Click += new System.EventHandler(this.SettingButton_Click);
+            // 
+            // ProfileButton
+            // 
+            this.ProfileButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ProfileButton.Dock = System.Windows.Forms.DockStyle.Top;
+            this.ProfileButton.FlatAppearance.BorderSize = 0;
+            this.ProfileButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ProfileButton.Font = new System.Drawing.Font("Poppins", 14.25F);
+            this.ProfileButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(68)))), ((int)(((byte)(76)))));
+            this.ProfileButton.Image = global::DigitalStudyPlanner_Studee.Properties.Resources.profile;
+            this.ProfileButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ProfileButton.Location = new System.Drawing.Point(0, 0);
+            this.ProfileButton.Margin = new System.Windows.Forms.Padding(2);
+            this.ProfileButton.Name = "ProfileButton";
+            this.ProfileButton.Padding = new System.Windows.Forms.Padding(28, 0, 0, 0);
+            this.ProfileButton.Size = new System.Drawing.Size(302, 57);
+            this.ProfileButton.TabIndex = 2;
+            this.ProfileButton.Text = "Profile";
+            this.ProfileButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ProfileButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.ProfileButton.UseVisualStyleBackColor = true;
+            this.ProfileButton.Click += new System.EventHandler(this.ProfileButton_Click);
             // 
             // panel3
             // 
@@ -89,137 +133,6 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(302, 287);
             this.panel3.TabIndex = 2;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.label_goodMorning);
-            this.panel2.Controls.Add(this.label_hello);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(302, 118);
-            this.panel2.TabIndex = 1;
-            // 
-            // label_goodMorning
-            // 
-            this.label_goodMorning.AutoSize = true;
-            this.label_goodMorning.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_goodMorning.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(68)))), ((int)(((byte)(76)))));
-            this.label_goodMorning.Location = new System.Drawing.Point(30, 69);
-            this.label_goodMorning.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label_goodMorning.Name = "label_goodMorning";
-            this.label_goodMorning.Size = new System.Drawing.Size(155, 34);
-            this.label_goodMorning.TabIndex = 2;
-            this.label_goodMorning.Text = "Good Morning!";
-            // 
-            // label_hello
-            // 
-            this.label_hello.AutoSize = true;
-            this.label_hello.Font = new System.Drawing.Font("Poppins SemiBold", 29.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_hello.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(68)))), ((int)(((byte)(76)))));
-            this.label_hello.Location = new System.Drawing.Point(22, 11);
-            this.label_hello.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label_hello.Name = "label_hello";
-            this.label_hello.Size = new System.Drawing.Size(264, 68);
-            this.label_hello.TabIndex = 1;
-            this.label_hello.Text = "Hello Dizzpy";
-            // 
-            // userToDoList1
-            // 
-            this.userToDoList1.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.userToDoList1.Location = new System.Drawing.Point(308, 0);
-            this.userToDoList1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.userToDoList1.Name = "userToDoList1";
-            this.userToDoList1.Size = new System.Drawing.Size(962, 681);
-            this.userToDoList1.TabIndex = 6;
-            // 
-            // userTimer1
-            // 
-            this.userTimer1.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.userTimer1.Location = new System.Drawing.Point(308, 0);
-            this.userTimer1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.userTimer1.Name = "userTimer1";
-            this.userTimer1.Size = new System.Drawing.Size(962, 681);
-            this.userTimer1.TabIndex = 5;
-            // 
-            // userNoteLib1
-            // 
-            this.userNoteLib1.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.userNoteLib1.Location = new System.Drawing.Point(308, -4);
-            this.userNoteLib1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.userNoteLib1.Name = "userNoteLib1";
-            this.userNoteLib1.Size = new System.Drawing.Size(962, 681);
-            this.userNoteLib1.TabIndex = 4;
-            // 
-            // userEvent1
-            // 
-            this.userEvent1.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.userEvent1.Location = new System.Drawing.Point(308, 0);
-            this.userEvent1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.userEvent1.Name = "userEvent1";
-            this.userEvent1.Size = new System.Drawing.Size(962, 681);
-            this.userEvent1.TabIndex = 3;
-            // 
-            // userDashboard2
-            // 
-            this.userDashboard2.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.userDashboard2.Location = new System.Drawing.Point(308, 0);
-            this.userDashboard2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.userDashboard2.Name = "userDashboard2";
-            this.userDashboard2.Size = new System.Drawing.Size(962, 681);
-            this.userDashboard2.TabIndex = 2;
-            // 
-            // userDashboard1
-            // 
-            this.userDashboard1.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.userDashboard1.Location = new System.Drawing.Point(596, -393);
-            this.userDashboard1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.userDashboard1.Name = "userDashboard1";
-            this.userDashboard1.Size = new System.Drawing.Size(962, 681);
-            this.userDashboard1.TabIndex = 1;
-            // 
-            // btn_setting
-            // 
-            this.btn_setting.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_setting.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_setting.FlatAppearance.BorderSize = 0;
-            this.btn_setting.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_setting.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_setting.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(68)))), ((int)(((byte)(76)))));
-            this.btn_setting.Image = global::DigitalStudyPlanner_Studee.Properties.Resources.settings;
-            this.btn_setting.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_setting.Location = new System.Drawing.Point(0, 57);
-            this.btn_setting.Margin = new System.Windows.Forms.Padding(2);
-            this.btn_setting.Name = "btn_setting";
-            this.btn_setting.Padding = new System.Windows.Forms.Padding(28, 0, 0, 0);
-            this.btn_setting.Size = new System.Drawing.Size(302, 57);
-            this.btn_setting.TabIndex = 3;
-            this.btn_setting.Text = "Settings";
-            this.btn_setting.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_setting.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btn_setting.UseVisualStyleBackColor = true;
-            // 
-            // btn_profile
-            // 
-            this.btn_profile.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_profile.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_profile.FlatAppearance.BorderSize = 0;
-            this.btn_profile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_profile.Font = new System.Drawing.Font("Poppins", 14.25F);
-            this.btn_profile.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(68)))), ((int)(((byte)(76)))));
-            this.btn_profile.Image = global::DigitalStudyPlanner_Studee.Properties.Resources.profile;
-            this.btn_profile.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_profile.Location = new System.Drawing.Point(0, 0);
-            this.btn_profile.Margin = new System.Windows.Forms.Padding(2);
-            this.btn_profile.Name = "btn_profile";
-            this.btn_profile.Padding = new System.Windows.Forms.Padding(28, 0, 0, 0);
-            this.btn_profile.Size = new System.Drawing.Size(302, 57);
-            this.btn_profile.TabIndex = 2;
-            this.btn_profile.Text = "Profile";
-            this.btn_profile.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_profile.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btn_profile.UseVisualStyleBackColor = true;
             // 
             // btn_noteLibrary
             // 
@@ -341,6 +254,96 @@
             this.btn_dashboard.UseVisualStyleBackColor = true;
             this.btn_dashboard.Click += new System.EventHandler(this.btn_dashboard_Click);
             // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.label_goodMorning);
+            this.panel2.Controls.Add(this.label_hello);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(302, 118);
+            this.panel2.TabIndex = 1;
+            // 
+            // label_goodMorning
+            // 
+            this.label_goodMorning.AutoSize = true;
+            this.label_goodMorning.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_goodMorning.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(68)))), ((int)(((byte)(76)))));
+            this.label_goodMorning.Location = new System.Drawing.Point(30, 69);
+            this.label_goodMorning.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label_goodMorning.Name = "label_goodMorning";
+            this.label_goodMorning.Size = new System.Drawing.Size(155, 34);
+            this.label_goodMorning.TabIndex = 2;
+            this.label_goodMorning.Text = "Good Morning!";
+            // 
+            // label_hello
+            // 
+            this.label_hello.AutoSize = true;
+            this.label_hello.Font = new System.Drawing.Font("Poppins SemiBold", 29.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_hello.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(68)))), ((int)(((byte)(76)))));
+            this.label_hello.Location = new System.Drawing.Point(22, 11);
+            this.label_hello.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label_hello.Name = "label_hello";
+            this.label_hello.Size = new System.Drawing.Size(264, 68);
+            this.label_hello.TabIndex = 1;
+            this.label_hello.Text = "Hello Dizzpy";
+            // 
+            // userToDoList1
+            // 
+            this.userToDoList1.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.userToDoList1.Location = new System.Drawing.Point(308, 0);
+            this.userToDoList1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.userToDoList1.Name = "userToDoList1";
+            this.userToDoList1.Size = new System.Drawing.Size(962, 681);
+            this.userToDoList1.TabIndex = 6;
+            // 
+            // userTimer1
+            // 
+            this.userTimer1.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.userTimer1.Location = new System.Drawing.Point(308, 0);
+            this.userTimer1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.userTimer1.Name = "userTimer1";
+            this.userTimer1.Size = new System.Drawing.Size(962, 681);
+            this.userTimer1.TabIndex = 5;
+            // 
+            // userNoteLib1
+            // 
+            this.userNoteLib1.BackColor = System.Drawing.Color.White;
+            this.userNoteLib1.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.userNoteLib1.Location = new System.Drawing.Point(308, -4);
+            this.userNoteLib1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.userNoteLib1.Name = "userNoteLib1";
+            this.userNoteLib1.Size = new System.Drawing.Size(962, 681);
+            this.userNoteLib1.TabIndex = 4;
+            // 
+            // userEvent1
+            // 
+            this.userEvent1.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.userEvent1.Location = new System.Drawing.Point(308, 0);
+            this.userEvent1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.userEvent1.Name = "userEvent1";
+            this.userEvent1.Size = new System.Drawing.Size(962, 681);
+            this.userEvent1.TabIndex = 3;
+            // 
+            // userDashboard2
+            // 
+            this.userDashboard2.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.userDashboard2.Location = new System.Drawing.Point(308, 0);
+            this.userDashboard2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.userDashboard2.Name = "userDashboard2";
+            this.userDashboard2.Size = new System.Drawing.Size(962, 681);
+            this.userDashboard2.TabIndex = 2;
+            // 
+            // userDashboard1
+            // 
+            this.userDashboard1.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.userDashboard1.Location = new System.Drawing.Point(596, -393);
+            this.userDashboard1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.userDashboard1.Name = "userDashboard1";
+            this.userDashboard1.Size = new System.Drawing.Size(962, 681);
+            this.userDashboard1.TabIndex = 1;
+            // 
             // MainDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -382,9 +385,9 @@
         private System.Windows.Forms.Button btn_events;
         private System.Windows.Forms.Button btn_toDoList;
         private System.Windows.Forms.Button btn_noteLibrary;
-        private System.Windows.Forms.Button btn_profile;
+        private System.Windows.Forms.Button ProfileButton;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Button btn_setting;
+        private System.Windows.Forms.Button SettingButton;
         private UserControlViews.UserDashboard userDashboard1;
         private UserControlViews.UserDashboard userDashboard2;
         private UserControlViews.UserEvent userEvent1;
