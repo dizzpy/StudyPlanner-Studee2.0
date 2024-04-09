@@ -34,7 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Guna.UI">
-      <HintPath>..\..\..\..\..\Downloads\Guna Ui\Guna_UI_Framework_Ultimate_2\Guna UI Framework Ultimate v2.0.0.1 Lib-Master\Guna.UI WinForms\.net 4.0\Guna.UI.dll</HintPath>
+      <HintPath>..\..\..\..\Downloads\Telegram Desktop\Guna Ui\Guna Ui\Guna_UI_Framework_Ultimate_2\Guna UI Framework Ultimate v2.0.0.1 Lib-Master\Guna.UI WinForms\.net 4.0\Guna.UI.dll</HintPath>
     </Reference>
     <Reference Include="Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
       <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.6\lib\net472\Guna.UI2.dll</HintPath>
@@ -82,10 +82,10 @@
     <Compile Include="Views\UserControlViews\ToDoListDiscardWindow.Designer.cs">
       <DependentUpon>ToDoListDiscardWindow.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\UserControlViews\ToDoListItem.cs">
+    <Compile Include="Views\ToDoList\ToDoListItem.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\UserControlViews\ToDoListItem.Designer.cs">
+    <Compile Include="Views\ToDoList\ToDoListItem.Designer.cs">
       <DependentUpon>ToDoListItem.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\UserControlViews\UserDashboard.cs">
@@ -140,7 +140,7 @@
     <EmbeddedResource Include="Views\UserControlViews\ToDoListDiscardWindow.resx">
       <DependentUpon>ToDoListDiscardWindow.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\UserControlViews\ToDoListItem.resx">
+    <EmbeddedResource Include="Views\ToDoList\ToDoListItem.resx">
       <DependentUpon>ToDoListItem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\UserControlViews\UserDashboard.resx">
