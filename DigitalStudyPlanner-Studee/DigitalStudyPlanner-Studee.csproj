@@ -82,6 +82,18 @@
     <Compile Include="Views\NoteLibrary\userNoteLibrary1.Designer.cs">
       <DependentUpon>userNoteLibrary1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\ProfileView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\ProfileView.Designer.cs">
+      <DependentUpon>ProfileView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SettingView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\SettingView.Designer.cs">
+      <DependentUpon>SettingView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\ToDoList\ToDoItemRow.cs">
       <SubType>UserControl</SubType>
     </Compile>

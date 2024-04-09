@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace DigitalStudyPlanner_Studee.Views.Auth
+namespace DigitalStudyPlanner_Studee.Views
 {
-    public partial class RegisterView : Form
+    public partial class SettingView : Form
     {
-        public RegisterView()
+        public SettingView()
         {
             InitializeComponent();
-        }
-
-        private void RegisterView_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
