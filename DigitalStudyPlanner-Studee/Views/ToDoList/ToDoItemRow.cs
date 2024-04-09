@@ -28,5 +28,10 @@ namespace DigitalStudyPlanner_Studee.Views.ToDoList
             ToDoListItem toDoListItem = new ToDoListItem();
             toDoListItem.Show();
         }
+
+        private void gunaAdvenceButton5_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
