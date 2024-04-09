@@ -164,6 +164,9 @@
     <EmbeddedResource Include="Views\NoteLibrary\userNoteLibrary1.resx">
       <DependentUpon>userNoteLibrary1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\SettingView.resx">
+      <DependentUpon>SettingView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\ToDoList\ToDoItemRow.resx">
       <DependentUpon>ToDoItemRow.cs</DependentUpon>
     </EmbeddedResource>
