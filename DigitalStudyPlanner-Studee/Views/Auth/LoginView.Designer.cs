@@ -127,7 +127,7 @@
             this.LogPasswordText.Location = new System.Drawing.Point(552, 310);
             this.LogPasswordText.Margin = new System.Windows.Forms.Padding(2);
             this.LogPasswordText.Name = "LogPasswordText";
-            this.LogPasswordText.PasswordChar = '*';
+            this.LogPasswordText.PasswordChar = '\0';
             this.LogPasswordText.Radius = 10;
             this.LogPasswordText.SelectedText = "";
             this.LogPasswordText.Size = new System.Drawing.Size(254, 42);

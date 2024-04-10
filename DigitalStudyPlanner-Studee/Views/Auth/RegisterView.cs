@@ -2,6 +2,7 @@
 using System;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.Net.Mail;
 using System.Windows.Forms;
 
 namespace DigitalStudyPlanner_Studee.Views.Auth
@@ -66,7 +67,7 @@ namespace DigitalStudyPlanner_Studee.Views.Auth
                     this.Hide();
 
                     string LoggedUserName = RegEmailText.Text;
-                    MainDashboard dashboardForm = new MainDashboard();
+                    MainDashboard dashboardForm = new MainDashboard(LoggedUserName);
                     dashboardForm.Show(); ;
                 }
             }

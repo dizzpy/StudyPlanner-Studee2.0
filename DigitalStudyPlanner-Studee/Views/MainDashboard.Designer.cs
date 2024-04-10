@@ -47,6 +47,7 @@
             this.userEvent1 = new DigitalStudyPlanner_Studee.Views.UserControlViews.UserEvent();
             this.userDashboard2 = new DigitalStudyPlanner_Studee.Views.UserControlViews.UserDashboard();
             this.userDashboard1 = new DigitalStudyPlanner_Studee.Views.UserControlViews.UserDashboard();
+            this.DisplayUserNameText = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -256,6 +257,7 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.DisplayUserNameText);
             this.panel2.Controls.Add(this.label_goodMorning);
             this.panel2.Controls.Add(this.label_hello);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
@@ -268,26 +270,26 @@
             // label_goodMorning
             // 
             this.label_goodMorning.AutoSize = true;
-            this.label_goodMorning.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_goodMorning.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_goodMorning.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(68)))), ((int)(((byte)(76)))));
-            this.label_goodMorning.Location = new System.Drawing.Point(30, 69);
+            this.label_goodMorning.Location = new System.Drawing.Point(30, 37);
             this.label_goodMorning.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label_goodMorning.Name = "label_goodMorning";
-            this.label_goodMorning.Size = new System.Drawing.Size(155, 34);
+            this.label_goodMorning.Size = new System.Drawing.Size(129, 28);
             this.label_goodMorning.TabIndex = 2;
             this.label_goodMorning.Text = "Good Morning!";
             // 
             // label_hello
             // 
             this.label_hello.AutoSize = true;
-            this.label_hello.Font = new System.Drawing.Font("Poppins SemiBold", 29.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_hello.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_hello.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(68)))), ((int)(((byte)(76)))));
-            this.label_hello.Location = new System.Drawing.Point(22, 11);
+            this.label_hello.Location = new System.Drawing.Point(30, 9);
             this.label_hello.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label_hello.Name = "label_hello";
-            this.label_hello.Size = new System.Drawing.Size(264, 68);
+            this.label_hello.Size = new System.Drawing.Size(51, 28);
             this.label_hello.TabIndex = 1;
-            this.label_hello.Text = "Hello Dizzpy";
+            this.label_hello.Text = "Hello";
             // 
             // userToDoList1
             // 
@@ -344,6 +346,18 @@
             this.userDashboard1.Size = new System.Drawing.Size(962, 681);
             this.userDashboard1.TabIndex = 1;
             // 
+            // DisplayUserNameText
+            // 
+            this.DisplayUserNameText.AutoSize = true;
+            this.DisplayUserNameText.Font = new System.Drawing.Font("Poppins SemiBold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DisplayUserNameText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(68)))), ((int)(((byte)(76)))));
+            this.DisplayUserNameText.Location = new System.Drawing.Point(30, 65);
+            this.DisplayUserNameText.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.DisplayUserNameText.Name = "DisplayUserNameText";
+            this.DisplayUserNameText.Size = new System.Drawing.Size(151, 42);
+            this.DisplayUserNameText.TabIndex = 3;
+            this.DisplayUserNameText.Text = "Yashohara";
+            // 
             // MainDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -394,5 +408,6 @@
         private UserControlViews.UserNoteLib userNoteLib1;
         private UserControlViews.UserTimer userTimer1;
         private UserControlViews.UserToDoList userToDoList1;
+        private System.Windows.Forms.Label DisplayUserNameText;
     }
 }

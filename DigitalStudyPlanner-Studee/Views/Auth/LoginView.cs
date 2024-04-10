@@ -52,7 +52,7 @@ namespace DigitalStudyPlanner_Studee.Views.Auth
                     MessageBox.Show("Login Successful", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     this.Hide();
                     string LoggedUserName = LogEmailText.Text;
-                    MainDashboard dashboardForm = new MainDashboard();
+                    MainDashboard dashboardForm = new MainDashboard(LoggedUserName);
                     dashboardForm.Show();
                 }
                 else

@@ -1,10 +1,12 @@
-﻿using System;
+﻿using MySqlConnector;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Linq;
+using System.Net.Mail;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -15,9 +17,16 @@ namespace DigitalStudyPlanner_Studee.Views
 {
     public partial class MainDashboard : Form
     {
-        public MainDashboard()
+        private readonly string EmailAddress;
+        private readonly MySqlConnection connection;
+
+
+        public MainDashboard(string EmailAddress)
         {
             InitializeComponent();
+            this.EmailAddress = EmailAddress;
+            connection = new MySqlConnection("server=localhost;database=studeedb;port=3306;username=root;password=");
+            DisplayUserData();
         }
 
         private void MainDashboard_Load(object sender, EventArgs e)
@@ -82,7 +91,8 @@ namespace DigitalStudyPlanner_Studee.Views
 
         private void ProfileButton_Click(object sender, EventArgs e)
         {
-            ProfileView profileView = new ProfileView();
+            string LoggedUserName = EmailAddress;
+            ProfileView profileView = new ProfileView(LoggedUserName);
             profileView.Show();
         }
 
@@ -90,6 +100,36 @@ namespace DigitalStudyPlanner_Studee.Views
         {
             SettingView settingView = new SettingView();
             settingView.Show();
+        }
+
+        private void DisplayUserData()
+        {
+            // Display User Username in "DisplayUserNameText" label
+            try
+            {
+                connection.Open();
+                string query = "SELECT * FROM users WHERE EmailAddress = @EmailAddress";
+                MySqlCommand command = new MySqlCommand(query, connection);
+                command.Parameters.AddWithValue("@EmailAddress", EmailAddress);
+
+                using (MySqlDataReader reader = command.ExecuteReader())
+                {
+                    if (reader.Read())
+                    {
+                        DisplayUserNameText.Text = reader["FullName"].ToString();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                connection.Close();
+            }   
+
+
         }
     }
 }
