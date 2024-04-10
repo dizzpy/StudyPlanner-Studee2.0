@@ -120,23 +120,24 @@
     <Compile Include="Views\SettingView.Designer.cs">
       <DependentUpon>SettingView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\ToDoList\ToDoItemRow.cs">
+    <Compile Include="Views\ToDoList\CustomListItem.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Views\ToDoList\ToDoItemRow.Designer.cs">
-      <DependentUpon>ToDoItemRow.cs</DependentUpon>
+    <Compile Include="Views\ToDoList\CustomListItem.Designer.cs">
+      <DependentUpon>CustomListItem.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\ToDoList\TaskItem.cs" />
     <Compile Include="Views\ToDoList\ToDoListDiscardWindow.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Views\ToDoList\ToDoListDiscardWindow.Designer.cs">
       <DependentUpon>ToDoListDiscardWindow.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\ToDoList\ToDoListItem.cs">
+    <Compile Include="Views\ToDoList\TaskAddWindow.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\ToDoList\ToDoListItem.Designer.cs">
-      <DependentUpon>ToDoListItem.cs</DependentUpon>
+    <Compile Include="Views\ToDoList\TaskAddWindow.Designer.cs">
+      <DependentUpon>TaskAddWindow.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\UserControlViews\UserDashboard.cs">
       <SubType>UserControl</SubType>
@@ -196,14 +197,14 @@
     <EmbeddedResource Include="Views\SettingView.resx">
       <DependentUpon>SettingView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\ToDoList\ToDoItemRow.resx">
-      <DependentUpon>ToDoItemRow.cs</DependentUpon>
+    <EmbeddedResource Include="Views\ToDoList\CustomListItem.resx">
+      <DependentUpon>CustomListItem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\ToDoList\ToDoListDiscardWindow.resx">
       <DependentUpon>ToDoListDiscardWindow.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\ToDoList\ToDoListItem.resx">
-      <DependentUpon>ToDoListItem.cs</DependentUpon>
+    <EmbeddedResource Include="Views\ToDoList\TaskAddWindow.resx">
+      <DependentUpon>TaskAddWindow.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\UserControlViews\UserDashboard.resx">
       <DependentUpon>UserDashboard.cs</DependentUpon>

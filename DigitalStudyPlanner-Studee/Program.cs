@@ -20,7 +20,7 @@ namespace DigitalStudyPlanner_Studee
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ToDoListItem());
+            Application.Run(new LoginView());
         }
     }
 }

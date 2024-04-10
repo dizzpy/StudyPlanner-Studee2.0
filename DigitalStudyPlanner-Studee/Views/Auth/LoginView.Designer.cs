@@ -111,6 +111,7 @@
             this.LogEmailText.SelectedText = "";
             this.LogEmailText.Size = new System.Drawing.Size(254, 42);
             this.LogEmailText.TabIndex = 6;
+            this.LogEmailText.Text = "dizzpy@admin.com";
             // 
             // LogPasswordText
             // 
@@ -132,6 +133,7 @@
             this.LogPasswordText.SelectedText = "";
             this.LogPasswordText.Size = new System.Drawing.Size(254, 42);
             this.LogPasswordText.TabIndex = 7;
+            this.LogPasswordText.Text = "admin123";
             // 
             // gunaMediumRadioButton1
             // 

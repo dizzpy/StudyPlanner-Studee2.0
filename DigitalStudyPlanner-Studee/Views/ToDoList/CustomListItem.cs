@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace DigitalStudyPlanner_Studee.Views.ToDoList
 {
-    public partial class ToDoItemRow : UserControl
+    public partial class CustomListItem : UserControl
     {
-        public ToDoItemRow()
+        public CustomListItem()
         {
             InitializeComponent();
         }
@@ -25,7 +25,7 @@ namespace DigitalStudyPlanner_Studee.Views.ToDoList
 
         private void gunaElipsePanel1_Paint(object sender, PaintEventArgs e)
         {
-            ToDoListItem toDoListItem = new ToDoListItem();
+            TaskAddWindow toDoListItem = new TaskAddWindow();
             toDoListItem.Show();
         }
 

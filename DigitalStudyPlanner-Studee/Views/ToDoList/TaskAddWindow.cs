@@ -11,9 +11,9 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace DigitalStudyPlanner_Studee.Views.UserControlViews
 {
-    public partial class ToDoListItem : Form
+    public partial class TaskAddWindow : Form
     {
-        public ToDoListItem()
+        public TaskAddWindow()
         {
             InitializeComponent();
         }

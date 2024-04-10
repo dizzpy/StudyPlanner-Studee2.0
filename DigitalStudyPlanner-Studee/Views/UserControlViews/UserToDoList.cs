@@ -19,7 +19,7 @@ namespace DigitalStudyPlanner_Studee.Views.UserControlViews
 
         private void gunaAdvenceButton1_Click(object sender, EventArgs e)
         {
-            ToDoListItem toDoListItem = new ToDoListItem();
+            TaskAddWindow toDoListItem = new TaskAddWindow();
             toDoListItem.Show();
         }
     }
