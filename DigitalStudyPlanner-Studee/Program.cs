@@ -1,4 +1,5 @@
 ﻿using DigitalStudyPlanner_Studee.Views;
+using DigitalStudyPlanner_Studee.Views.Auth;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,7 +18,7 @@ namespace DigitalStudyPlanner_Studee
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainDashboard());
+            Application.Run(new LoginView());
         }
     }
 }

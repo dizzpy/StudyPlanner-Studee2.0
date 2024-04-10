@@ -30,20 +30,20 @@
         {
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.RegisterButton = new Guna.UI.WinForms.GunaButton();
-            this.fullText = new Guna.UI.WinForms.GunaTextBox();
+            this.RegFullNameText = new Guna.UI.WinForms.GunaTextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.UserOccupation = new Guna.UI.WinForms.GunaTextBox();
+            this.RegOccuText = new Guna.UI.WinForms.GunaTextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.userEmail = new Guna.UI.WinForms.GunaTextBox();
+            this.RegEmailText = new Guna.UI.WinForms.GunaTextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.passText = new Guna.UI.WinForms.GunaTextBox();
+            this.RegPassText = new Guna.UI.WinForms.GunaTextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.ToLogin = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.btnUploard = new Guna.UI.WinForms.GunaButton();
+            this.RegProPicButton = new Guna.UI.WinForms.GunaButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -84,28 +84,29 @@
             this.RegisterButton.TabIndex = 19;
             this.RegisterButton.Text = "Register";
             this.RegisterButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.RegisterButton.Click += new System.EventHandler(this.RegisterButton_Click);
             // 
-            // fullText
+            // RegFullNameText
             // 
-            this.fullText.BackColor = System.Drawing.Color.Transparent;
-            this.fullText.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(252)))), ((int)(((byte)(246)))));
-            this.fullText.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(156)))), ((int)(((byte)(116)))));
-            this.fullText.BorderSize = 1;
-            this.fullText.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.fullText.FocusedBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(252)))), ((int)(((byte)(246)))));
-            this.fullText.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(156)))), ((int)(((byte)(116)))));
-            this.fullText.FocusedForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(156)))), ((int)(((byte)(116)))));
-            this.fullText.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.fullText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(156)))), ((int)(((byte)(116)))));
-            this.fullText.Location = new System.Drawing.Point(66, 142);
-            this.fullText.Margin = new System.Windows.Forms.Padding(2);
-            this.fullText.Name = "fullText";
-            this.fullText.PasswordChar = '\0';
-            this.fullText.Radius = 10;
-            this.fullText.SelectedText = "";
-            this.fullText.Size = new System.Drawing.Size(254, 42);
-            this.fullText.TabIndex = 15;
-            this.fullText.Text = "Dizzpy";
+            this.RegFullNameText.BackColor = System.Drawing.Color.Transparent;
+            this.RegFullNameText.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(252)))), ((int)(((byte)(246)))));
+            this.RegFullNameText.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(156)))), ((int)(((byte)(116)))));
+            this.RegFullNameText.BorderSize = 1;
+            this.RegFullNameText.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.RegFullNameText.FocusedBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(252)))), ((int)(((byte)(246)))));
+            this.RegFullNameText.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(156)))), ((int)(((byte)(116)))));
+            this.RegFullNameText.FocusedForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(156)))), ((int)(((byte)(116)))));
+            this.RegFullNameText.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.RegFullNameText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(156)))), ((int)(((byte)(116)))));
+            this.RegFullNameText.Location = new System.Drawing.Point(66, 142);
+            this.RegFullNameText.Margin = new System.Windows.Forms.Padding(2);
+            this.RegFullNameText.Name = "RegFullNameText";
+            this.RegFullNameText.PasswordChar = '\0';
+            this.RegFullNameText.Radius = 10;
+            this.RegFullNameText.SelectedText = "";
+            this.RegFullNameText.Size = new System.Drawing.Size(254, 42);
+            this.RegFullNameText.TabIndex = 15;
+            this.RegFullNameText.Text = "Dizzpy";
             // 
             // label3
             // 
@@ -143,27 +144,27 @@
             this.label1.TabIndex = 11;
             this.label1.Text = "Register";
             // 
-            // UserOccupation
+            // RegOccuText
             // 
-            this.UserOccupation.BackColor = System.Drawing.Color.Transparent;
-            this.UserOccupation.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(252)))), ((int)(((byte)(246)))));
-            this.UserOccupation.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(156)))), ((int)(((byte)(116)))));
-            this.UserOccupation.BorderSize = 1;
-            this.UserOccupation.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.UserOccupation.FocusedBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(252)))), ((int)(((byte)(246)))));
-            this.UserOccupation.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(156)))), ((int)(((byte)(116)))));
-            this.UserOccupation.FocusedForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(156)))), ((int)(((byte)(116)))));
-            this.UserOccupation.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.UserOccupation.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(156)))), ((int)(((byte)(116)))));
-            this.UserOccupation.Location = new System.Drawing.Point(66, 221);
-            this.UserOccupation.Margin = new System.Windows.Forms.Padding(2);
-            this.UserOccupation.Name = "UserOccupation";
-            this.UserOccupation.PasswordChar = '\0';
-            this.UserOccupation.Radius = 10;
-            this.UserOccupation.SelectedText = "";
-            this.UserOccupation.Size = new System.Drawing.Size(254, 42);
-            this.UserOccupation.TabIndex = 21;
-            this.UserOccupation.Text = "Undergraduate";
+            this.RegOccuText.BackColor = System.Drawing.Color.Transparent;
+            this.RegOccuText.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(252)))), ((int)(((byte)(246)))));
+            this.RegOccuText.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(156)))), ((int)(((byte)(116)))));
+            this.RegOccuText.BorderSize = 1;
+            this.RegOccuText.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.RegOccuText.FocusedBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(252)))), ((int)(((byte)(246)))));
+            this.RegOccuText.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(156)))), ((int)(((byte)(116)))));
+            this.RegOccuText.FocusedForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(156)))), ((int)(((byte)(116)))));
+            this.RegOccuText.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.RegOccuText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(156)))), ((int)(((byte)(116)))));
+            this.RegOccuText.Location = new System.Drawing.Point(66, 221);
+            this.RegOccuText.Margin = new System.Windows.Forms.Padding(2);
+            this.RegOccuText.Name = "RegOccuText";
+            this.RegOccuText.PasswordChar = '\0';
+            this.RegOccuText.Radius = 10;
+            this.RegOccuText.SelectedText = "";
+            this.RegOccuText.Size = new System.Drawing.Size(254, 42);
+            this.RegOccuText.TabIndex = 21;
+            this.RegOccuText.Text = "Undergraduate";
             // 
             // label4
             // 
@@ -177,27 +178,27 @@
             this.label4.TabIndex = 20;
             this.label4.Text = "Occupation";
             // 
-            // userEmail
+            // RegEmailText
             // 
-            this.userEmail.BackColor = System.Drawing.Color.Transparent;
-            this.userEmail.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(252)))), ((int)(((byte)(246)))));
-            this.userEmail.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(156)))), ((int)(((byte)(116)))));
-            this.userEmail.BorderSize = 1;
-            this.userEmail.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.userEmail.FocusedBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(252)))), ((int)(((byte)(246)))));
-            this.userEmail.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(156)))), ((int)(((byte)(116)))));
-            this.userEmail.FocusedForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(156)))), ((int)(((byte)(116)))));
-            this.userEmail.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.userEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(156)))), ((int)(((byte)(116)))));
-            this.userEmail.Location = new System.Drawing.Point(66, 304);
-            this.userEmail.Margin = new System.Windows.Forms.Padding(2);
-            this.userEmail.Name = "userEmail";
-            this.userEmail.PasswordChar = '\0';
-            this.userEmail.Radius = 10;
-            this.userEmail.SelectedText = "";
-            this.userEmail.Size = new System.Drawing.Size(254, 42);
-            this.userEmail.TabIndex = 23;
-            this.userEmail.Text = "info@example.com";
+            this.RegEmailText.BackColor = System.Drawing.Color.Transparent;
+            this.RegEmailText.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(252)))), ((int)(((byte)(246)))));
+            this.RegEmailText.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(156)))), ((int)(((byte)(116)))));
+            this.RegEmailText.BorderSize = 1;
+            this.RegEmailText.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.RegEmailText.FocusedBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(252)))), ((int)(((byte)(246)))));
+            this.RegEmailText.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(156)))), ((int)(((byte)(116)))));
+            this.RegEmailText.FocusedForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(156)))), ((int)(((byte)(116)))));
+            this.RegEmailText.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.RegEmailText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(156)))), ((int)(((byte)(116)))));
+            this.RegEmailText.Location = new System.Drawing.Point(66, 304);
+            this.RegEmailText.Margin = new System.Windows.Forms.Padding(2);
+            this.RegEmailText.Name = "RegEmailText";
+            this.RegEmailText.PasswordChar = '\0';
+            this.RegEmailText.Radius = 10;
+            this.RegEmailText.SelectedText = "";
+            this.RegEmailText.Size = new System.Drawing.Size(254, 42);
+            this.RegEmailText.TabIndex = 23;
+            this.RegEmailText.Text = "info@example.com";
             // 
             // label5
             // 
@@ -211,27 +212,27 @@
             this.label5.TabIndex = 22;
             this.label5.Text = "Email Address";
             // 
-            // passText
+            // RegPassText
             // 
-            this.passText.BackColor = System.Drawing.Color.Transparent;
-            this.passText.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(252)))), ((int)(((byte)(246)))));
-            this.passText.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(156)))), ((int)(((byte)(116)))));
-            this.passText.BorderSize = 1;
-            this.passText.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.passText.FocusedBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(252)))), ((int)(((byte)(246)))));
-            this.passText.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(156)))), ((int)(((byte)(116)))));
-            this.passText.FocusedForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(156)))), ((int)(((byte)(116)))));
-            this.passText.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.passText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(156)))), ((int)(((byte)(116)))));
-            this.passText.Location = new System.Drawing.Point(66, 386);
-            this.passText.Margin = new System.Windows.Forms.Padding(2);
-            this.passText.Name = "passText";
-            this.passText.PasswordChar = '\0';
-            this.passText.Radius = 10;
-            this.passText.SelectedText = "";
-            this.passText.Size = new System.Drawing.Size(254, 42);
-            this.passText.TabIndex = 25;
-            this.passText.Text = "your password";
+            this.RegPassText.BackColor = System.Drawing.Color.Transparent;
+            this.RegPassText.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(252)))), ((int)(((byte)(246)))));
+            this.RegPassText.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(156)))), ((int)(((byte)(116)))));
+            this.RegPassText.BorderSize = 1;
+            this.RegPassText.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.RegPassText.FocusedBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(252)))), ((int)(((byte)(246)))));
+            this.RegPassText.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(156)))), ((int)(((byte)(116)))));
+            this.RegPassText.FocusedForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(156)))), ((int)(((byte)(116)))));
+            this.RegPassText.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.RegPassText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(156)))), ((int)(((byte)(116)))));
+            this.RegPassText.Location = new System.Drawing.Point(66, 386);
+            this.RegPassText.Margin = new System.Windows.Forms.Padding(2);
+            this.RegPassText.Name = "RegPassText";
+            this.RegPassText.PasswordChar = '\0';
+            this.RegPassText.Radius = 10;
+            this.RegPassText.SelectedText = "";
+            this.RegPassText.Size = new System.Drawing.Size(254, 42);
+            this.RegPassText.TabIndex = 25;
+            this.RegPassText.Text = "your password";
             // 
             // label6
             // 
@@ -283,32 +284,32 @@
             this.label8.TabIndex = 28;
             this.label8.Text = "Already have an account ?";
             // 
-            // btnUploard
+            // RegProPicButton
             // 
-            this.btnUploard.AnimationHoverSpeed = 0.07F;
-            this.btnUploard.AnimationSpeed = 0.03F;
-            this.btnUploard.BackColor = System.Drawing.Color.Transparent;
-            this.btnUploard.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(252)))), ((int)(((byte)(246)))));
-            this.btnUploard.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(156)))), ((int)(((byte)(116)))));
-            this.btnUploard.BorderSize = 1;
-            this.btnUploard.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnUploard.FocusedColor = System.Drawing.Color.Empty;
-            this.btnUploard.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnUploard.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(156)))), ((int)(((byte)(116)))));
-            this.btnUploard.Image = null;
-            this.btnUploard.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnUploard.Location = new System.Drawing.Point(66, 467);
-            this.btnUploard.Margin = new System.Windows.Forms.Padding(2);
-            this.btnUploard.Name = "btnUploard";
-            this.btnUploard.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(156)))), ((int)(((byte)(116)))));
-            this.btnUploard.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(156)))), ((int)(((byte)(116)))));
-            this.btnUploard.OnHoverForeColor = System.Drawing.Color.White;
-            this.btnUploard.OnHoverImage = null;
-            this.btnUploard.OnPressedColor = System.Drawing.Color.Black;
-            this.btnUploard.Radius = 10;
-            this.btnUploard.Size = new System.Drawing.Size(254, 43);
-            this.btnUploard.TabIndex = 30;
-            this.btnUploard.Text = "Add Profile Photo";
+            this.RegProPicButton.AnimationHoverSpeed = 0.07F;
+            this.RegProPicButton.AnimationSpeed = 0.03F;
+            this.RegProPicButton.BackColor = System.Drawing.Color.Transparent;
+            this.RegProPicButton.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(252)))), ((int)(((byte)(246)))));
+            this.RegProPicButton.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(156)))), ((int)(((byte)(116)))));
+            this.RegProPicButton.BorderSize = 1;
+            this.RegProPicButton.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.RegProPicButton.FocusedColor = System.Drawing.Color.Empty;
+            this.RegProPicButton.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.RegProPicButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(156)))), ((int)(((byte)(116)))));
+            this.RegProPicButton.Image = null;
+            this.RegProPicButton.ImageSize = new System.Drawing.Size(20, 20);
+            this.RegProPicButton.Location = new System.Drawing.Point(66, 467);
+            this.RegProPicButton.Margin = new System.Windows.Forms.Padding(2);
+            this.RegProPicButton.Name = "RegProPicButton";
+            this.RegProPicButton.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(156)))), ((int)(((byte)(116)))));
+            this.RegProPicButton.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(156)))), ((int)(((byte)(116)))));
+            this.RegProPicButton.OnHoverForeColor = System.Drawing.Color.White;
+            this.RegProPicButton.OnHoverImage = null;
+            this.RegProPicButton.OnPressedColor = System.Drawing.Color.Black;
+            this.RegProPicButton.Radius = 10;
+            this.RegProPicButton.Size = new System.Drawing.Size(254, 43);
+            this.RegProPicButton.TabIndex = 30;
+            this.RegProPicButton.Text = "Add Profile Photo";
             // 
             // RegisterView
             // 
@@ -316,18 +317,18 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(913, 645);
-            this.Controls.Add(this.btnUploard);
+            this.Controls.Add(this.RegProPicButton);
             this.Controls.Add(this.ToLogin);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.passText);
+            this.Controls.Add(this.RegPassText);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.userEmail);
+            this.Controls.Add(this.RegEmailText);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.UserOccupation);
+            this.Controls.Add(this.RegOccuText);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.RegisterButton);
-            this.Controls.Add(this.fullText);
+            this.Controls.Add(this.RegFullNameText);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -337,7 +338,6 @@
             this.MaximizeBox = false;
             this.Name = "RegisterView";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Load += new System.EventHandler(this.RegisterView_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -348,19 +348,19 @@
 
         private System.Windows.Forms.PictureBox pictureBox1;
         private Guna.UI.WinForms.GunaButton RegisterButton;
-        private Guna.UI.WinForms.GunaTextBox fullText;
+        private Guna.UI.WinForms.GunaTextBox RegFullNameText;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private Guna.UI.WinForms.GunaTextBox UserOccupation;
+        private Guna.UI.WinForms.GunaTextBox RegOccuText;
         private System.Windows.Forms.Label label4;
-        private Guna.UI.WinForms.GunaTextBox userEmail;
+        private Guna.UI.WinForms.GunaTextBox RegEmailText;
         private System.Windows.Forms.Label label5;
-        private Guna.UI.WinForms.GunaTextBox passText;
+        private Guna.UI.WinForms.GunaTextBox RegPassText;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label ToLogin;
         private System.Windows.Forms.Label label8;
-        private Guna.UI.WinForms.GunaButton btnUploard;
+        private Guna.UI.WinForms.GunaButton RegProPicButton;
     }
 }
