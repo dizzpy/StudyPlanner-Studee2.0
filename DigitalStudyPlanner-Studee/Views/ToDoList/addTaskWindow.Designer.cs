@@ -1,6 +1,6 @@
 ﻿namespace DigitalStudyPlanner_Studee.Views.UserControlViews
 {
-    partial class TaskAddWindow
+    partial class addTaskWindow
     {
         /// <summary>
         /// Required designer variable.
@@ -31,7 +31,6 @@
             this.label_goodMorning = new System.Windows.Forms.Label();
             this.taskNameTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.categoryTextBox = new Guna.UI2.WinForms.Guna2TextBox();
-            this.priorityTextBox = new System.Windows.Forms.ComboBox();
             this.AddTaskToListView = new Guna.UI.WinForms.GunaAdvenceButton();
             this.gunaAdvenceButton2 = new Guna.UI.WinForms.GunaAdvenceButton();
             this.label3 = new System.Windows.Forms.Label();
@@ -40,6 +39,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.completedCheckBox = new Guna.UI2.WinForms.Guna2CheckBox();
             this.addedDateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.priorityTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.SuspendLayout();
             // 
             // label_goodMorning
@@ -57,8 +57,7 @@
             // taskNameTextBox
             // 
             this.taskNameTextBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(156)))), ((int)(((byte)(116)))));
-            this.taskNameTextBox.BorderRadius = 5;
-            this.taskNameTextBox.BorderThickness = 2;
+            this.taskNameTextBox.BorderRadius = 3;
             this.taskNameTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.taskNameTextBox.DefaultText = "";
             this.taskNameTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -81,8 +80,7 @@
             // 
             this.categoryTextBox.BackColor = System.Drawing.Color.White;
             this.categoryTextBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(47)))), ((int)(((byte)(100)))));
-            this.categoryTextBox.BorderRadius = 5;
-            this.categoryTextBox.BorderThickness = 2;
+            this.categoryTextBox.BorderRadius = 3;
             this.categoryTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.categoryTextBox.DefaultText = "";
             this.categoryTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -102,21 +100,6 @@
             this.categoryTextBox.Size = new System.Drawing.Size(162, 37);
             this.categoryTextBox.TabIndex = 6;
             this.categoryTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // priorityTextBox
-            // 
-            this.priorityTextBox.BackColor = System.Drawing.Color.White;
-            this.priorityTextBox.FormattingEnabled = true;
-            this.priorityTextBox.Items.AddRange(new object[] {
-            "Low",
-            "Medium",
-            "High",
-            "Very High"});
-            this.priorityTextBox.Location = new System.Drawing.Point(332, 234);
-            this.priorityTextBox.Name = "priorityTextBox";
-            this.priorityTextBox.Size = new System.Drawing.Size(129, 31);
-            this.priorityTextBox.TabIndex = 9;
-            this.priorityTextBox.Text = "   High";
             // 
             // AddTaskToListView
             // 
@@ -151,6 +134,7 @@
             this.AddTaskToListView.TabIndex = 12;
             this.AddTaskToListView.Text = "Add Task";
             this.AddTaskToListView.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.AddTaskToListView.Click += new System.EventHandler(this.AddTaskToListView_Click);
             // 
             // gunaAdvenceButton2
             // 
@@ -274,19 +258,44 @@
             this.addedDateTimePicker.Size = new System.Drawing.Size(200, 27);
             this.addedDateTimePicker.TabIndex = 19;
             // 
-            // TaskAddWindow
+            // priorityTextBox
+            // 
+            this.priorityTextBox.BackColor = System.Drawing.Color.White;
+            this.priorityTextBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(47)))), ((int)(((byte)(100)))));
+            this.priorityTextBox.BorderRadius = 3;
+            this.priorityTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.priorityTextBox.DefaultText = "";
+            this.priorityTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.priorityTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.priorityTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.priorityTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.priorityTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.priorityTextBox.Font = new System.Drawing.Font("Poppins", 11.25F);
+            this.priorityTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(68)))), ((int)(((byte)(76)))));
+            this.priorityTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.priorityTextBox.Location = new System.Drawing.Point(332, 231);
+            this.priorityTextBox.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.priorityTextBox.Name = "priorityTextBox";
+            this.priorityTextBox.PasswordChar = '\0';
+            this.priorityTextBox.PlaceholderText = "Priority";
+            this.priorityTextBox.SelectedText = "";
+            this.priorityTextBox.Size = new System.Drawing.Size(162, 37);
+            this.priorityTextBox.TabIndex = 20;
+            this.priorityTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // addTaskWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(568, 580);
+            this.Controls.Add(this.priorityTextBox);
             this.Controls.Add(this.addedDateTimePicker);
             this.Controls.Add(this.completedCheckBox);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.gunaAdvenceButton2);
             this.Controls.Add(this.AddTaskToListView);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.priorityTextBox);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.categoryTextBox);
             this.Controls.Add(this.label1);
@@ -294,7 +303,7 @@
             this.Controls.Add(this.label_goodMorning);
             this.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Name = "TaskAddWindow";
+            this.Name = "addTaskWindow";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ToDoListItem";
             this.ResumeLayout(false);
@@ -309,12 +318,12 @@
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2TextBox categoryTextBox;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox priorityTextBox;
         private System.Windows.Forms.Label label3;
         private Guna.UI.WinForms.GunaAdvenceButton AddTaskToListView;
         private Guna.UI.WinForms.GunaAdvenceButton gunaAdvenceButton2;
         private System.Windows.Forms.Label label4;
         private Guna.UI2.WinForms.Guna2CheckBox completedCheckBox;
         private System.Windows.Forms.DateTimePicker addedDateTimePicker;
+        private Guna.UI2.WinForms.Guna2TextBox priorityTextBox;
     }
 }

@@ -13,25 +13,43 @@ namespace DigitalStudyPlanner_Studee.Views.ToDoList
 {
     public partial class CustomListItem : UserControl
     {
-        public CustomListItem()
+        private TaskItem task;
+
+        public event EventHandler<TaskItem> DeleteTask;
+
+
+        public CustomListItem(TaskItem taskItem)
         {
             InitializeComponent();
+            task = taskItem;
+            InitializeTask();
+            deleteItemFromList.Click += DeleteItemFromList_Click;
         }
 
-        private void gunaAdvenceButton1_Click(object sender, EventArgs e)
+        private void InitializeTask()
         {
-
+            taskname.Text = task.Name;
+            taskcato.Text = task.Category;
+            taskprio.Text = task.Priority;
+            taskdate.Text = task.AddedDate.ToString();
+            iscom.Checked = task.IsCompleted;
         }
 
         private void gunaElipsePanel1_Paint(object sender, PaintEventArgs e)
         {
-            TaskAddWindow toDoListItem = new TaskAddWindow();
+            addTaskWindow toDoListItem = new addTaskWindow();
             toDoListItem.Show();
         }
 
-        private void gunaAdvenceButton5_Click(object sender, EventArgs e)
+        private void DeleteItemFromList_Click(object sender, EventArgs e)
         {
-
+            OnDeleteTask(task);
         }
+
+        protected virtual void OnDeleteTask(TaskItem taskToDelete)
+        {
+            DeleteTask?.Invoke(this, taskToDelete);
+        }
+
     }
 }
