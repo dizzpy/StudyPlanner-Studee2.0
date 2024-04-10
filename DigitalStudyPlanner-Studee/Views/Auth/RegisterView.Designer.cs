@@ -310,6 +310,7 @@
             this.RegProPicButton.Size = new System.Drawing.Size(254, 43);
             this.RegProPicButton.TabIndex = 30;
             this.RegProPicButton.Text = "Add Profile Photo";
+            this.RegProPicButton.Click += new System.EventHandler(this.RegProPicButton_Click);
             // 
             // RegisterView
             // 
