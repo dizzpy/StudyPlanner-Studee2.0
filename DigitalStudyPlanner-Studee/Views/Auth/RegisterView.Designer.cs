@@ -106,7 +106,6 @@
             this.RegFullNameText.SelectedText = "";
             this.RegFullNameText.Size = new System.Drawing.Size(254, 42);
             this.RegFullNameText.TabIndex = 15;
-            this.RegFullNameText.Text = "Dizzpy";
             // 
             // label3
             // 
@@ -164,7 +163,6 @@
             this.RegOccuText.SelectedText = "";
             this.RegOccuText.Size = new System.Drawing.Size(254, 42);
             this.RegOccuText.TabIndex = 21;
-            this.RegOccuText.Text = "Undergraduate";
             // 
             // label4
             // 
@@ -198,7 +196,6 @@
             this.RegEmailText.SelectedText = "";
             this.RegEmailText.Size = new System.Drawing.Size(254, 42);
             this.RegEmailText.TabIndex = 23;
-            this.RegEmailText.Text = "info@example.com";
             // 
             // label5
             // 
@@ -227,12 +224,11 @@
             this.RegPassText.Location = new System.Drawing.Point(66, 386);
             this.RegPassText.Margin = new System.Windows.Forms.Padding(2);
             this.RegPassText.Name = "RegPassText";
-            this.RegPassText.PasswordChar = '\0';
+            this.RegPassText.PasswordChar = '*';
             this.RegPassText.Radius = 10;
             this.RegPassText.SelectedText = "";
             this.RegPassText.Size = new System.Drawing.Size(254, 42);
             this.RegPassText.TabIndex = 25;
-            this.RegPassText.Text = "your password";
             // 
             // label6
             // 
@@ -309,7 +305,8 @@
             this.RegProPicButton.Radius = 10;
             this.RegProPicButton.Size = new System.Drawing.Size(254, 43);
             this.RegProPicButton.TabIndex = 30;
-            this.RegProPicButton.Text = "Add Profile Photo";
+            this.RegProPicButton.Text = "Select Image";
+            this.RegProPicButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.RegProPicButton.Click += new System.EventHandler(this.RegProPicButton_Click);
             // 
             // RegisterView

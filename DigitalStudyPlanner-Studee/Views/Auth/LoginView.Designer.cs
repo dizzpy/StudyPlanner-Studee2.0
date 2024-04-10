@@ -32,8 +32,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.userText = new Guna.UI.WinForms.GunaTextBox();
-            this.passText = new Guna.UI.WinForms.GunaTextBox();
+            this.LogEmailText = new Guna.UI.WinForms.GunaTextBox();
+            this.LogPasswordText = new Guna.UI.WinForms.GunaTextBox();
             this.gunaMediumRadioButton1 = new Guna.UI.WinForms.GunaMediumRadioButton();
             this.label5 = new System.Windows.Forms.Label();
             this.LoginButton = new Guna.UI.WinForms.GunaButton();
@@ -91,47 +91,47 @@
             this.label4.TabIndex = 5;
             this.label4.Text = "Password";
             // 
-            // userText
+            // LogEmailText
             // 
-            this.userText.BackColor = System.Drawing.Color.Transparent;
-            this.userText.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(252)))), ((int)(((byte)(246)))));
-            this.userText.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(156)))), ((int)(((byte)(116)))));
-            this.userText.BorderSize = 1;
-            this.userText.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.userText.FocusedBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(252)))), ((int)(((byte)(246)))));
-            this.userText.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(156)))), ((int)(((byte)(116)))));
-            this.userText.FocusedForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(156)))), ((int)(((byte)(116)))));
-            this.userText.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.userText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(156)))), ((int)(((byte)(116)))));
-            this.userText.Location = new System.Drawing.Point(552, 195);
-            this.userText.Margin = new System.Windows.Forms.Padding(2);
-            this.userText.Name = "userText";
-            this.userText.PasswordChar = '\0';
-            this.userText.Radius = 10;
-            this.userText.SelectedText = "";
-            this.userText.Size = new System.Drawing.Size(254, 42);
-            this.userText.TabIndex = 6;
+            this.LogEmailText.BackColor = System.Drawing.Color.Transparent;
+            this.LogEmailText.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(252)))), ((int)(((byte)(246)))));
+            this.LogEmailText.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(156)))), ((int)(((byte)(116)))));
+            this.LogEmailText.BorderSize = 1;
+            this.LogEmailText.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.LogEmailText.FocusedBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(252)))), ((int)(((byte)(246)))));
+            this.LogEmailText.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(156)))), ((int)(((byte)(116)))));
+            this.LogEmailText.FocusedForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(156)))), ((int)(((byte)(116)))));
+            this.LogEmailText.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.LogEmailText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(156)))), ((int)(((byte)(116)))));
+            this.LogEmailText.Location = new System.Drawing.Point(552, 195);
+            this.LogEmailText.Margin = new System.Windows.Forms.Padding(2);
+            this.LogEmailText.Name = "LogEmailText";
+            this.LogEmailText.PasswordChar = '\0';
+            this.LogEmailText.Radius = 10;
+            this.LogEmailText.SelectedText = "";
+            this.LogEmailText.Size = new System.Drawing.Size(254, 42);
+            this.LogEmailText.TabIndex = 6;
             // 
-            // passText
+            // LogPasswordText
             // 
-            this.passText.BackColor = System.Drawing.Color.Transparent;
-            this.passText.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(252)))), ((int)(((byte)(246)))));
-            this.passText.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(156)))), ((int)(((byte)(116)))));
-            this.passText.BorderSize = 1;
-            this.passText.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.passText.FocusedBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(252)))), ((int)(((byte)(246)))));
-            this.passText.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(156)))), ((int)(((byte)(116)))));
-            this.passText.FocusedForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(156)))), ((int)(((byte)(116)))));
-            this.passText.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.passText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(156)))), ((int)(((byte)(116)))));
-            this.passText.Location = new System.Drawing.Point(552, 310);
-            this.passText.Margin = new System.Windows.Forms.Padding(2);
-            this.passText.Name = "passText";
-            this.passText.PasswordChar = '\0';
-            this.passText.Radius = 10;
-            this.passText.SelectedText = "";
-            this.passText.Size = new System.Drawing.Size(254, 42);
-            this.passText.TabIndex = 7;
+            this.LogPasswordText.BackColor = System.Drawing.Color.Transparent;
+            this.LogPasswordText.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(252)))), ((int)(((byte)(246)))));
+            this.LogPasswordText.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(156)))), ((int)(((byte)(116)))));
+            this.LogPasswordText.BorderSize = 1;
+            this.LogPasswordText.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.LogPasswordText.FocusedBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(252)))), ((int)(((byte)(246)))));
+            this.LogPasswordText.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(156)))), ((int)(((byte)(116)))));
+            this.LogPasswordText.FocusedForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(156)))), ((int)(((byte)(116)))));
+            this.LogPasswordText.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.LogPasswordText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(156)))), ((int)(((byte)(116)))));
+            this.LogPasswordText.Location = new System.Drawing.Point(552, 310);
+            this.LogPasswordText.Margin = new System.Windows.Forms.Padding(2);
+            this.LogPasswordText.Name = "LogPasswordText";
+            this.LogPasswordText.PasswordChar = '*';
+            this.LogPasswordText.Radius = 10;
+            this.LogPasswordText.SelectedText = "";
+            this.LogPasswordText.Size = new System.Drawing.Size(254, 42);
+            this.LogPasswordText.TabIndex = 7;
             // 
             // gunaMediumRadioButton1
             // 
@@ -183,6 +183,7 @@
             this.LoginButton.TabIndex = 10;
             this.LoginButton.Text = "Login";
             this.LoginButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.LoginButton.Click += new System.EventHandler(this.LoginButton_Click);
             // 
             // label6
             // 
@@ -231,8 +232,8 @@
             this.Controls.Add(this.LoginButton);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.gunaMediumRadioButton1);
-            this.Controls.Add(this.passText);
-            this.Controls.Add(this.userText);
+            this.Controls.Add(this.LogPasswordText);
+            this.Controls.Add(this.LogEmailText);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -258,8 +259,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private Guna.UI.WinForms.GunaTextBox userText;
-        private Guna.UI.WinForms.GunaTextBox passText;
+        private Guna.UI.WinForms.GunaTextBox LogEmailText;
+        private Guna.UI.WinForms.GunaTextBox LogPasswordText;
         private Guna.UI.WinForms.GunaMediumRadioButton gunaMediumRadioButton1;
         private System.Windows.Forms.Label label5;
         private Guna.UI.WinForms.GunaButton LoginButton;
