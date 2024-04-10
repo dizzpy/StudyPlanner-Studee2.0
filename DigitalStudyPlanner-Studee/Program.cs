@@ -1,5 +1,7 @@
 ﻿using DigitalStudyPlanner_Studee.Views;
 using DigitalStudyPlanner_Studee.Views.Auth;
+using DigitalStudyPlanner_Studee.Views.ToDoList;
+using DigitalStudyPlanner_Studee.Views.UserControlViews;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,7 +20,7 @@ namespace DigitalStudyPlanner_Studee
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new LoginView());
+            Application.Run(new ToDoListItem());
         }
     }
 }
