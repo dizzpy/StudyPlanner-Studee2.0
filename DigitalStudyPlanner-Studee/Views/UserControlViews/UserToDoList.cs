@@ -18,6 +18,13 @@ namespace DigitalStudyPlanner_Studee.Views.UserControlViews
         private FirestoreDb db;
         private List<TaskItem> tasks = new List<TaskItem>();
 
+        public void SetLoggedUserEmail(string email)
+        {
+            // Set the text of the label to the logged user's email address
+            lblLoggedUserEmail.Text = email;
+        }
+
+
         public UserToDoList()
         {
             InitializeComponent();

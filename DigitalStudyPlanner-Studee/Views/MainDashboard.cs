@@ -55,8 +55,15 @@ namespace DigitalStudyPlanner_Studee.Views
             userEvent1.Hide();
             userNoteLib1.Hide();
             userTimer1.Hide();
+
+            // Show the to-do list user control
             userToDoList1.Show();
             userToDoList1.BringToFront();
+
+            // Pass the logged user's email address to the to-do list user control
+            userToDoList1.SetLoggedUserEmail(EmailAddress);
+            // Alternatively, you can use a method to set the email address
+            // userToDoList1.SetLoggedUserEmail(EmailAddress);
         }
 
         private void btn_events_Click(object sender, EventArgs e)

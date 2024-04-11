@@ -30,6 +30,7 @@
         {
             this.openAddTaskWindow = new System.Windows.Forms.Button();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.lblLoggedUserEmail = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // openAddTaskWindow
@@ -52,11 +53,21 @@
             this.flowLayoutPanel1.Size = new System.Drawing.Size(928, 586);
             this.flowLayoutPanel1.TabIndex = 2;
             // 
+            // lblLoggedUserEmail
+            // 
+            this.lblLoggedUserEmail.AutoSize = true;
+            this.lblLoggedUserEmail.Location = new System.Drawing.Point(11, 28);
+            this.lblLoggedUserEmail.Name = "lblLoggedUserEmail";
+            this.lblLoggedUserEmail.Size = new System.Drawing.Size(46, 23);
+            this.lblLoggedUserEmail.TabIndex = 5;
+            this.lblLoggedUserEmail.Text = "label1";
+            // 
             // UserToDoList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.lblLoggedUserEmail);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.openAddTaskWindow);
             this.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -64,6 +75,7 @@
             this.Name = "UserToDoList";
             this.Size = new System.Drawing.Size(962, 681);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -71,5 +83,6 @@
 
         private System.Windows.Forms.Button openAddTaskWindow;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.Label lblLoggedUserEmail;
     }
 }
