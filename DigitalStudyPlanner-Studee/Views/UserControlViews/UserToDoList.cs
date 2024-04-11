@@ -1,4 +1,5 @@
-﻿using DigitalStudyPlanner_Studee.Views.ToDoList;
+﻿using DigitalStudyPlanner_Studee.Models;
+using DigitalStudyPlanner_Studee.Views.ToDoList;
 using Google.Cloud.Firestore;
 using System;
 using System.Collections.Generic;
@@ -18,11 +19,8 @@ namespace DigitalStudyPlanner_Studee.Views.UserControlViews
         private FirestoreDb db;
         private List<TaskItem> tasks = new List<TaskItem>();
 
-        public void SetLoggedUserEmail(string email)
-        {
-            // Set the text of the label to the logged user's email address
-            lblLoggedUserEmail.Text = email;
-        }
+        //get the user email from the global variable
+        string userLoggedEmail = GlobalVariables.LoggedEmail;
 
 
         public UserToDoList()
@@ -46,7 +44,7 @@ namespace DigitalStudyPlanner_Studee.Views.UserControlViews
         {
             try
             {
-                CollectionReference userCollection = db.Collection("UserEmailAddrass");
+                CollectionReference userCollection = db.Collection(userLoggedEmail);
                 QuerySnapshot querySnapshot = await userCollection.GetSnapshotAsync();
 
                 foreach (DocumentSnapshot documentSnapshot in querySnapshot.Documents)
@@ -100,7 +98,7 @@ namespace DigitalStudyPlanner_Studee.Views.UserControlViews
                 flowLayoutPanel1.Controls.Remove((CustomListItem)sender);
 
                 // Delete the task document from Firestore
-                await db.Collection("UserEmailAddrass").Document(task.TaskID).DeleteAsync();
+                await db.Collection(userLoggedEmail).Document(task.TaskID).DeleteAsync();
 
                 MessageBox.Show("Task deleted successfully");
             }

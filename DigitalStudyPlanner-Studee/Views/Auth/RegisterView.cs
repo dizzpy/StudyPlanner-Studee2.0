@@ -1,4 +1,5 @@
-﻿using MySqlConnector;
+﻿using DigitalStudyPlanner_Studee.Models;
+using MySqlConnector;
 using System;
 using System.Data.SqlClient;
 using System.Drawing;
@@ -66,6 +67,7 @@ namespace DigitalStudyPlanner_Studee.Views.Auth
                     MessageBox.Show("Account Created Successful", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     this.Hide();
 
+                    GlobalVariables.LoggedEmail = RegEmailText.Text;
                     string LoggedUserName = RegEmailText.Text;
                     MainDashboard dashboardForm = new MainDashboard(LoggedUserName);
                     dashboardForm.Show(); ;

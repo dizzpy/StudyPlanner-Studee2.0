@@ -61,7 +61,7 @@ namespace DigitalStudyPlanner_Studee.Views
             userToDoList1.BringToFront();
 
             // Pass the logged user's email address to the to-do list user control
-            userToDoList1.SetLoggedUserEmail(EmailAddress);
+            //userToDoList1.SetLoggedUserEmail(EmailAddress);
             // Alternatively, you can use a method to set the email address
             // userToDoList1.SetLoggedUserEmail(EmailAddress);
         }

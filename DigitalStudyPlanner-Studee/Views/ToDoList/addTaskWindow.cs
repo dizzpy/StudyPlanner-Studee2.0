@@ -19,7 +19,7 @@ namespace DigitalStudyPlanner_Studee.Views.UserControlViews
         private FirestoreDb db;
         public event EventHandler<TaskItem> AddTaskClicked;
 
-        string userEmail = GlobalVariables.LoggedEmail;
+        string userLoggedEmail = GlobalVariables.LoggedEmail;
 
         public addTaskWindow()
         {
@@ -75,7 +75,7 @@ namespace DigitalStudyPlanner_Studee.Views.UserControlViews
             {
                 string taskID = GenerateTaskID();
 
-                DocumentReference taskDocument = db.Collection("UserEmailAddrass").Document(task.TaskID);
+                DocumentReference taskDocument = db.Collection(userLoggedEmail).Document(task.TaskID);
                 await taskDocument.SetAsync(taskData);
 
                 MessageBox.Show("Task Added Successfully");
