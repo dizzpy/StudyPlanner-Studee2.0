@@ -1,4 +1,5 @@
-﻿using DigitalStudyPlanner_Studee.Views.ToDoList;
+﻿using DigitalStudyPlanner_Studee.Models;
+using DigitalStudyPlanner_Studee.Views.ToDoList;
 using Google.Cloud.Firestore;
 using System;
 using System.Collections.Generic;
@@ -16,8 +17,9 @@ namespace DigitalStudyPlanner_Studee.Views.UserControlViews
     public partial class addTaskWindow : Form
     {
         private FirestoreDb db;
-
         public event EventHandler<TaskItem> AddTaskClicked;
+
+        string userEmail = GlobalVariables.LoggedEmail;
 
         public addTaskWindow()
         {

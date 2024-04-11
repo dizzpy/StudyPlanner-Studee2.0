@@ -1,4 +1,5 @@
-﻿using MySqlConnector;
+﻿using DigitalStudyPlanner_Studee.Models;
+using MySqlConnector;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -49,6 +50,7 @@ namespace DigitalStudyPlanner_Studee.Views.Auth
 
                 if (dr.Read())
                 {
+                    GlobalVariables.LoggedEmail = LogEmailText.Text;
                     MessageBox.Show("Login Successful", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     this.Hide();
                     string LoggedUserName = LogEmailText.Text;
