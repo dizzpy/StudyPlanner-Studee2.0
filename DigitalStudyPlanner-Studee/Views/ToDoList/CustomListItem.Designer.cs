@@ -33,19 +33,19 @@
             this.iscom = new System.Windows.Forms.CheckBox();
             this.deleteItemFromList = new Guna.UI.WinForms.GunaAdvenceButton();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.taskcato = new System.Windows.Forms.Label();
             this.taskprio = new System.Windows.Forms.Label();
+            this.taskcato = new System.Windows.Forms.Label();
             this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // taskdate
             // 
             this.taskdate.AutoSize = true;
-            this.taskdate.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.taskdate.Font = new System.Drawing.Font("Poppins", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.taskdate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(156)))), ((int)(((byte)(116)))));
-            this.taskdate.Location = new System.Drawing.Point(701, 19);
+            this.taskdate.Location = new System.Drawing.Point(700, 16);
             this.taskdate.Name = "taskdate";
-            this.taskdate.Size = new System.Drawing.Size(146, 28);
+            this.taskdate.Size = new System.Drawing.Size(137, 26);
             this.taskdate.TabIndex = 5;
             this.taskdate.Text = "date month year";
             // 
@@ -54,7 +54,7 @@
             this.taskname.AutoSize = true;
             this.taskname.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.taskname.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(156)))), ((int)(((byte)(116)))));
-            this.taskname.Location = new System.Drawing.Point(51, 19);
+            this.taskname.Location = new System.Drawing.Point(33, 15);
             this.taskname.Name = "taskname";
             this.taskname.Size = new System.Drawing.Size(263, 28);
             this.taskname.TabIndex = 1;
@@ -63,7 +63,7 @@
             // iscom
             // 
             this.iscom.AutoSize = true;
-            this.iscom.Location = new System.Drawing.Point(20, 26);
+            this.iscom.Location = new System.Drawing.Point(11, 22);
             this.iscom.Name = "iscom";
             this.iscom.Size = new System.Drawing.Size(15, 14);
             this.iscom.TabIndex = 0;
@@ -90,7 +90,7 @@
             this.deleteItemFromList.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.deleteItemFromList.ImageSize = new System.Drawing.Size(20, 20);
             this.deleteItemFromList.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(156)))), ((int)(((byte)(116)))));
-            this.deleteItemFromList.Location = new System.Drawing.Point(865, 10);
+            this.deleteItemFromList.Location = new System.Drawing.Point(870, 6);
             this.deleteItemFromList.Name = "deleteItemFromList";
             this.deleteItemFromList.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(252)))), ((int)(((byte)(246)))));
             this.deleteItemFromList.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(252)))), ((int)(((byte)(246)))));
@@ -115,45 +115,45 @@
             this.guna2Panel1.Controls.Add(this.taskname);
             this.guna2Panel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(252)))), ((int)(((byte)(246)))));
             this.guna2Panel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.guna2Panel1.Location = new System.Drawing.Point(3, 3);
+            this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(928, 67);
+            this.guna2Panel1.Size = new System.Drawing.Size(920, 55);
             this.guna2Panel1.TabIndex = 1;
-            // 
-            // taskcato
-            // 
-            this.taskcato.AutoSize = true;
-            this.taskcato.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(135)))), ((int)(((byte)(105)))), ((int)(((byte)(167)))));
-            this.taskcato.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.taskcato.ForeColor = System.Drawing.Color.White;
-            this.taskcato.Location = new System.Drawing.Point(441, 19);
-            this.taskcato.Name = "taskcato";
-            this.taskcato.Padding = new System.Windows.Forms.Padding(15, 3, 15, 3);
-            this.taskcato.Size = new System.Drawing.Size(102, 29);
-            this.taskcato.TabIndex = 59;
-            this.taskcato.Text = "University";
             // 
             // taskprio
             // 
             this.taskprio.AutoSize = true;
             this.taskprio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(119)))), ((int)(((byte)(111)))));
-            this.taskprio.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.taskprio.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.taskprio.ForeColor = System.Drawing.Color.White;
-            this.taskprio.Location = new System.Drawing.Point(590, 19);
+            this.taskprio.Location = new System.Drawing.Point(595, 17);
             this.taskprio.Name = "taskprio";
-            this.taskprio.Padding = new System.Windows.Forms.Padding(15, 3, 15, 3);
-            this.taskprio.Size = new System.Drawing.Size(79, 29);
+            this.taskprio.Padding = new System.Windows.Forms.Padding(15, 1, 15, 1);
+            this.taskprio.Size = new System.Drawing.Size(76, 24);
             this.taskprio.TabIndex = 60;
             this.taskprio.Text = "label2";
+            // 
+            // taskcato
+            // 
+            this.taskcato.AutoSize = true;
+            this.taskcato.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(135)))), ((int)(((byte)(105)))), ((int)(((byte)(167)))));
+            this.taskcato.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.taskcato.ForeColor = System.Drawing.Color.White;
+            this.taskcato.Location = new System.Drawing.Point(469, 17);
+            this.taskcato.Name = "taskcato";
+            this.taskcato.Padding = new System.Windows.Forms.Padding(15, 1, 15, 1);
+            this.taskcato.Size = new System.Drawing.Size(97, 24);
+            this.taskcato.TabIndex = 59;
+            this.taskcato.Text = "University";
             // 
             // CustomListItem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.IndianRed;
+            this.BackColor = System.Drawing.Color.Transparent;
             this.Controls.Add(this.guna2Panel1);
             this.Name = "CustomListItem";
-            this.Size = new System.Drawing.Size(935, 73);
+            this.Size = new System.Drawing.Size(920, 55);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
             this.ResumeLayout(false);
