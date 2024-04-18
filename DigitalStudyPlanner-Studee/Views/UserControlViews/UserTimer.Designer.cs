@@ -28,26 +28,28 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserTimer));
-            this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
+            this.label1 = new Guna.UI.WinForms.GunaLabel();
             this.ongoingBTN = new Guna.UI.WinForms.GunaButton();
             this.breakBTN = new Guna.UI.WinForms.GunaButton();
             this.startBTN = new Guna.UI.WinForms.GunaButton();
             this.resetBTN = new Guna.UI.WinForms.GunaButton();
             this.stopBTN = new Guna.UI.WinForms.GunaButton();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
-            // gunaLabel1
+            // label1
             // 
-            this.gunaLabel1.AutoSize = true;
-            this.gunaLabel1.Font = new System.Drawing.Font("Poppins", 94.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(156)))), ((int)(((byte)(116)))));
-            this.gunaLabel1.Location = new System.Drawing.Point(223, 206);
-            this.gunaLabel1.Name = "gunaLabel1";
-            this.gunaLabel1.Size = new System.Drawing.Size(1076, 278);
-            this.gunaLabel1.TabIndex = 10;
-            this.gunaLabel1.Text = "00:00:00:00";
-            this.gunaLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Poppins", 50F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(156)))), ((int)(((byte)(116)))));
+            this.label1.Location = new System.Drawing.Point(180, 169);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(574, 148);
+            this.label1.TabIndex = 10;
+            this.label1.Text = "00:00:00:00";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // ongoingBTN
             // 
@@ -62,7 +64,7 @@
             this.ongoingBTN.ForeColor = System.Drawing.Color.White;
             this.ongoingBTN.Image = null;
             this.ongoingBTN.ImageSize = new System.Drawing.Size(20, 20);
-            this.ongoingBTN.Location = new System.Drawing.Point(595, 153);
+            this.ongoingBTN.Location = new System.Drawing.Point(362, 41);
             this.ongoingBTN.Name = "ongoingBTN";
             this.ongoingBTN.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(156)))), ((int)(((byte)(116)))));
             this.ongoingBTN.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -90,7 +92,7 @@
             this.breakBTN.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(156)))), ((int)(((byte)(116)))));
             this.breakBTN.Image = null;
             this.breakBTN.ImageSize = new System.Drawing.Size(20, 20);
-            this.breakBTN.Location = new System.Drawing.Point(761, 153);
+            this.breakBTN.Location = new System.Drawing.Point(531, 41);
             this.breakBTN.Name = "breakBTN";
             this.breakBTN.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(156)))), ((int)(((byte)(116)))));
             this.breakBTN.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -117,7 +119,7 @@
             this.startBTN.Image = ((System.Drawing.Image)(resources.GetObject("startBTN.Image")));
             this.startBTN.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.startBTN.ImageSize = new System.Drawing.Size(20, 20);
-            this.startBTN.Location = new System.Drawing.Point(294, 487);
+            this.startBTN.Location = new System.Drawing.Point(177, 387);
             this.startBTN.Name = "startBTN";
             this.startBTN.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(156)))), ((int)(((byte)(116)))));
             this.startBTN.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -130,6 +132,7 @@
             this.startBTN.Text = "Start";
             this.startBTN.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.startBTN.UseTransfarantBackground = true;
+            this.startBTN.Click += new System.EventHandler(this.startBTN_Click);
             // 
             // resetBTN
             // 
@@ -140,12 +143,12 @@
             this.resetBTN.BorderColor = System.Drawing.Color.Black;
             this.resetBTN.DialogResult = System.Windows.Forms.DialogResult.None;
             this.resetBTN.FocusedColor = System.Drawing.Color.Empty;
-            this.resetBTN.Font = new System.Drawing.Font("Poppins", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.resetBTN.Font = new System.Drawing.Font("Poppins", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.resetBTN.ForeColor = System.Drawing.Color.White;
             this.resetBTN.Image = global::DigitalStudyPlanner_Studee.Properties.Resources.icons8_reset_24;
             this.resetBTN.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.resetBTN.ImageSize = new System.Drawing.Size(20, 20);
-            this.resetBTN.Location = new System.Drawing.Point(1037, 487);
+            this.resetBTN.Location = new System.Drawing.Point(645, 387);
             this.resetBTN.Name = "resetBTN";
             this.resetBTN.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(156)))), ((int)(((byte)(116)))));
             this.resetBTN.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -153,11 +156,12 @@
             this.resetBTN.OnHoverImage = null;
             this.resetBTN.OnPressedColor = System.Drawing.Color.Black;
             this.resetBTN.Radius = 23;
-            this.resetBTN.Size = new System.Drawing.Size(180, 65);
+            this.resetBTN.Size = new System.Drawing.Size(135, 65);
             this.resetBTN.TabIndex = 12;
             this.resetBTN.Text = "Reset";
             this.resetBTN.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.resetBTN.UseTransfarantBackground = true;
+            this.resetBTN.Click += new System.EventHandler(this.resetBTN_Click);
             // 
             // stopBTN
             // 
@@ -173,7 +177,7 @@
             this.stopBTN.Image = global::DigitalStudyPlanner_Studee.Properties.Resources.icons8_stop_24;
             this.stopBTN.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.stopBTN.ImageSize = new System.Drawing.Size(20, 20);
-            this.stopBTN.Location = new System.Drawing.Point(659, 487);
+            this.stopBTN.Location = new System.Drawing.Point(410, 387);
             this.stopBTN.Name = "stopBTN";
             this.stopBTN.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(156)))), ((int)(((byte)(116)))));
             this.stopBTN.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -186,6 +190,11 @@
             this.stopBTN.Text = "Stop";
             this.stopBTN.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.stopBTN.UseTransfarantBackground = true;
+            this.stopBTN.Click += new System.EventHandler(this.stopBTN_Click);
+            // 
+            // timer1
+            // 
+            this.timer1.Interval = 10;
             // 
             // UserTimer
             // 
@@ -194,13 +203,14 @@
             this.Controls.Add(this.startBTN);
             this.Controls.Add(this.resetBTN);
             this.Controls.Add(this.stopBTN);
-            this.Controls.Add(this.gunaLabel1);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.ongoingBTN);
             this.Controls.Add(this.breakBTN);
             this.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "UserTimer";
-            this.Size = new System.Drawing.Size(1536, 776);
+            this.Size = new System.Drawing.Size(962, 681);
+            this.Load += new System.EventHandler(this.UserTimer_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -211,8 +221,9 @@
         private Guna.UI.WinForms.GunaButton startBTN;
         private Guna.UI.WinForms.GunaButton resetBTN;
         private Guna.UI.WinForms.GunaButton stopBTN;
-        private Guna.UI.WinForms.GunaLabel gunaLabel1;
+        private Guna.UI.WinForms.GunaLabel label1;
         private Guna.UI.WinForms.GunaButton ongoingBTN;
         private Guna.UI.WinForms.GunaButton breakBTN;
+        internal System.Windows.Forms.Timer timer1;
     }
 }
