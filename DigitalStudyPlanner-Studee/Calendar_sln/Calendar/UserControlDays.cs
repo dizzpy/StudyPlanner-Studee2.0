@@ -9,18 +9,35 @@ using System.Security.AccessControl;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using MySql.Data.MySqlClient;
+using Google.Cloud.Firestore;
 
 namespace Calendar
 {
     public partial class UserControlDays : UserControl
 
     {
-        string connString = "Server=localhost; user id =root; database=db_calendar; sslmode=none";
-        public static string static_day;
+        private FirestoreDb _db;
+        private string _selectedDate;
+
         public UserControlDays()
         {
             InitializeComponent();
+            InitializeFirestore();
+        }
+
+        private void InitializeFirestore()
+        {
+            try
+            {
+
+                string projectId = "your-project-id";
+                Environment.SetEnvironmentVariable("GOOGLE_APPLICATION_CREDENTIALS", "path/to/serviceAccountKey.json");
+                _db = FirestoreDb.Create(projectId);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error initializing Firestore: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void UserControlDays_Load(object sender, EventArgs e)
@@ -30,35 +47,41 @@ namespace Calendar
 
         public void days(int numday)
         {
-            lbdays.Text = numday + "";
+            lbdays.Text = numday.ToString();
         }
 
         private void UserControlDays_Click(object sender, EventArgs e)
         {
-            static_day = lbdays.Text;
-            timer1.Start();
-            EventsForm eventform = new EventsForm();
-            eventform.Show();
+            _selectedDate = $"{Form1.static_year}-{Form1.static_month}-{lbdays.Text}";
+            await DisplayEvent();
         }
 
         private void displayEvent()
         {
-            MySqlConnection conn = new MySqlConnection(connString);
-                conn.Open();
-            string Sql = "SELECT * FROM tbl_calender Where date = ?";
-            MySqlCommand cmd = conn.CreateCommand();
-            cmd.CommandText = Sql;
-            cmd.Parameters.AddWithValue("date", Form1.static_year + "-" + Form1.static_year + "-" + lbdays.Text);
-            MySqlDataReader reader = cmd.ExecuteReader();
-            if (reader.Read())
+            try
             {
-                lbevent.Text = reader["event"].ToString();
+                CollectionReference eventsRef = _db.Collection("events");
 
+                QuerySnapshot querySnapshot = await eventsRef
+                    .WhereEqualTo("date", _selectedDate)
+                    .Limit(1)
+                    .GetSnapshotAsync();
+
+                if (querySnapshot.Count > 0)
+                {
+                    DocumentSnapshot eventDoc = querySnapshot.Documents[0];
+                    string eventName = eventDoc.GetValue<string>("eventName");
+                    lbevent.Text = eventName;
+                }
+                else
+                {
+                    lbevent.Text = "No event for this date.";
+                }
             }
-
-            reader.Dispose();
-            cmd.Dispose();
-            conn.Close();
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error retrieving event: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void timer1_Tick(object sender, EventArgs e)
