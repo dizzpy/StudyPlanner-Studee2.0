@@ -35,7 +35,7 @@ namespace DigitalStudyPlanner_Studee.Views.UserControlViews
         {
             // Set up Firestore with your project ID
             string projectId = "lastfiretodo";
-            Environment.SetEnvironmentVariable("GOOGLE_APPLICATION_CREDENTIALS", "C:\\Users\\User\\Desktop\\Studee\\StudyPlanner-Studee2.0\\DigitalStudyPlanner-Studee\\FileBase-Credentials\\lastfiretodo-firebase.json");
+            Environment.SetEnvironmentVariable("GOOGLE_APPLICATION_CREDENTIALS", "C:\\Users\\DELL\\Desktop\\Studee-New\\StudyPlanner-Studee2.0\\DigitalStudyPlanner-Studee\\FileBase-Credentials\\lastfiretodo-firebase.json");
             db = FirestoreDb.Create(projectId);
         }
 

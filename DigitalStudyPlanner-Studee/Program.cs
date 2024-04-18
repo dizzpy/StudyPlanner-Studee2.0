@@ -20,7 +20,7 @@ namespace DigitalStudyPlanner_Studee
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new UserControl()); // Change here to UserTimer
+            Application.Run(new LoginView()); // Change here to UserTimer
         }
     }
 }
