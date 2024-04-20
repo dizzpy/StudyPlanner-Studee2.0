@@ -3,6 +3,7 @@ using DigitalStudyPlanner_Studee.Views.ToDoList;
 using Google.Cloud.Firestore;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Windows.Forms;
 
 namespace DigitalStudyPlanner_Studee.Views.UserControlViews
@@ -25,9 +26,27 @@ namespace DigitalStudyPlanner_Studee.Views.UserControlViews
         private void InitializeFirestore()
         {
             string projectId = "tsetingsampletodo";
-            Environment.SetEnvironmentVariable("GOOGLE_APPLICATION_CREDENTIALS", "C:\\Users\\User\\Desktop\\Studee\\StudyPlanner-Studee2.0\\DigitalStudyPlanner-Studee\\firecred.json");
+
+            // Check for environment variable first (recommended)
+            string credentialsPath = Environment.GetEnvironmentVariable("GOOGLE_APPLICATION_CREDENTIALS");
+
+            // If not set, use a fallback path (optional)
+            if (string.IsNullOrEmpty(credentialsPath))
+            {
+                string projectRoot = AppDomain.CurrentDomain.BaseDirectory;
+                credentialsPath = Path.Combine(projectRoot, "Credentials", "firecred.json");
+            }
+
+            if (!File.Exists(credentialsPath))
+            {
+                throw new FileNotFoundException("Firebase credentials file not found at: " + credentialsPath);
+            }
+
+            Environment.SetEnvironmentVariable("GOOGLE_APPLICATION_CREDENTIALS", credentialsPath);
             db = FirestoreDb.Create(projectId);
         }
+
+
 
         private async void LoadTasksFromFirestore()
         {

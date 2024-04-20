@@ -32,16 +32,34 @@ namespace DigitalStudyPlanner_Studee.Views.UserControlViews
         private void InitializeFirestore()
         {
             string projectId = "tsetingsampletodo";
-            Environment.SetEnvironmentVariable("GOOGLE_APPLICATION_CREDENTIALS", "C:\\Users\\User\\Desktop\\Studee\\StudyPlanner-Studee2.0\\DigitalStudyPlanner-Studee\\firecred.json");
+
+            // Check for environment variable first (recommended)
+            string credentialsPath = Environment.GetEnvironmentVariable("GOOGLE_APPLICATION_CREDENTIALS");
+
+            // If not set, use a fallback path (optional)
+            if (string.IsNullOrEmpty(credentialsPath))
+            {
+                string projectRoot = AppDomain.CurrentDomain.BaseDirectory;
+                credentialsPath = Path.Combine(projectRoot, "Credentials", "firecred.json");
+            }
+
+            if (!File.Exists(credentialsPath))
+            {
+                throw new FileNotFoundException("Firebase credentials file not found at: " + credentialsPath);
+            }
+
+            Environment.SetEnvironmentVariable("GOOGLE_APPLICATION_CREDENTIALS", credentialsPath);
             db = FirestoreDb.Create(projectId);
         }
+
+
 
         private string GenerateTaskID()
         {
             // Generate a unique task ID using timestamp and a random number
-            string timestamp = System.DateTime.UtcNow.ToString("yyyyMMddHHmmssfff"); // Current timestamp
-            string randomNumber = new Random().Next(1000, 9999).ToString(); // Random 4-digit number
-            string taskID = timestamp + randomNumber; // Concatenate timestamp and random number
+            string timestamp = System.DateTime.UtcNow.ToString("yyyyMMddHHmmssfff");
+            string randomNumber = new Random().Next(1000, 9999).ToString();
+            string taskID = timestamp + randomNumber;
             return taskID;
         }
 
