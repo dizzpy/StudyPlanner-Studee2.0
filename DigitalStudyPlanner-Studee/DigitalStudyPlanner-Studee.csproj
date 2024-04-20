@@ -309,6 +309,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="firecred.json" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

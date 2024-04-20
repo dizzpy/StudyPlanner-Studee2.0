@@ -31,8 +31,8 @@ namespace DigitalStudyPlanner_Studee.Views.UserControlViews
 
         private void InitializeFirestore()
         {
-            string projectId = "todotest-6e94f";
-            Environment.SetEnvironmentVariable("GOOGLE_APPLICATION_CREDENTIALS", "C:\\Users\\User\\Desktop\\Studee\\StudyPlanner-Studee2.0\\DigitalStudyPlanner-Studee\\FileBase-Credentials\\firebasecred.json");
+            string projectId = "tsetingsampletodo";
+            Environment.SetEnvironmentVariable("GOOGLE_APPLICATION_CREDENTIALS", "C:\\Users\\User\\Desktop\\Studee\\StudyPlanner-Studee2.0\\DigitalStudyPlanner-Studee\\firecred.json");
             db = FirestoreDb.Create(projectId);
         }
 
