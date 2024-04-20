@@ -138,6 +138,16 @@ namespace DigitalStudyPlanner_Studee.Views
 
 
         }
+
+        private void gunaElipsePanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void gunaLabel9_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 
