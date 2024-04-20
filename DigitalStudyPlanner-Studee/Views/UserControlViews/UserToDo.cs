@@ -3,42 +3,31 @@ using DigitalStudyPlanner_Studee.Views.ToDoList;
 using Google.Cloud.Firestore;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.TrackBar;
 
 namespace DigitalStudyPlanner_Studee.Views.UserControlViews
 {
-    public partial class UserToDoList : UserControl
+    public partial class UserToDo : UserControl
     {
         private FirestoreDb db;
         private List<TaskItem> tasks = new List<TaskItem>();
 
-        //get the user email from the global variable
         string userLoggedEmail = GlobalVariables.LoggedEmail;
 
-
-        public UserToDoList()
+        public UserToDo()
         {
             InitializeComponent();
-            openAddTaskWindow.Click += OpenAddTaskWindow_Click;
+            openAddTaskWindow.Click += openAddTaskWindow_Click;
             InitializeFirestore();
             LoadTasksFromFirestore();
         }
-        // Fire Base Initialization
+
         private void InitializeFirestore()
         {
-            // Set up Firestore with your project ID
-            string projectId = "lastfiretodo";
-            Environment.SetEnvironmentVariable("GOOGLE_APPLICATION_CREDENTIALS", "C:\\Users\\DELL\\Desktop\\Studee-New\\StudyPlanner-Studee2.0\\DigitalStudyPlanner-Studee\\FileBase-Credentials\\lastfiretodo-firebase.json");
+            string projectId = "tsetingsampletodo";
+            Environment.SetEnvironmentVariable("GOOGLE_APPLICATION_CREDENTIALS", "C:\\Users\\User\\Desktop\\Studee\\StudyPlanner-Studee2.0\\DigitalStudyPlanner-Studee\\firecred.json");
             db = FirestoreDb.Create(projectId);
         }
-
 
         private async void LoadTasksFromFirestore()
         {
@@ -108,9 +97,7 @@ namespace DigitalStudyPlanner_Studee.Views.UserControlViews
             }
         }
 
-
-
-        private void OpenAddTaskWindow_Click(object sender, EventArgs e)
+        private void openAddTaskWindow_Click(object sender, EventArgs e)
         {
             using (var addTaskForm = new addTaskWindow())
             {

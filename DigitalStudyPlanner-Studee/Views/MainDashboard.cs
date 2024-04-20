@@ -31,69 +31,64 @@ namespace DigitalStudyPlanner_Studee.Views
 
         private void MainDashboard_Load(object sender, EventArgs e)
         {
-            userDashboard1.Show();
-            userDashboard1.BringToFront();
-            userEvent1.Hide();
-            userNoteLib1.Hide();
-            userTimer1.Hide();
-            userToDoList1.Hide();
-        }
-
-        private void btn_dashboard_Click(object sender, EventArgs e)
-        {
-            userDashboard1.Show();
-            userDashboard1.BringToFront();
-            userEvent1.Hide();
-            userNoteLib1.Hide();
-            userTimer1.Hide();
-            userToDoList1.Hide();
+            userDashboard3.Show();
+            userDashboard3.BringToFront();
+            userEvent2.Hide();
+            userNoteLib2.Hide();
+            userTimer2.Hide();
+            userToDo.Hide();
         }
 
         private void btn_toDoList_Click(object sender, EventArgs e)
         {
-            userDashboard1.Hide();
-            userEvent1.Hide();
-            userNoteLib1.Hide();
-            userTimer1.Hide();
-
-            // Show the to-do list user control
-            userToDoList1.Show();
-            userToDoList1.BringToFront();
-
-            // Pass the logged user's email address to the to-do list user control
-            //userToDoList1.SetLoggedUserEmail(EmailAddress);
-            // Alternatively, you can use a method to set the email address
-            // userToDoList1.SetLoggedUserEmail(EmailAddress);
+            userDashboard3.Hide();
+            userToDo.Show();
+            userToDo.BringToFront();
+            userEvent2.Hide();
+            userNoteLib2.Hide();
+            userTimer2.Hide();
         }
+
+        private void btn_dashboard_Click(object sender, EventArgs e)
+        {
+            userDashboard3.Show();
+            userDashboard3.BringToFront();
+            userEvent2.Hide();
+            userNoteLib2.Hide();
+            userTimer2.Hide();
+            userToDo.Hide();
+
+        }
+
 
         private void btn_events_Click(object sender, EventArgs e)
         {
-            userDashboard1.Hide();
-            userEvent1.Show();
-            userEvent1.BringToFront();
-            userNoteLib1.Hide();
-            userTimer1.Hide();
-            userToDoList1.Hide();
+            userDashboard3.Hide();
+            userEvent2.Show();
+            userEvent2.BringToFront();
+            userNoteLib2.Hide();
+            userTimer2.Hide();
+            userToDo.Hide();
         }
 
         private void btn_timer_Click(object sender, EventArgs e)
         {
-            userDashboard1.Hide();
-            userEvent1.Hide();
-            userNoteLib1.Hide();
-            userTimer1.Show();
-            userTimer1.BringToFront();
-            userToDoList1.Hide();
+            userDashboard3.Hide();
+            userEvent2.Hide();
+            userNoteLib2.Hide();
+            userTimer2.Show();
+            userTimer2.BringToFront();
+            userToDo.Hide();
         }
 
         private void btn_noteLibrary_Click(object sender, EventArgs e)
         {
-            userDashboard1.Hide();
-            userEvent1.Hide();
-            userNoteLib1.Show();
-            userNoteLib1.BringToFront();
-            userTimer1.Hide();
-            userToDoList1.Hide();
+            userDashboard3.Hide();
+            userEvent2.Hide();
+            userNoteLib2.Show();
+            userNoteLib2.BringToFront();
+            userTimer2.Hide();
+            userToDo.Hide();
         }
 
         private void ProfileButton_Click(object sender, EventArgs e)
@@ -148,6 +143,8 @@ namespace DigitalStudyPlanner_Studee.Views
         {
 
         }
+
+        
     }
 }
 

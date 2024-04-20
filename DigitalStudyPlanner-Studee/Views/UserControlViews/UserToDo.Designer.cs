@@ -1,6 +1,6 @@
 ﻿namespace DigitalStudyPlanner_Studee.Views.UserControlViews
 {
-    partial class UserToDoList
+    partial class UserToDo
     {
         /// <summary> 
         /// Required designer variable.
@@ -34,34 +34,30 @@
             // 
             // openAddTaskWindow
             // 
-            this.openAddTaskWindow.Font = new System.Drawing.Font("Poppins", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.openAddTaskWindow.Location = new System.Drawing.Point(791, 13);
+            this.openAddTaskWindow.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.openAddTaskWindow.Location = new System.Drawing.Point(806, 17);
             this.openAddTaskWindow.Name = "openAddTaskWindow";
-            this.openAddTaskWindow.Size = new System.Drawing.Size(152, 53);
-            this.openAddTaskWindow.TabIndex = 4;
+            this.openAddTaskWindow.Size = new System.Drawing.Size(139, 47);
+            this.openAddTaskWindow.TabIndex = 0;
             this.openAddTaskWindow.Text = "Add Task";
             this.openAddTaskWindow.UseVisualStyleBackColor = true;
+            this.openAddTaskWindow.Click += new System.EventHandler(this.openAddTaskWindow_Click);
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.AutoScroll = true;
-            this.flowLayoutPanel1.BackColor = System.Drawing.Color.White;
-            this.flowLayoutPanel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(15, 81);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(17, 81);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(928, 586);
-            this.flowLayoutPanel1.TabIndex = 2;
+            this.flowLayoutPanel1.TabIndex = 1;
             // 
-            // UserToDoList
+            // UserToDo
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 23F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.openAddTaskWindow);
-            this.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Name = "UserToDoList";
+            this.Name = "UserToDo";
             this.Size = new System.Drawing.Size(962, 681);
             this.ResumeLayout(false);
 

@@ -44,14 +44,14 @@
     <Reference Include="Google.Api.Gax.Grpc, Version=4.8.0.0, Culture=neutral, PublicKeyToken=3ec5ea7f18953e47, processorArchitecture=MSIL">
       <HintPath>..\packages\Google.Api.Gax.Grpc.4.8.0\lib\net462\Google.Api.Gax.Grpc.dll</HintPath>
     </Reference>
-    <Reference Include="Google.Apis, Version=1.67.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
-      <HintPath>..\packages\Google.Apis.1.67.0\lib\net462\Google.Apis.dll</HintPath>
+    <Reference Include="Google.Apis, Version=1.68.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.1.68.0\lib\net462\Google.Apis.dll</HintPath>
     </Reference>
     <Reference Include="Google.Apis.Auth, Version=1.67.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
       <HintPath>..\packages\Google.Apis.Auth.1.67.0\lib\net462\Google.Apis.Auth.dll</HintPath>
     </Reference>
-    <Reference Include="Google.Apis.Core, Version=1.67.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
-      <HintPath>..\packages\Google.Apis.Core.1.67.0\lib\net462\Google.Apis.Core.dll</HintPath>
+    <Reference Include="Google.Apis.Core, Version=1.68.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.Core.1.68.0\lib\net462\Google.Apis.Core.dll</HintPath>
     </Reference>
     <Reference Include="Google.Cloud.Firestore, Version=3.6.0.0, Culture=neutral, PublicKeyToken=185c282632e132a0, processorArchitecture=MSIL">
       <HintPath>..\packages\Google.Cloud.Firestore.3.6.0\lib\net462\Google.Cloud.Firestore.dll</HintPath>
@@ -240,11 +240,11 @@
     <Compile Include="Views\UserControlViews\UserTimer.Designer.cs">
       <DependentUpon>UserTimer.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\UserControlViews\UserToDoList.cs">
+    <Compile Include="Views\UserControlViews\UserToDo.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Views\UserControlViews\UserToDoList.Designer.cs">
-      <DependentUpon>UserToDoList.cs</DependentUpon>
+    <Compile Include="Views\UserControlViews\UserToDo.Designer.cs">
+      <DependentUpon>UserToDo.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -295,10 +295,10 @@
     <EmbeddedResource Include="Views\UserControlViews\UserTimer.resx">
       <DependentUpon>UserTimer.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\UserControlViews\UserToDoList.resx">
-      <DependentUpon>UserToDoList.cs</DependentUpon>
+    <EmbeddedResource Include="Views\UserControlViews\UserToDo.resx">
+      <DependentUpon>UserToDo.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="FileBase-Credentials\lastfiretodo-firebase.json" />
+    <None Include="FileBase-Credentials\firebasecred.json" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -309,6 +309,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="firecred.json" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

@@ -16,5 +16,6 @@ namespace DigitalStudyPlanner_Studee.Views.UserControlViews
         {
             InitializeComponent();
         }
+
     }
 }
