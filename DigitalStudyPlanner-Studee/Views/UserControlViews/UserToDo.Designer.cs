@@ -28,34 +28,44 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.openAddTaskWindow = new System.Windows.Forms.Button();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.SuspendLayout();
             // 
-            // label1
+            // openAddTaskWindow
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Poppins", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(381, 283);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(210, 62);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "User To Do";
+            this.openAddTaskWindow.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.openAddTaskWindow.Location = new System.Drawing.Point(806, 17);
+            this.openAddTaskWindow.Name = "openAddTaskWindow";
+            this.openAddTaskWindow.Size = new System.Drawing.Size(139, 47);
+            this.openAddTaskWindow.TabIndex = 0;
+            this.openAddTaskWindow.Text = "Add Task";
+            this.openAddTaskWindow.UseVisualStyleBackColor = true;
+            this.openAddTaskWindow.Click += new System.EventHandler(this.openAddTaskWindow_Click);
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(17, 81);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(928, 586);
+            this.flowLayoutPanel1.TabIndex = 1;
             // 
             // UserToDo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.flowLayoutPanel1);
+            this.Controls.Add(this.openAddTaskWindow);
             this.Name = "UserToDo";
             this.Size = new System.Drawing.Size(962, 681);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button openAddTaskWindow;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
     }
 }

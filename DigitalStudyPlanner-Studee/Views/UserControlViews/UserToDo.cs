@@ -16,5 +16,10 @@ namespace DigitalStudyPlanner_Studee.Views.UserControlViews
         {
             InitializeComponent();
         }
+
+        private void openAddTaskWindow_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
