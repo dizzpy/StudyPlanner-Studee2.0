@@ -1,11 +1,13 @@
 ﻿using DigitalStudyPlanner_Studee.Models;
 using DigitalStudyPlanner_Studee.Views.ToDoList;
 using Google.Cloud.Firestore;
+using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -29,9 +31,8 @@ namespace DigitalStudyPlanner_Studee.Views.UserControlViews
 
         private void InitializeFirestore()
         {
-            // Set up Firestore with your project ID
-            string projectId = "lastfiretodo";
-            Environment.SetEnvironmentVariable("GOOGLE_APPLICATION_CREDENTIALS", "C:\\Users\\DELL\\Desktop\\Studee-New\\StudyPlanner-Studee2.0\\DigitalStudyPlanner-Studee\\FileBase-Credentials\\lastfiretodo-firebase.json");
+            string projectId = "todotest-6e94f";
+            Environment.SetEnvironmentVariable("GOOGLE_APPLICATION_CREDENTIALS", "C:\\Users\\User\\Desktop\\Studee\\StudyPlanner-Studee2.0\\DigitalStudyPlanner-Studee\\FileBase-Credentials\\firebasecred.json");
             db = FirestoreDb.Create(projectId);
         }
 

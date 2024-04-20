@@ -10,12 +10,11 @@ using System.Windows.Forms;
 
 namespace DigitalStudyPlanner_Studee.Views.UserControlViews
 {
-    public partial class UserDashboard : UserControl
+    public partial class UserToDo : UserControl
     {
-        public UserDashboard()
+        public UserToDo()
         {
             InitializeComponent();
         }
-
     }
 }
