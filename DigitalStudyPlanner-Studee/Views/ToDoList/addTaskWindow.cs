@@ -31,24 +31,9 @@ namespace DigitalStudyPlanner_Studee.Views.UserControlViews
 
         private void InitializeFirestore()
         {
+            // Set up Firestore with your project ID
             string projectId = "tsetingsampletodo";
-
-            // Check for environment variable first (recommended)
-            string credentialsPath = Environment.GetEnvironmentVariable("GOOGLE_APPLICATION_CREDENTIALS");
-
-            // If not set, use a fallback path (optional)
-            if (string.IsNullOrEmpty(credentialsPath))
-            {
-                string projectRoot = AppDomain.CurrentDomain.BaseDirectory;
-                credentialsPath = Path.Combine(projectRoot, "Credentials", "firecred.json");
-            }
-
-            if (!File.Exists(credentialsPath))
-            {
-                throw new FileNotFoundException("Firebase credentials file not found at: " + credentialsPath);
-            }
-
-            Environment.SetEnvironmentVariable("GOOGLE_APPLICATION_CREDENTIALS", credentialsPath);
+            Environment.SetEnvironmentVariable("GOOGLE_APPLICATION_CREDENTIALS", "C:\\Users\\User\\Desktop\\Studee\\StudyPlanner-Studee2.0\\DigitalStudyPlanner-Studee\\firecred.json");
             db = FirestoreDb.Create(projectId);
         }
 
