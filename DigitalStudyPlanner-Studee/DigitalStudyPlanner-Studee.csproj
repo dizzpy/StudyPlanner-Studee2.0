@@ -185,6 +185,12 @@
     <Compile Include="Views\NoteLibrary\AddNoteWindow.Designer.cs">
       <DependentUpon>AddNoteWindow.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\NoteLibrary\CustomNoteList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\NoteLibrary\CustomNoteList.Designer.cs">
+      <DependentUpon>CustomNoteList.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\NoteLibrary\userNoteLibrary1.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -298,6 +304,9 @@
     <EmbeddedResource Include="Views\NoteLibrary\AddNoteWindow.resx">
       <DependentUpon>AddNoteWindow.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\NoteLibrary\CustomNoteList.resx">
+      <DependentUpon>CustomNoteList.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\NoteLibrary\userNoteLibrary1.resx">
       <DependentUpon>userNoteLibrary1.cs</DependentUpon>
     </EmbeddedResource>
@@ -343,6 +352,7 @@
     <EmbeddedResource Include="Views\UserControlViews\UserToDo.resx">
       <DependentUpon>UserToDo.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="notelibtest.json" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -451,6 +461,7 @@
     <Content Include="Resources\calender.png" />
     <None Include="Resources\icons8-stop-24.png" />
     <None Include="Resources\icons8-reset-24.png" />
+    <None Include="Resources\DeleteImgWhite.png" />
     <Content Include="Resources\Images\other-icons\Group 199.png" />
     <None Include="Resources\trash-2.png" />
     <None Include="Resources\Images\Rectangles\Rectangle 15.png" />

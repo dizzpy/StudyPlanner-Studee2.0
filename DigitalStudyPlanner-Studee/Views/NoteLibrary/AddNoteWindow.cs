@@ -15,11 +15,17 @@ namespace DigitalStudyPlanner_Studee.Views.NoteLibrary
         public AddNoteWindow()
         {
             InitializeComponent();
+            AddNoteToListView.Click += AddNoteToListView_Click;
         }
 
         private void NoteDiscardBtn_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void AddNoteToListView_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

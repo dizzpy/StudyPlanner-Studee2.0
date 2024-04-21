@@ -100,6 +100,7 @@
             this.AddNoteToListView.TabIndex = 13;
             this.AddNoteToListView.Text = "Save Changes";
             this.AddNoteToListView.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.AddNoteToListView.Click += new System.EventHandler(this.AddNoteToListView_Click);
             // 
             // NoteDiscardBtn
             // 
@@ -142,7 +143,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1030, 751);
+            this.ClientSize = new System.Drawing.Size(1024, 751);
             this.Controls.Add(this.NoteDiscardBtn);
             this.Controls.Add(this.AddNoteToListView);
             this.Controls.Add(this.NoteContentTextBox);

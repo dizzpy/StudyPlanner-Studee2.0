@@ -16,12 +16,22 @@ namespace DigitalStudyPlanner_Studee.Views.UserControlViews
         public UserNoteLib()
         {
             InitializeComponent();
+
         }
 
         private void AddNoteBtn_Click(object sender, EventArgs e)
         {
             AddNoteWindow addNoteWindow = new AddNoteWindow();
             addNoteWindow.Show();
+
+           
+
+        }
+
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+            
+
         }
     }
 }
