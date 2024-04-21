@@ -43,11 +43,11 @@
             this.txevents.BorderColor = System.Drawing.Color.White;
             this.txevents.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txevents.FocusedBaseColor = System.Drawing.Color.White;
-            this.txevents.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.txevents.FocusedBorderColor = System.Drawing.Color.Black;
             this.txevents.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txevents.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txevents.Location = new System.Drawing.Point(56, 71);
-            this.txevents.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txevents.Margin = new System.Windows.Forms.Padding(2);
             this.txevents.Name = "txevents";
             this.txevents.PasswordChar = '\0';
             this.txevents.SelectedText = "";
@@ -169,7 +169,7 @@
             this.Controls.Add(this.gunaLabel3);
             this.Controls.Add(this.gunaLabel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.Name = "EventForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
