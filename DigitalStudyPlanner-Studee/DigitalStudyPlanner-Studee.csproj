@@ -84,7 +84,7 @@
       <HintPath>..\packages\Grpc.Net.Common.2.60.0\lib\netstandard2.0\Grpc.Net.Common.dll</HintPath>
     </Reference>
     <Reference Include="Guna.UI">
-      <HintPath>..\..\..\..\Project\Guna.UI-Framework-Lib-master\Guna.UI-Framework-Lib-master\Guna.UI WinForms\.net 4.0\Guna.UI.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\..\Guna.UI-Framework-Lib-master\Guna.UI WinForms\.net 4.0\Guna.UI.dll</HintPath>
     </Reference>
     <Reference Include="Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
       <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.6\lib\net472\Guna.UI2.dll</HintPath>
@@ -216,6 +216,30 @@
     <Compile Include="Views\ToDoList\addTaskWindow.Designer.cs">
       <DependentUpon>addTaskWindow.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\UserControlViews\EventForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\UserControlViews\EventForm.Designer.cs">
+      <DependentUpon>EventForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UserControlViews\EventSavedForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\UserControlViews\EventSavedForm.Designer.cs">
+      <DependentUpon>EventSavedForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UserControlViews\UserControlBlank.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\UserControlViews\UserControlBlank.Designer.cs">
+      <DependentUpon>UserControlBlank.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UserControlViews\UserControlDays.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\UserControlViews\UserControlDays.Designer.cs">
+      <DependentUpon>UserControlDays.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\UserControlViews\UserDashboard.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -282,6 +306,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\ToDoList\addTaskWindow.resx">
       <DependentUpon>addTaskWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\UserControlViews\EventForm.resx">
+      <DependentUpon>EventForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\UserControlViews\EventSavedForm.resx">
+      <DependentUpon>EventSavedForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\UserControlViews\UserControlBlank.resx">
+      <DependentUpon>UserControlBlank.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\UserControlViews\UserControlDays.resx">
+      <DependentUpon>UserControlDays.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\UserControlViews\UserDashboard.resx">
       <DependentUpon>UserDashboard.cs</DependentUpon>

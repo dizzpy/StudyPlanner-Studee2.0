@@ -28,28 +28,212 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label2 = new System.Windows.Forms.Label();
+            this.butnext = new Guna.UI.WinForms.GunaButton();
+            this.butprevios = new Guna.UI.WinForms.GunaButton();
+            this.Today = new Guna.UI.WinForms.GunaButton();
+            this.LBDATE = new System.Windows.Forms.Label();
+            this.gunaLabel5 = new Guna.UI.WinForms.GunaLabel();
+            this.gunaLabel6 = new Guna.UI.WinForms.GunaLabel();
+            this.gunaLabel7 = new Guna.UI.WinForms.GunaLabel();
+            this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
+            this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
+            this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
+            this.gunaLabel4 = new Guna.UI.WinForms.GunaLabel();
+            this.daycontainer = new System.Windows.Forms.FlowLayoutPanel();
             this.SuspendLayout();
             // 
-            // label2
+            // butnext
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Poppins", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(418, 316);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(93, 48);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Event";
+            this.butnext.AnimationHoverSpeed = 0.07F;
+            this.butnext.AnimationSpeed = 0.03F;
+            this.butnext.BackColor = System.Drawing.Color.Transparent;
+            this.butnext.BaseColor = System.Drawing.Color.White;
+            this.butnext.BorderColor = System.Drawing.Color.Black;
+            this.butnext.BorderSize = 2;
+            this.butnext.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.butnext.FocusedColor = System.Drawing.Color.Empty;
+            this.butnext.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.butnext.ForeColor = System.Drawing.Color.Black;
+            this.butnext.Image = null;
+            this.butnext.ImageSize = new System.Drawing.Size(20, 20);
+            this.butnext.Location = new System.Drawing.Point(224, 18);
+            this.butnext.Name = "butnext";
+            this.butnext.OnHoverBaseColor = System.Drawing.Color.Transparent;
+            this.butnext.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.butnext.OnHoverForeColor = System.Drawing.Color.White;
+            this.butnext.OnHoverImage = null;
+            this.butnext.OnPressedColor = System.Drawing.Color.Black;
+            this.butnext.Radius = 12;
+            this.butnext.Size = new System.Drawing.Size(40, 40);
+            this.butnext.TabIndex = 15;
+            this.butnext.Text = ">";
+            this.butnext.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.butnext.Click += new System.EventHandler(this.butnext_Click);
+            // 
+            // butprevios
+            // 
+            this.butprevios.AnimationHoverSpeed = 0.07F;
+            this.butprevios.AnimationSpeed = 0.03F;
+            this.butprevios.BackColor = System.Drawing.Color.Transparent;
+            this.butprevios.BaseColor = System.Drawing.Color.White;
+            this.butprevios.BorderColor = System.Drawing.Color.Black;
+            this.butprevios.BorderSize = 2;
+            this.butprevios.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.butprevios.FocusedColor = System.Drawing.Color.Empty;
+            this.butprevios.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.butprevios.ForeColor = System.Drawing.Color.Black;
+            this.butprevios.Image = null;
+            this.butprevios.ImageSize = new System.Drawing.Size(20, 20);
+            this.butprevios.Location = new System.Drawing.Point(172, 18);
+            this.butprevios.Name = "butprevios";
+            this.butprevios.OnHoverBaseColor = System.Drawing.Color.Transparent;
+            this.butprevios.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.butprevios.OnHoverForeColor = System.Drawing.Color.White;
+            this.butprevios.OnHoverImage = null;
+            this.butprevios.OnPressedColor = System.Drawing.Color.Black;
+            this.butprevios.Radius = 12;
+            this.butprevios.Size = new System.Drawing.Size(40, 40);
+            this.butprevios.TabIndex = 14;
+            this.butprevios.Text = "<";
+            this.butprevios.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.butprevios.Click += new System.EventHandler(this.butprevios_Click);
+            // 
+            // Today
+            // 
+            this.Today.AnimationHoverSpeed = 0.07F;
+            this.Today.AnimationSpeed = 0.03F;
+            this.Today.BackColor = System.Drawing.Color.Transparent;
+            this.Today.BaseColor = System.Drawing.Color.White;
+            this.Today.BorderColor = System.Drawing.Color.Black;
+            this.Today.BorderSize = 2;
+            this.Today.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.Today.FocusedColor = System.Drawing.Color.Empty;
+            this.Today.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Today.ForeColor = System.Drawing.Color.Black;
+            this.Today.Image = null;
+            this.Today.ImageSize = new System.Drawing.Size(20, 20);
+            this.Today.Location = new System.Drawing.Point(16, 18);
+            this.Today.Name = "Today";
+            this.Today.OnHoverBaseColor = System.Drawing.Color.Transparent;
+            this.Today.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.Today.OnHoverForeColor = System.Drawing.Color.White;
+            this.Today.OnHoverImage = null;
+            this.Today.OnPressedColor = System.Drawing.Color.Black;
+            this.Today.Radius = 12;
+            this.Today.Size = new System.Drawing.Size(136, 40);
+            this.Today.TabIndex = 13;
+            this.Today.Text = "Today";
+            this.Today.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // LBDATE
+            // 
+            this.LBDATE.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBDATE.Location = new System.Drawing.Point(697, 19);
+            this.LBDATE.Name = "LBDATE";
+            this.LBDATE.Size = new System.Drawing.Size(232, 39);
+            this.LBDATE.TabIndex = 16;
+            this.LBDATE.Text = "MONTH YEAR";
+            this.LBDATE.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // gunaLabel5
+            // 
+            this.gunaLabel5.AutoSize = true;
+            this.gunaLabel5.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel5.Location = new System.Drawing.Point(588, 84);
+            this.gunaLabel5.Name = "gunaLabel5";
+            this.gunaLabel5.Size = new System.Drawing.Size(34, 25);
+            this.gunaLabel5.TabIndex = 25;
+            this.gunaLabel5.Text = "Fri";
+            // 
+            // gunaLabel6
+            // 
+            this.gunaLabel6.AutoSize = true;
+            this.gunaLabel6.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel6.Location = new System.Drawing.Point(447, 84);
+            this.gunaLabel6.Name = "gunaLabel6";
+            this.gunaLabel6.Size = new System.Drawing.Size(44, 25);
+            this.gunaLabel6.TabIndex = 24;
+            this.gunaLabel6.Text = "Thu";
+            // 
+            // gunaLabel7
+            // 
+            this.gunaLabel7.AutoSize = true;
+            this.gunaLabel7.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel7.Location = new System.Drawing.Point(310, 84);
+            this.gunaLabel7.Name = "gunaLabel7";
+            this.gunaLabel7.Size = new System.Drawing.Size(51, 25);
+            this.gunaLabel7.TabIndex = 23;
+            this.gunaLabel7.Text = "Wed";
+            // 
+            // gunaLabel2
+            // 
+            this.gunaLabel2.AutoSize = true;
+            this.gunaLabel2.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel2.Location = new System.Drawing.Point(185, 84);
+            this.gunaLabel2.Name = "gunaLabel2";
+            this.gunaLabel2.Size = new System.Drawing.Size(42, 25);
+            this.gunaLabel2.TabIndex = 22;
+            this.gunaLabel2.Text = "Tue";
+            // 
+            // gunaLabel1
+            // 
+            this.gunaLabel1.AutoSize = true;
+            this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel1.Location = new System.Drawing.Point(47, 84);
+            this.gunaLabel1.Name = "gunaLabel1";
+            this.gunaLabel1.Size = new System.Drawing.Size(52, 25);
+            this.gunaLabel1.TabIndex = 21;
+            this.gunaLabel1.Text = "Mon";
+            // 
+            // gunaLabel3
+            // 
+            this.gunaLabel3.AutoSize = true;
+            this.gunaLabel3.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel3.Location = new System.Drawing.Point(855, 84);
+            this.gunaLabel3.Name = "gunaLabel3";
+            this.gunaLabel3.Size = new System.Drawing.Size(44, 25);
+            this.gunaLabel3.TabIndex = 27;
+            this.gunaLabel3.Text = "Sun";
+            // 
+            // gunaLabel4
+            // 
+            this.gunaLabel4.AutoSize = true;
+            this.gunaLabel4.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel4.Location = new System.Drawing.Point(722, 84);
+            this.gunaLabel4.Name = "gunaLabel4";
+            this.gunaLabel4.Size = new System.Drawing.Size(39, 25);
+            this.gunaLabel4.TabIndex = 26;
+            this.gunaLabel4.Text = "Sat";
+            // 
+            // daycontainer
+            // 
+            this.daycontainer.Location = new System.Drawing.Point(13, 120);
+            this.daycontainer.Name = "daycontainer";
+            this.daycontainer.Size = new System.Drawing.Size(928, 537);
+            this.daycontainer.TabIndex = 28;
             // 
             // UserEvent
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 23F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.label2);
-            this.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.daycontainer);
+            this.Controls.Add(this.gunaLabel3);
+            this.Controls.Add(this.gunaLabel4);
+            this.Controls.Add(this.gunaLabel5);
+            this.Controls.Add(this.gunaLabel6);
+            this.Controls.Add(this.gunaLabel7);
+            this.Controls.Add(this.gunaLabel2);
+            this.Controls.Add(this.gunaLabel1);
+            this.Controls.Add(this.LBDATE);
+            this.Controls.Add(this.butnext);
+            this.Controls.Add(this.butprevios);
+            this.Controls.Add(this.Today);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "UserEvent";
             this.Size = new System.Drawing.Size(962, 681);
+            this.Load += new System.EventHandler(this.UserEvent_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -57,6 +241,17 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label2;
+        private Guna.UI.WinForms.GunaButton butnext;
+        private Guna.UI.WinForms.GunaButton butprevios;
+        private Guna.UI.WinForms.GunaButton Today;
+        private System.Windows.Forms.Label LBDATE;
+        private Guna.UI.WinForms.GunaLabel gunaLabel5;
+        private Guna.UI.WinForms.GunaLabel gunaLabel6;
+        private Guna.UI.WinForms.GunaLabel gunaLabel7;
+        private Guna.UI.WinForms.GunaLabel gunaLabel2;
+        private Guna.UI.WinForms.GunaLabel gunaLabel1;
+        private Guna.UI.WinForms.GunaLabel gunaLabel3;
+        private Guna.UI.WinForms.GunaLabel gunaLabel4;
+        private System.Windows.Forms.FlowLayoutPanel daycontainer;
     }
 }
