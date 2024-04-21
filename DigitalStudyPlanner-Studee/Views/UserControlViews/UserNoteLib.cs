@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DigitalStudyPlanner_Studee.Views.NoteLibrary;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,12 @@ namespace DigitalStudyPlanner_Studee.Views.UserControlViews
         public UserNoteLib()
         {
             InitializeComponent();
+        }
+
+        private void AddNoteBtn_Click(object sender, EventArgs e)
+        {
+            AddNoteWindow addNoteWindow = new AddNoteWindow();
+            addNoteWindow.Show();
         }
     }
 }
