@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserDashboard));
             this.gunaElipsePanel5 = new Guna.UI.WinForms.GunaElipsePanel();
             this.label10 = new System.Windows.Forms.Label();
@@ -43,7 +44,7 @@
             this.gunaLabel12 = new Guna.UI.WinForms.GunaLabel();
             this.gunaElipsePanel3 = new Guna.UI.WinForms.GunaElipsePanel();
             this.label9 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
+            this.MotiQuoteLabel = new System.Windows.Forms.Label();
             this.gunaLabel9 = new Guna.UI.WinForms.GunaLabel();
             this.gunaElipsePanel2 = new Guna.UI.WinForms.GunaElipsePanel();
             this.label7 = new System.Windows.Forms.Label();
@@ -60,6 +61,7 @@
             this.gunaElipsePanel6 = new Guna.UI.WinForms.GunaElipsePanel();
             this.label11 = new System.Windows.Forms.Label();
             this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
+            this.quote1 = new System.Windows.Forms.Timer(this.components);
             this.gunaElipsePanel5.SuspendLayout();
             this.gunaElipsePanel4.SuspendLayout();
             this.gunaElipsePanel3.SuspendLayout();
@@ -295,7 +297,7 @@
             this.gunaElipsePanel3.BackColor = System.Drawing.Color.Transparent;
             this.gunaElipsePanel3.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(252)))), ((int)(((byte)(246)))));
             this.gunaElipsePanel3.Controls.Add(this.label9);
-            this.gunaElipsePanel3.Controls.Add(this.label8);
+            this.gunaElipsePanel3.Controls.Add(this.MotiQuoteLabel);
             this.gunaElipsePanel3.Font = new System.Drawing.Font("Poppins", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaElipsePanel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(252)))), ((int)(((byte)(246)))));
             this.gunaElipsePanel3.Location = new System.Drawing.Point(14, 197);
@@ -315,15 +317,15 @@
             this.label9.TabIndex = 13;
             this.label9.Text = "-PELE-";
             // 
-            // label8
+            // MotiQuoteLabel
             // 
-            this.label8.Font = new System.Drawing.Font("Poppins", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(156)))), ((int)(((byte)(116)))));
-            this.label8.Location = new System.Drawing.Point(19, 26);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(884, 68);
-            this.label8.TabIndex = 2;
-            this.label8.Text = "\"Success is no accident. It is hard work, perseverance, learning, studying, sacri" +
+            this.MotiQuoteLabel.Font = new System.Drawing.Font("Poppins", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MotiQuoteLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(156)))), ((int)(((byte)(116)))));
+            this.MotiQuoteLabel.Location = new System.Drawing.Point(19, 26);
+            this.MotiQuoteLabel.Name = "MotiQuoteLabel";
+            this.MotiQuoteLabel.Size = new System.Drawing.Size(884, 68);
+            this.MotiQuoteLabel.TabIndex = 2;
+            this.MotiQuoteLabel.Text = "\"Success is no accident. It is hard work, perseverance, learning, studying, sacri" +
     "fice and most of all, \r\nlove of what you are doing or learning to do.\"\r\n";
             // 
             // gunaLabel9
@@ -562,7 +564,7 @@
         private Guna.UI.WinForms.GunaLabel gunaLabel12;
         private Guna.UI.WinForms.GunaElipsePanel gunaElipsePanel3;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label MotiQuoteLabel;
         private Guna.UI.WinForms.GunaLabel gunaLabel9;
         private Guna.UI.WinForms.GunaElipsePanel gunaElipsePanel2;
         private System.Windows.Forms.Label label7;
@@ -579,5 +581,6 @@
         private Guna.UI.WinForms.GunaElipsePanel gunaElipsePanel6;
         private System.Windows.Forms.Label label11;
         private Guna.UI.WinForms.GunaLabel gunaLabel2;
+        private System.Windows.Forms.Timer quote1;
     }
 }

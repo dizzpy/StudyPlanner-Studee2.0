@@ -159,6 +159,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Models\GlobalVariables.cs" />
+    <Compile Include="Models\Quotes.cs" />
+    <Compile Include="Models\TimerManager.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Views\Auth\LoginView.cs">
