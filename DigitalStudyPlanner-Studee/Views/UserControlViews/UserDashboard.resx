@@ -117,23 +117,15 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="label11.Text" xml:space="preserve">
-    <value>It is a long established fact that a reader will be distracted by the readable
-content of a page when looking at its layout. The point of using Lorem Ipsum 
-is that it has a more-or-less normal distribution of letters, as opposeaededs
-</value>
-  </data>
   <data name="label10.Text" xml:space="preserve">
-    <value>It is a long established fact that a reader will be distracted by the readable
-content of a page when looking at its layout. The point of using Lorem Ipsum 
-is that it has a more-or-less normal distribution of letters, as opposeaededs
+    <value>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposeaededs
 </value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="gunaButton7.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DQAACw0B7QfALAAAAd9JREFUSEutlksvA1EYhtumQlUTC8GOFr+kLPwTxY9QYm1ZIRGx9AfqHit7l9i7
+        DAAACwwBP0AiyAAAAd9JREFUSEutlksvA1EYhtumQlUTC8GOFr+kLPwTxY9QYm1ZIRGx9AfqHit7l9i7
         LdBaIS6J8bzTb/SiramZN3nSmfe85zuTc86caaQTOY4TFXYbXBQbhjnYg1v4hA+4gh2YgUGLu+J+Gmbt
         trkIpGAZXqBWJShXLn/0CgvQa33PZaJ+t1ijaMjAhRtxnDcoQBa6LaJMAiZhDd5BuoQR+5UGLF4Vpoo/
         uM2OcwCj1tRSZMbhSB3QHTxWLhsGwNC0eE++AXFraityE6B59/p6+jWA5lzaB7/FtQm06M1UHYAbBbWg
@@ -147,7 +139,7 @@ is that it has a more-or-less normal distribution of letters, as opposeaededs
   <data name="gunaButton6.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DQAACw0B7QfALAAAAENJREFUSEtjGAUkgf///7MBsSaFmA1qHCaAKqAUaEKNwwQgSYgaisCoBQTBqAUE
+        DAAACwwBP0AiyAAAAENJREFUSEtjGAUkgf///7MBsSaFmA1qHCaAKqAUaEKNwwQgSYgaisCoBQTBqAUE
         wagFBMGoBQTBMLeAthXOKMAEDAwAcHTRyfgQv5YAAAAASUVORK5CYII=
 </value>
   </data>
@@ -158,6 +150,10 @@ is that it has a more-or-less normal distribution of letters, as opposeaededs
         ZmKAX0A8E4jFocrIB2DjcIPPQNwAxJxQ5aQDsDGEwRMgTgNiZqg24gFYO/HgKhD7QLUSByD6SAaghGAI
         NQI/gKgnC4CS9yogVoAahR2AlVIGvgFxMNQ4TABRQxGgmQU0DSJQJBtAjcAPIOqJBjRLpjTLaDQrKmha
         2G0GYlWoNOUAaBjNKxxQlRkA5Y54wMAAAHg5LWJ6R7P5AAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="label11.Text" xml:space="preserve">
+    <value>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposeaededs
 </value>
   </data>
 </root>

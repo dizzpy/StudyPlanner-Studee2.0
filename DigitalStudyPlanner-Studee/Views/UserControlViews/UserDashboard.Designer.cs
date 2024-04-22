@@ -29,9 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserDashboard));
-            this.gunaElipsePanel6 = new Guna.UI.WinForms.GunaElipsePanel();
-            this.label11 = new System.Windows.Forms.Label();
-            this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
             this.gunaElipsePanel5 = new Guna.UI.WinForms.GunaElipsePanel();
             this.label10 = new System.Windows.Forms.Label();
             this.gunaLabel14 = new Guna.UI.WinForms.GunaLabel();
@@ -60,48 +57,17 @@
             this.gunaElipsePanel7 = new Guna.UI.WinForms.GunaElipsePanel();
             this.label6 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.gunaElipsePanel6.SuspendLayout();
+            this.gunaElipsePanel6 = new Guna.UI.WinForms.GunaElipsePanel();
+            this.label11 = new System.Windows.Forms.Label();
+            this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
             this.gunaElipsePanel5.SuspendLayout();
             this.gunaElipsePanel4.SuspendLayout();
             this.gunaElipsePanel3.SuspendLayout();
             this.gunaElipsePanel2.SuspendLayout();
             this.gunaElipsePanel1.SuspendLayout();
             this.gunaElipsePanel7.SuspendLayout();
+            this.gunaElipsePanel6.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // gunaElipsePanel6
-            // 
-            this.gunaElipsePanel6.BackColor = System.Drawing.Color.Transparent;
-            this.gunaElipsePanel6.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(252)))), ((int)(((byte)(246)))));
-            this.gunaElipsePanel6.Controls.Add(this.label11);
-            this.gunaElipsePanel6.Controls.Add(this.gunaLabel2);
-            this.gunaElipsePanel6.Location = new System.Drawing.Point(664, 651);
-            this.gunaElipsePanel6.Name = "gunaElipsePanel6";
-            this.gunaElipsePanel6.Radius = 20;
-            this.gunaElipsePanel6.Size = new System.Drawing.Size(604, 170);
-            this.gunaElipsePanel6.TabIndex = 36;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(156)))), ((int)(((byte)(116)))));
-            this.label11.Location = new System.Drawing.Point(7, 50);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(465, 66);
-            this.label11.TabIndex = 1;
-            this.label11.Text = resources.GetString("label11.Text");
-            // 
-            // gunaLabel2
-            // 
-            this.gunaLabel2.AutoSize = true;
-            this.gunaLabel2.Font = new System.Drawing.Font("Poppins", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(156)))), ((int)(((byte)(116)))));
-            this.gunaLabel2.Location = new System.Drawing.Point(5, 10);
-            this.gunaLabel2.Name = "gunaLabel2";
-            this.gunaLabel2.Size = new System.Drawing.Size(143, 34);
-            this.gunaLabel2.TabIndex = 0;
-            this.gunaLabel2.Text = "Lorem ipsum";
             // 
             // gunaElipsePanel5
             // 
@@ -109,20 +75,19 @@
             this.gunaElipsePanel5.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(252)))), ((int)(((byte)(246)))));
             this.gunaElipsePanel5.Controls.Add(this.label10);
             this.gunaElipsePanel5.Controls.Add(this.gunaLabel14);
-            this.gunaElipsePanel5.Location = new System.Drawing.Point(664, 454);
+            this.gunaElipsePanel5.Location = new System.Drawing.Point(519, 366);
             this.gunaElipsePanel5.Name = "gunaElipsePanel5";
             this.gunaElipsePanel5.Radius = 20;
-            this.gunaElipsePanel5.Size = new System.Drawing.Size(604, 170);
+            this.gunaElipsePanel5.Size = new System.Drawing.Size(423, 137);
             this.gunaElipsePanel5.TabIndex = 35;
             // 
             // label10
             // 
-            this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(156)))), ((int)(((byte)(116)))));
-            this.label10.Location = new System.Drawing.Point(7, 50);
+            this.label10.Location = new System.Drawing.Point(12, 49);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(465, 66);
+            this.label10.Size = new System.Drawing.Size(400, 66);
             this.label10.TabIndex = 1;
             this.label10.Text = resources.GetString("label10.Text");
             // 
@@ -147,10 +112,10 @@
             this.gunaElipsePanel4.Controls.Add(this.gunaButton4);
             this.gunaElipsePanel4.Controls.Add(this.gunaLabel18);
             this.gunaElipsePanel4.Controls.Add(this.gunaButton3);
-            this.gunaElipsePanel4.Location = new System.Drawing.Point(132, 349);
+            this.gunaElipsePanel4.Location = new System.Drawing.Point(14, 366);
             this.gunaElipsePanel4.Name = "gunaElipsePanel4";
-            this.gunaElipsePanel4.Radius = 20;
-            this.gunaElipsePanel4.Size = new System.Drawing.Size(526, 317);
+            this.gunaElipsePanel4.Radius = 10;
+            this.gunaElipsePanel4.Size = new System.Drawing.Size(483, 298);
             this.gunaElipsePanel4.TabIndex = 34;
             // 
             // gunaButton7
@@ -162,12 +127,12 @@
             this.gunaButton7.BorderColor = System.Drawing.Color.Black;
             this.gunaButton7.DialogResult = System.Windows.Forms.DialogResult.None;
             this.gunaButton7.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaButton7.Font = new System.Drawing.Font("Poppins", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaButton7.Font = new System.Drawing.Font("Poppins", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaButton7.ForeColor = System.Drawing.Color.White;
             this.gunaButton7.Image = ((System.Drawing.Image)(resources.GetObject("gunaButton7.Image")));
             this.gunaButton7.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.gunaButton7.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton7.Location = new System.Drawing.Point(450, 260);
+            this.gunaButton7.Location = new System.Drawing.Point(307, 213);
             this.gunaButton7.Name = "gunaButton7";
             this.gunaButton7.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(156)))), ((int)(((byte)(116)))));
             this.gunaButton7.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -175,7 +140,7 @@
             this.gunaButton7.OnHoverImage = null;
             this.gunaButton7.OnPressedColor = System.Drawing.Color.Black;
             this.gunaButton7.Radius = 23;
-            this.gunaButton7.Size = new System.Drawing.Size(93, 50);
+            this.gunaButton7.Size = new System.Drawing.Size(105, 48);
             this.gunaButton7.TabIndex = 12;
             this.gunaButton7.Text = "Reset";
             this.gunaButton7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -190,12 +155,12 @@
             this.gunaButton6.BorderColor = System.Drawing.Color.Black;
             this.gunaButton6.DialogResult = System.Windows.Forms.DialogResult.None;
             this.gunaButton6.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaButton6.Font = new System.Drawing.Font("Poppins", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaButton6.Font = new System.Drawing.Font("Poppins", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaButton6.ForeColor = System.Drawing.Color.White;
             this.gunaButton6.Image = ((System.Drawing.Image)(resources.GetObject("gunaButton6.Image")));
             this.gunaButton6.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.gunaButton6.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton6.Location = new System.Drawing.Point(270, 260);
+            this.gunaButton6.Location = new System.Drawing.Point(184, 213);
             this.gunaButton6.Name = "gunaButton6";
             this.gunaButton6.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(156)))), ((int)(((byte)(116)))));
             this.gunaButton6.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -203,7 +168,7 @@
             this.gunaButton6.OnHoverImage = null;
             this.gunaButton6.OnPressedColor = System.Drawing.Color.Black;
             this.gunaButton6.Radius = 23;
-            this.gunaButton6.Size = new System.Drawing.Size(93, 50);
+            this.gunaButton6.Size = new System.Drawing.Size(102, 48);
             this.gunaButton6.TabIndex = 11;
             this.gunaButton6.Text = "Stop";
             this.gunaButton6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -218,12 +183,12 @@
             this.gunaButton5.BorderColor = System.Drawing.Color.Black;
             this.gunaButton5.DialogResult = System.Windows.Forms.DialogResult.None;
             this.gunaButton5.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaButton5.Font = new System.Drawing.Font("Poppins", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaButton5.Font = new System.Drawing.Font("Poppins", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaButton5.ForeColor = System.Drawing.Color.White;
             this.gunaButton5.Image = ((System.Drawing.Image)(resources.GetObject("gunaButton5.Image")));
             this.gunaButton5.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.gunaButton5.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton5.Location = new System.Drawing.Point(84, 260);
+            this.gunaButton5.Location = new System.Drawing.Point(68, 213);
             this.gunaButton5.Name = "gunaButton5";
             this.gunaButton5.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(156)))), ((int)(((byte)(116)))));
             this.gunaButton5.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -231,7 +196,7 @@
             this.gunaButton5.OnHoverImage = null;
             this.gunaButton5.OnPressedColor = System.Drawing.Color.Black;
             this.gunaButton5.Radius = 23;
-            this.gunaButton5.Size = new System.Drawing.Size(93, 50);
+            this.gunaButton5.Size = new System.Drawing.Size(95, 48);
             this.gunaButton5.TabIndex = 10;
             this.gunaButton5.Text = "Start";
             this.gunaButton5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -246,11 +211,11 @@
             this.gunaButton4.BorderColor = System.Drawing.Color.Black;
             this.gunaButton4.DialogResult = System.Windows.Forms.DialogResult.None;
             this.gunaButton4.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaButton4.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaButton4.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaButton4.ForeColor = System.Drawing.Color.White;
             this.gunaButton4.Image = null;
             this.gunaButton4.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton4.Location = new System.Drawing.Point(164, 63);
+            this.gunaButton4.Location = new System.Drawing.Point(133, 24);
             this.gunaButton4.Name = "gunaButton4";
             this.gunaButton4.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(156)))), ((int)(((byte)(116)))));
             this.gunaButton4.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -258,7 +223,7 @@
             this.gunaButton4.OnHoverImage = null;
             this.gunaButton4.OnPressedColor = System.Drawing.Color.Black;
             this.gunaButton4.Radius = 18;
-            this.gunaButton4.Size = new System.Drawing.Size(116, 50);
+            this.gunaButton4.Size = new System.Drawing.Size(98, 40);
             this.gunaButton4.TabIndex = 9;
             this.gunaButton4.Text = "Ongoing";
             this.gunaButton4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -268,7 +233,7 @@
             this.gunaLabel18.AutoSize = true;
             this.gunaLabel18.Font = new System.Drawing.Font("Poppins", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(156)))), ((int)(((byte)(116)))));
-            this.gunaLabel18.Location = new System.Drawing.Point(33, 116);
+            this.gunaLabel18.Location = new System.Drawing.Point(16, 85);
             this.gunaLabel18.Name = "gunaLabel18";
             this.gunaLabel18.Size = new System.Drawing.Size(438, 113);
             this.gunaLabel18.TabIndex = 6;
@@ -284,11 +249,11 @@
             this.gunaButton3.BorderColor = System.Drawing.Color.Black;
             this.gunaButton3.DialogResult = System.Windows.Forms.DialogResult.None;
             this.gunaButton3.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaButton3.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaButton3.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaButton3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(156)))), ((int)(((byte)(116)))));
             this.gunaButton3.Image = null;
             this.gunaButton3.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton3.Location = new System.Drawing.Point(315, 63);
+            this.gunaButton3.Location = new System.Drawing.Point(249, 25);
             this.gunaButton3.Name = "gunaButton3";
             this.gunaButton3.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(156)))), ((int)(((byte)(116)))));
             this.gunaButton3.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -296,7 +261,7 @@
             this.gunaButton3.OnHoverImage = null;
             this.gunaButton3.OnPressedColor = System.Drawing.Color.Black;
             this.gunaButton3.Radius = 18;
-            this.gunaButton3.Size = new System.Drawing.Size(144, 50);
+            this.gunaButton3.Size = new System.Drawing.Size(98, 40);
             this.gunaButton3.TabIndex = 5;
             this.gunaButton3.Text = "Break";
             this.gunaButton3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -304,24 +269,24 @@
             // gunaLabel13
             // 
             this.gunaLabel13.AutoSize = true;
-            this.gunaLabel13.Font = new System.Drawing.Font("Poppins", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel13.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(68)))), ((int)(((byte)(76)))));
-            this.gunaLabel13.Location = new System.Drawing.Point(667, 401);
+            this.gunaLabel13.Location = new System.Drawing.Point(512, 327);
             this.gunaLabel13.Margin = new System.Windows.Forms.Padding(80, 0, 61, 0);
             this.gunaLabel13.Name = "gunaLabel13";
-            this.gunaLabel13.Size = new System.Drawing.Size(161, 39);
+            this.gunaLabel13.Size = new System.Drawing.Size(117, 28);
             this.gunaLabel13.TabIndex = 33;
             this.gunaLabel13.Text = "Recent Notes";
             // 
             // gunaLabel12
             // 
             this.gunaLabel12.AutoSize = true;
-            this.gunaLabel12.Font = new System.Drawing.Font("Poppins", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel12.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(68)))), ((int)(((byte)(76)))));
-            this.gunaLabel12.Location = new System.Drawing.Point(-5, 401);
+            this.gunaLabel12.Location = new System.Drawing.Point(14, 327);
             this.gunaLabel12.Margin = new System.Windows.Forms.Padding(80, 0, 61, 0);
             this.gunaLabel12.Name = "gunaLabel12";
-            this.gunaLabel12.Size = new System.Drawing.Size(79, 39);
+            this.gunaLabel12.Size = new System.Drawing.Size(57, 28);
             this.gunaLabel12.TabIndex = 32;
             this.gunaLabel12.Text = "Timer";
             // 
@@ -333,10 +298,10 @@
             this.gunaElipsePanel3.Controls.Add(this.label8);
             this.gunaElipsePanel3.Font = new System.Drawing.Font("Poppins", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaElipsePanel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(252)))), ((int)(((byte)(246)))));
-            this.gunaElipsePanel3.Location = new System.Drawing.Point(14, 224);
+            this.gunaElipsePanel3.Location = new System.Drawing.Point(14, 197);
             this.gunaElipsePanel3.Name = "gunaElipsePanel3";
             this.gunaElipsePanel3.Radius = 20;
-            this.gunaElipsePanel3.Size = new System.Drawing.Size(923, 119);
+            this.gunaElipsePanel3.Size = new System.Drawing.Size(928, 119);
             this.gunaElipsePanel3.TabIndex = 31;
             // 
             // label9
@@ -364,12 +329,12 @@
             // gunaLabel9
             // 
             this.gunaLabel9.AutoSize = true;
-            this.gunaLabel9.Font = new System.Drawing.Font("Poppins", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel9.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(68)))), ((int)(((byte)(76)))));
-            this.gunaLabel9.Location = new System.Drawing.Point(7, 170);
+            this.gunaLabel9.Location = new System.Drawing.Point(14, 158);
             this.gunaLabel9.Margin = new System.Windows.Forms.Padding(80, 0, 61, 0);
             this.gunaLabel9.Name = "gunaLabel9";
-            this.gunaLabel9.Size = new System.Drawing.Size(345, 39);
+            this.gunaLabel9.Size = new System.Drawing.Size(251, 28);
             this.gunaLabel9.TabIndex = 30;
             this.gunaLabel9.Text = "Motivational Quote Of the Day";
             // 
@@ -379,7 +344,7 @@
             this.gunaElipsePanel2.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(156)))), ((int)(((byte)(116)))));
             this.gunaElipsePanel2.Controls.Add(this.label7);
             this.gunaElipsePanel2.Controls.Add(this.label5);
-            this.gunaElipsePanel2.Location = new System.Drawing.Point(10, 48);
+            this.gunaElipsePanel2.Location = new System.Drawing.Point(14, 48);
             this.gunaElipsePanel2.Name = "gunaElipsePanel2";
             this.gunaElipsePanel2.Radius = 18;
             this.gunaElipsePanel2.Size = new System.Drawing.Size(461, 99);
@@ -468,12 +433,12 @@
             // gunaLabel1
             // 
             this.gunaLabel1.AutoSize = true;
-            this.gunaLabel1.Font = new System.Drawing.Font("Poppins", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel1.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(68)))), ((int)(((byte)(76)))));
-            this.gunaLabel1.Location = new System.Drawing.Point(7, 6);
+            this.gunaLabel1.Location = new System.Drawing.Point(14, 9);
             this.gunaLabel1.Margin = new System.Windows.Forms.Padding(80, 0, 61, 0);
             this.gunaLabel1.Name = "gunaLabel1";
-            this.gunaLabel1.Size = new System.Drawing.Size(207, 39);
+            this.gunaLabel1.Size = new System.Drawing.Size(150, 28);
             this.gunaLabel1.TabIndex = 27;
             this.gunaLabel1.Text = "Upcoming Events";
             // 
@@ -510,13 +475,46 @@
             this.label12.TabIndex = 5;
             this.label12.Text = "May 6 , 2024";
             // 
+            // gunaElipsePanel6
+            // 
+            this.gunaElipsePanel6.BackColor = System.Drawing.Color.Transparent;
+            this.gunaElipsePanel6.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(252)))), ((int)(((byte)(246)))));
+            this.gunaElipsePanel6.Controls.Add(this.label11);
+            this.gunaElipsePanel6.Controls.Add(this.gunaLabel2);
+            this.gunaElipsePanel6.Location = new System.Drawing.Point(519, 527);
+            this.gunaElipsePanel6.Name = "gunaElipsePanel6";
+            this.gunaElipsePanel6.Radius = 20;
+            this.gunaElipsePanel6.Size = new System.Drawing.Size(423, 137);
+            this.gunaElipsePanel6.TabIndex = 36;
+            // 
+            // label11
+            // 
+            this.label11.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(156)))), ((int)(((byte)(116)))));
+            this.label11.Location = new System.Drawing.Point(12, 49);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(400, 66);
+            this.label11.TabIndex = 1;
+            this.label11.Text = resources.GetString("label11.Text");
+            // 
+            // gunaLabel2
+            // 
+            this.gunaLabel2.AutoSize = true;
+            this.gunaLabel2.Font = new System.Drawing.Font("Poppins", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(156)))), ((int)(((byte)(116)))));
+            this.gunaLabel2.Location = new System.Drawing.Point(5, 10);
+            this.gunaLabel2.Name = "gunaLabel2";
+            this.gunaLabel2.Size = new System.Drawing.Size(143, 34);
+            this.gunaLabel2.TabIndex = 0;
+            this.gunaLabel2.Text = "Lorem ipsum";
+            // 
             // UserDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.gunaElipsePanel7);
             this.Controls.Add(this.gunaElipsePanel6);
+            this.Controls.Add(this.gunaElipsePanel7);
             this.Controls.Add(this.gunaElipsePanel5);
             this.Controls.Add(this.gunaElipsePanel4);
             this.Controls.Add(this.gunaLabel13);
@@ -530,8 +528,6 @@
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "UserDashboard";
             this.Size = new System.Drawing.Size(962, 681);
-            this.gunaElipsePanel6.ResumeLayout(false);
-            this.gunaElipsePanel6.PerformLayout();
             this.gunaElipsePanel5.ResumeLayout(false);
             this.gunaElipsePanel5.PerformLayout();
             this.gunaElipsePanel4.ResumeLayout(false);
@@ -544,16 +540,14 @@
             this.gunaElipsePanel1.PerformLayout();
             this.gunaElipsePanel7.ResumeLayout(false);
             this.gunaElipsePanel7.PerformLayout();
+            this.gunaElipsePanel6.ResumeLayout(false);
+            this.gunaElipsePanel6.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private Guna.UI.WinForms.GunaElipsePanel gunaElipsePanel6;
-        private System.Windows.Forms.Label label11;
-        private Guna.UI.WinForms.GunaLabel gunaLabel2;
         private Guna.UI.WinForms.GunaElipsePanel gunaElipsePanel5;
         private System.Windows.Forms.Label label10;
         private Guna.UI.WinForms.GunaLabel gunaLabel14;
@@ -582,5 +576,8 @@
         private Guna.UI.WinForms.GunaElipsePanel gunaElipsePanel7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label12;
+        private Guna.UI.WinForms.GunaElipsePanel gunaElipsePanel6;
+        private System.Windows.Forms.Label label11;
+        private Guna.UI.WinForms.GunaLabel gunaLabel2;
     }
 }
