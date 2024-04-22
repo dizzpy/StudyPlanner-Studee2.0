@@ -452,6 +452,8 @@
     <None Include="Resources\Images\dashboard-icons\logout.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Resources\Images\loginimg.png" />
+    <Content Include="Resources\Images\registerimage.png" />
     <None Include="Resources\tag-22.png" />
     <None Include="Resources\tag-21.png" />
     <None Include="Resources\tag-2.png" />

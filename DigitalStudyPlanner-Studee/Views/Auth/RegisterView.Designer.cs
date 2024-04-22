@@ -50,10 +50,11 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.White;
-            this.pictureBox1.Location = new System.Drawing.Point(431, 85);
+            this.pictureBox1.Image = global::DigitalStudyPlanner_Studee.Properties.Resources.registerimage;
+            this.pictureBox1.Location = new System.Drawing.Point(383, 40);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(421, 470);
+            this.pictureBox1.Size = new System.Drawing.Size(496, 573);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
