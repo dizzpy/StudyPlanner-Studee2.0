@@ -25,6 +25,20 @@ namespace DigitalStudyPlanner_Studee.Views.UserControlViews
 
         private void AddEvent_Click(object sender, EventArgs e)
         {
+            /*
+            MySqlConnection conn = new MySqlConnection(connString);
+            conn.Open();
+            String Sql = "INSERT INTO tbl_calender(date,event)values (?,?)";
+            MySqlCommand cmd = conn.CreateCommand();
+            cmd.CommandText = Sql;
+            cmd.Parameters.AddWithValue("date", txdate.Text);
+            cmd.Parameters.AddWithValue("event", txevent.Text);
+            cmd.ExecuteNonQuery();
+            MessageBox.Show("Event Saved");
+            cmd.Dispose();
+            conn.Close();
+             */
+
             this.Hide();
             EventSavedForm f1 = new EventSavedForm();
             f1.ShowDialog();
