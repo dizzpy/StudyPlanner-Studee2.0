@@ -124,6 +124,7 @@
             this.Today.TabIndex = 13;
             this.Today.Text = "Today";
             this.Today.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.Today.Click += new System.EventHandler(this.Today_Click);
             // 
             // LBDATE
             // 
