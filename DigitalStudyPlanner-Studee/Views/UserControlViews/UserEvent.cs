@@ -14,6 +14,8 @@ namespace DigitalStudyPlanner_Studee.Views.UserControlViews
     public partial class UserEvent : UserControl
     {
         int month, year;
+
+        //static variable that can pass to another form for month and year;
         public static int static_month, static_year;
         public UserEvent()
         {

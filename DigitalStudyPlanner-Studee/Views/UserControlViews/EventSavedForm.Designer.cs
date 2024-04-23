@@ -45,7 +45,7 @@
             this.AddEvent.ForeColor = System.Drawing.Color.White;
             this.AddEvent.Image = null;
             this.AddEvent.ImageSize = new System.Drawing.Size(20, 20);
-            this.AddEvent.Location = new System.Drawing.Point(169, 208);
+            this.AddEvent.Location = new System.Drawing.Point(127, 169);
             this.AddEvent.Margin = new System.Windows.Forms.Padding(2);
             this.AddEvent.Name = "AddEvent";
             this.AddEvent.OnHoverBaseColor = System.Drawing.Color.Turquoise;
@@ -53,9 +53,9 @@
             this.AddEvent.OnHoverForeColor = System.Drawing.Color.White;
             this.AddEvent.OnHoverImage = null;
             this.AddEvent.OnPressedColor = System.Drawing.Color.Black;
-            this.AddEvent.Padding = new System.Windows.Forms.Padding(10, 28, 10, 28);
+            this.AddEvent.Padding = new System.Windows.Forms.Padding(8, 23, 8, 23);
             this.AddEvent.Radius = 15;
-            this.AddEvent.Size = new System.Drawing.Size(118, 47);
+            this.AddEvent.Size = new System.Drawing.Size(88, 38);
             this.AddEvent.TabIndex = 14;
             this.AddEvent.Text = "Done";
             this.AddEvent.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -64,22 +64,24 @@
             // gunaLabel1
             // 
             this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI Semibold", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel1.Location = new System.Drawing.Point(116, 36);
+            this.gunaLabel1.Location = new System.Drawing.Point(87, 29);
+            this.gunaLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.gunaLabel1.Name = "gunaLabel1";
-            this.gunaLabel1.Size = new System.Drawing.Size(225, 146);
+            this.gunaLabel1.Size = new System.Drawing.Size(169, 119);
             this.gunaLabel1.TabIndex = 13;
             this.gunaLabel1.Text = "Event Saved\nSuccessfully !";
             this.gunaLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // EventSavedForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(473, 300);
+            this.ClientSize = new System.Drawing.Size(355, 244);
             this.Controls.Add(this.AddEvent);
             this.Controls.Add(this.gunaLabel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "EventSavedForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EventSavedForm";
