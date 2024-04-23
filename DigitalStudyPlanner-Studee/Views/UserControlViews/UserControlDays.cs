@@ -1,12 +1,15 @@
-﻿using System;
+﻿using MySqlConnector;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Management.Instrumentation;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
 
 namespace DigitalStudyPlanner_Studee.Views.UserControlViews
 {
@@ -33,5 +36,30 @@ namespace DigitalStudyPlanner_Studee.Views.UserControlViews
             EventForm eventForm = new EventForm();
             eventForm.Show();
         }
+        /*
+        private void displayEvent()
+        {
+            MySqlConnection conn = new MySqlConnection(connString);
+            conn.Open();
+            string Sql = "SELECT * FROM tbl_calender Where date = ?";
+            MySqlCommand cmd = conn.CreateCommand();
+            cmd.CommandText = Sql;
+            cmd.Parameters.AddWithValue("date", Form1.static_year + "-" + Form1.static_year + "-" + lbdays.Text);
+            MySqlDataReader reader = cmd.ExecuteReader();
+            if (reader.Read())
+            {
+                lbevent.Text = reader["event"].ToString();
+
+            }
+
+            reader.Dispose();
+            cmd.Dispose();
+            conn.Close();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            displayEvent();
+        }*/
     }
 }
