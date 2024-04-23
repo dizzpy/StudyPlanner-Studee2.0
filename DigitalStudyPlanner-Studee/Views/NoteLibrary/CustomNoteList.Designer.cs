@@ -29,46 +29,27 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CustomNoteList));
-            this.gunaElipsePanel1 = new Guna.UI.WinForms.GunaElipsePanel();
-            this.CustomNoteTitle = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.NotePanel = new Guna.UI.WinForms.GunaElipsePanel();
             this.CustomDeleteIcon = new Guna.UI.WinForms.GunaButton();
-            this.gunaElipsePanel1.SuspendLayout();
+            this.CustomnoteContent = new System.Windows.Forms.Label();
+            this.CustomNoteTitle = new System.Windows.Forms.Label();
+            this.NotePanel.SuspendLayout();
             this.SuspendLayout();
             // 
-            // gunaElipsePanel1
+            // NotePanel
             // 
-            this.gunaElipsePanel1.BackColor = System.Drawing.Color.Transparent;
-            this.gunaElipsePanel1.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(156)))), ((int)(((byte)(116)))));
-            this.gunaElipsePanel1.Controls.Add(this.CustomDeleteIcon);
-            this.gunaElipsePanel1.Controls.Add(this.label1);
-            this.gunaElipsePanel1.Controls.Add(this.CustomNoteTitle);
-            this.gunaElipsePanel1.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaElipsePanel1.Location = new System.Drawing.Point(0, 0);
-            this.gunaElipsePanel1.Name = "gunaElipsePanel1";
-            this.gunaElipsePanel1.Radius = 23;
-            this.gunaElipsePanel1.Size = new System.Drawing.Size(407, 244);
-            this.gunaElipsePanel1.TabIndex = 0;
-            // 
-            // CustomNoteTitle
-            // 
-            this.CustomNoteTitle.Font = new System.Drawing.Font("Poppins SemiBold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CustomNoteTitle.ForeColor = System.Drawing.Color.White;
-            this.CustomNoteTitle.Location = new System.Drawing.Point(26, 27);
-            this.CustomNoteTitle.Name = "CustomNoteTitle";
-            this.CustomNoteTitle.Size = new System.Drawing.Size(226, 38);
-            this.CustomNoteTitle.TabIndex = 0;
-            this.CustomNoteTitle.Text = "Lorem ipsum";
-            // 
-            // label1
-            // 
-            this.label1.Font = new System.Drawing.Font("Poppins ExtraLight", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(26, 65);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(355, 159);
-            this.label1.TabIndex = 1;
-            this.label1.Text = resources.GetString("label1.Text");
+            this.NotePanel.BackColor = System.Drawing.Color.Transparent;
+            this.NotePanel.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(156)))), ((int)(((byte)(116)))));
+            this.NotePanel.Controls.Add(this.CustomDeleteIcon);
+            this.NotePanel.Controls.Add(this.CustomnoteContent);
+            this.NotePanel.Controls.Add(this.CustomNoteTitle);
+            this.NotePanel.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NotePanel.Location = new System.Drawing.Point(0, 0);
+            this.NotePanel.Name = "NotePanel";
+            this.NotePanel.Radius = 23;
+            this.NotePanel.Size = new System.Drawing.Size(307, 115);
+            this.NotePanel.TabIndex = 0;
+            this.NotePanel.Paint += new System.Windows.Forms.PaintEventHandler(this.NotePanel_Paint);
             // 
             // CustomDeleteIcon
             // 
@@ -82,33 +63,55 @@
             this.CustomDeleteIcon.ForeColor = System.Drawing.Color.White;
             this.CustomDeleteIcon.Image = global::DigitalStudyPlanner_Studee.Properties.Resources.DeleteImgWhite;
             this.CustomDeleteIcon.ImageSize = new System.Drawing.Size(20, 20);
-            this.CustomDeleteIcon.Location = new System.Drawing.Point(346, 23);
+            this.CustomDeleteIcon.Location = new System.Drawing.Point(254, 2);
             this.CustomDeleteIcon.Name = "CustomDeleteIcon";
             this.CustomDeleteIcon.OnHoverBaseColor = System.Drawing.Color.Transparent;
             this.CustomDeleteIcon.OnHoverBorderColor = System.Drawing.Color.Black;
             this.CustomDeleteIcon.OnHoverForeColor = System.Drawing.Color.White;
             this.CustomDeleteIcon.OnHoverImage = null;
             this.CustomDeleteIcon.OnPressedColor = System.Drawing.Color.Transparent;
-            this.CustomDeleteIcon.Size = new System.Drawing.Size(39, 42);
+            this.CustomDeleteIcon.Size = new System.Drawing.Size(35, 34);
             this.CustomDeleteIcon.TabIndex = 2;
+            this.CustomDeleteIcon.Click += new System.EventHandler(this.CustomDeleteIcon_Click);
+            // 
+            // CustomnoteContent
+            // 
+            this.CustomnoteContent.Font = new System.Drawing.Font("Poppins Light", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CustomnoteContent.ForeColor = System.Drawing.Color.White;
+            this.CustomnoteContent.Location = new System.Drawing.Point(18, 39);
+            this.CustomnoteContent.Name = "CustomnoteContent";
+            this.CustomnoteContent.Size = new System.Drawing.Size(283, 72);
+            this.CustomnoteContent.TabIndex = 1;
+            this.CustomnoteContent.Text = resources.GetString("CustomnoteContent.Text");
+            // 
+            // CustomNoteTitle
+            // 
+            this.CustomNoteTitle.Font = new System.Drawing.Font("Poppins", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CustomNoteTitle.ForeColor = System.Drawing.Color.White;
+            this.CustomNoteTitle.Location = new System.Drawing.Point(22, 8);
+            this.CustomNoteTitle.Name = "CustomNoteTitle";
+            this.CustomNoteTitle.Size = new System.Drawing.Size(226, 36);
+            this.CustomNoteTitle.TabIndex = 0;
+            this.CustomNoteTitle.Text = "Lorem ipsum";
             // 
             // CustomNoteList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.gunaElipsePanel1);
+            this.Controls.Add(this.NotePanel);
             this.Name = "CustomNoteList";
-            this.Size = new System.Drawing.Size(407, 244);
-            this.gunaElipsePanel1.ResumeLayout(false);
+            this.Size = new System.Drawing.Size(307, 115);
+            this.Load += new System.EventHandler(this.CustomNoteList_Load);
+            this.NotePanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private Guna.UI.WinForms.GunaElipsePanel gunaElipsePanel1;
+        private Guna.UI.WinForms.GunaElipsePanel NotePanel;
         private Guna.UI.WinForms.GunaButton CustomDeleteIcon;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label CustomnoteContent;
         private System.Windows.Forms.Label CustomNoteTitle;
     }
 }

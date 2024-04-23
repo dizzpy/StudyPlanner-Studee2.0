@@ -136,7 +136,7 @@
             this.NoteDiscardBtn.TabIndex = 14;
             this.NoteDiscardBtn.Text = "Discard";
             this.NoteDiscardBtn.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.NoteDiscardBtn.Click += new System.EventHandler(this.NoteDiscardBtn_Click);
+            this.NoteDiscardBtn.Click += new System.EventHandler(this.NoteDiscardBtn_Click_1);
             // 
             // AddNoteWindow
             // 
@@ -150,7 +150,7 @@
             this.Controls.Add(this.NoteTitleTextBox);
             this.Font = new System.Drawing.Font("Poppins Medium", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "AddNoteWindow";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
