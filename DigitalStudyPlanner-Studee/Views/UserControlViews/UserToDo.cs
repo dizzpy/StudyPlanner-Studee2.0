@@ -25,9 +25,9 @@ namespace DigitalStudyPlanner_Studee.Views.UserControlViews
 
         private void InitializeFirestore()
         {
-            // Set up Firestore with your project ID
+            // Change the credentials file path to the path of your own credentials file
             string projectId = "tsetingsampletodo";
-            Environment.SetEnvironmentVariable("GOOGLE_APPLICATION_CREDENTIALS", "C:\\Users\\akila\\Desktop\\Studee-Files-New-Final\\Final_1.3\\StudyPlanner-Studee2.0\\DigitalStudyPlanner-Studee\\firecred.json");
+            Environment.SetEnvironmentVariable("GOOGLE_APPLICATION_CREDENTIALS", "C:\\Users\\chenu\\OneDrive\\Documents\\git\\StudyPlanner-Studee2.0\\DigitalStudyPlanner-Studee\\firecred.json");
             db = FirestoreDb.Create(projectId);
         }
 
@@ -58,7 +58,7 @@ namespace DigitalStudyPlanner_Studee.Views.UserControlViews
                     AddTaskToListView(task);
                 }
 
-                MessageBox.Show("Data loaded successfully");
+                MessageBox.Show("To Do List Item Load Successful !");
             }
             catch (Exception ex)
             {

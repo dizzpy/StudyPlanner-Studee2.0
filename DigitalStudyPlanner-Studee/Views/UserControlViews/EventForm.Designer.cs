@@ -34,7 +34,7 @@
             this.Discard = new Guna.UI.WinForms.GunaButton();
             this.txdate = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
-            this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
+            this.txevent = new Guna.UI.WinForms.GunaLabel();
             this.SuspendLayout();
             // 
             // txevents
@@ -140,21 +140,21 @@
             this.gunaLabel3.TabIndex = 18;
             this.gunaLabel3.Text = "       Date";
             // 
-            // gunaLabel1
+            // txevent
             // 
-            this.gunaLabel1.AutoSize = true;
-            this.gunaLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(68)))), ((int)(((byte)(76)))));
-            this.gunaLabel1.Image = ((System.Drawing.Image)(resources.GetObject("gunaLabel1.Image")));
-            this.gunaLabel1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.gunaLabel1.Location = new System.Drawing.Point(52, 43);
-            this.gunaLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.gunaLabel1.Name = "gunaLabel1";
-            this.gunaLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.gunaLabel1.Size = new System.Drawing.Size(139, 20);
-            this.gunaLabel1.TabIndex = 17;
-            this.gunaLabel1.Text = "      Add your event";
+            this.txevent.AutoSize = true;
+            this.txevent.BackColor = System.Drawing.Color.Transparent;
+            this.txevent.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txevent.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(68)))), ((int)(((byte)(76)))));
+            this.txevent.Image = ((System.Drawing.Image)(resources.GetObject("txevent.Image")));
+            this.txevent.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.txevent.Location = new System.Drawing.Point(52, 43);
+            this.txevent.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.txevent.Name = "txevent";
+            this.txevent.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txevent.Size = new System.Drawing.Size(139, 20);
+            this.txevent.TabIndex = 17;
+            this.txevent.Text = "      Add your event";
             // 
             // EventForm
             // 
@@ -167,7 +167,7 @@
             this.Controls.Add(this.Discard);
             this.Controls.Add(this.txdate);
             this.Controls.Add(this.gunaLabel3);
-            this.Controls.Add(this.gunaLabel1);
+            this.Controls.Add(this.txevent);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
@@ -187,6 +187,6 @@
         private Guna.UI.WinForms.GunaButton Discard;
         private Guna.UI.WinForms.GunaLabel txdate;
         private Guna.UI.WinForms.GunaLabel gunaLabel3;
-        private Guna.UI.WinForms.GunaLabel gunaLabel1;
+        private Guna.UI.WinForms.GunaLabel txevent;
     }
 }
