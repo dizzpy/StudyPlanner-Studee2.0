@@ -43,7 +43,7 @@ namespace DigitalStudyPlanner_Studee.Views.UserControlViews
         
         private void displayEvent()
         {
-            MySqlConnection conn = new MySqlConnection(connString);
+            /*MySqlConnection conn = new MySqlConnection(connString);
             conn.Open();
             string Sql = "SELECT * FROM tbl_calender Where date = ?";
             MySqlCommand cmd = conn.CreateCommand();
@@ -58,7 +58,7 @@ namespace DigitalStudyPlanner_Studee.Views.UserControlViews
 
             reader.Dispose();
             cmd.Dispose();
-            conn.Close();
+            conn.Close();*/ 
         }
 
         

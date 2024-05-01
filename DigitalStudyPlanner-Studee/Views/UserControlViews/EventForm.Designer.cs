@@ -29,31 +29,31 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EventForm));
-            this.txevents = new Guna.UI.WinForms.GunaTextBox();
+            this.txevent = new Guna.UI.WinForms.GunaTextBox();
             this.AddEvent = new Guna.UI.WinForms.GunaButton();
             this.Discard = new Guna.UI.WinForms.GunaButton();
             this.txdate = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
-            this.txevent = new Guna.UI.WinForms.GunaLabel();
+            this.lbevent = new Guna.UI.WinForms.GunaLabel();
             this.SuspendLayout();
             // 
-            // txevents
+            // txevent
             // 
-            this.txevents.BaseColor = System.Drawing.Color.White;
-            this.txevents.BorderColor = System.Drawing.Color.White;
-            this.txevents.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txevents.FocusedBaseColor = System.Drawing.Color.White;
-            this.txevents.FocusedBorderColor = System.Drawing.Color.Black;
-            this.txevents.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.txevents.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txevents.Location = new System.Drawing.Point(56, 71);
-            this.txevents.Margin = new System.Windows.Forms.Padding(2);
-            this.txevents.Name = "txevents";
-            this.txevents.PasswordChar = '\0';
-            this.txevents.SelectedText = "";
-            this.txevents.Size = new System.Drawing.Size(392, 49);
-            this.txevents.TabIndex = 22;
-            this.txevents.Text = " ";
+            this.txevent.BaseColor = System.Drawing.Color.White;
+            this.txevent.BorderColor = System.Drawing.Color.White;
+            this.txevent.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txevent.FocusedBaseColor = System.Drawing.Color.White;
+            this.txevent.FocusedBorderColor = System.Drawing.Color.Black;
+            this.txevent.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.txevent.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txevent.Location = new System.Drawing.Point(56, 71);
+            this.txevent.Margin = new System.Windows.Forms.Padding(2);
+            this.txevent.Name = "txevent";
+            this.txevent.PasswordChar = '\0';
+            this.txevent.SelectedText = "";
+            this.txevent.Size = new System.Drawing.Size(392, 49);
+            this.txevent.TabIndex = 22;
+            this.txevent.Text = " ";
             // 
             // AddEvent
             // 
@@ -140,21 +140,21 @@
             this.gunaLabel3.TabIndex = 18;
             this.gunaLabel3.Text = "       Date";
             // 
-            // txevent
+            // lbevent
             // 
-            this.txevent.AutoSize = true;
-            this.txevent.BackColor = System.Drawing.Color.Transparent;
-            this.txevent.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txevent.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(68)))), ((int)(((byte)(76)))));
-            this.txevent.Image = ((System.Drawing.Image)(resources.GetObject("txevent.Image")));
-            this.txevent.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.txevent.Location = new System.Drawing.Point(52, 43);
-            this.txevent.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.txevent.Name = "txevent";
-            this.txevent.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txevent.Size = new System.Drawing.Size(139, 20);
-            this.txevent.TabIndex = 17;
-            this.txevent.Text = "      Add your event";
+            this.lbevent.AutoSize = true;
+            this.lbevent.BackColor = System.Drawing.Color.Transparent;
+            this.lbevent.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbevent.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(68)))), ((int)(((byte)(76)))));
+            this.lbevent.Image = ((System.Drawing.Image)(resources.GetObject("lbevent.Image")));
+            this.lbevent.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbevent.Location = new System.Drawing.Point(52, 43);
+            this.lbevent.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbevent.Name = "lbevent";
+            this.lbevent.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lbevent.Size = new System.Drawing.Size(139, 20);
+            this.lbevent.TabIndex = 17;
+            this.lbevent.Text = "      Add your event";
             // 
             // EventForm
             // 
@@ -162,12 +162,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(500, 320);
-            this.Controls.Add(this.txevents);
+            this.Controls.Add(this.txevent);
             this.Controls.Add(this.AddEvent);
             this.Controls.Add(this.Discard);
             this.Controls.Add(this.txdate);
             this.Controls.Add(this.gunaLabel3);
-            this.Controls.Add(this.txevent);
+            this.Controls.Add(this.lbevent);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
@@ -182,11 +182,11 @@
 
         #endregion
 
-        private Guna.UI.WinForms.GunaTextBox txevents;
+        private Guna.UI.WinForms.GunaTextBox txevent;
         private Guna.UI.WinForms.GunaButton AddEvent;
         private Guna.UI.WinForms.GunaButton Discard;
         private Guna.UI.WinForms.GunaLabel txdate;
         private Guna.UI.WinForms.GunaLabel gunaLabel3;
-        private Guna.UI.WinForms.GunaLabel txevent;
+        private Guna.UI.WinForms.GunaLabel lbevent;
     }
 }

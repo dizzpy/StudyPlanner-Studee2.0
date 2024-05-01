@@ -254,6 +254,7 @@
     <Compile Include="Views\ToDoList\addTaskWindow.Designer.cs">
       <DependentUpon>addTaskWindow.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\UserControlViews\Data.cs" />
     <Compile Include="Views\UserControlViews\EventForm.cs">
       <SubType>Form</SubType>
     </Compile>
