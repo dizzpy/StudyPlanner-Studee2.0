@@ -40,11 +40,11 @@
             // gunaLabel1
             // 
             this.gunaLabel1.AutoSize = true;
-            this.gunaLabel1.Font = new System.Drawing.Font("Poppins", 94.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel1.Font = new System.Drawing.Font("Poppins", 70.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(156)))), ((int)(((byte)(116)))));
-            this.gunaLabel1.Location = new System.Drawing.Point(223, 206);
+            this.gunaLabel1.Location = new System.Drawing.Point(32, 220);
             this.gunaLabel1.Name = "gunaLabel1";
-            this.gunaLabel1.Size = new System.Drawing.Size(1076, 278);
+            this.gunaLabel1.Size = new System.Drawing.Size(805, 208);
             this.gunaLabel1.TabIndex = 10;
             this.gunaLabel1.Text = "00:00:00:00";
             this.gunaLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -62,7 +62,7 @@
             this.ongoingBTN.ForeColor = System.Drawing.Color.White;
             this.ongoingBTN.Image = null;
             this.ongoingBTN.ImageSize = new System.Drawing.Size(20, 20);
-            this.ongoingBTN.Location = new System.Drawing.Point(595, 153);
+            this.ongoingBTN.Location = new System.Drawing.Point(279, 153);
             this.ongoingBTN.Name = "ongoingBTN";
             this.ongoingBTN.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(156)))), ((int)(((byte)(116)))));
             this.ongoingBTN.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -90,7 +90,7 @@
             this.breakBTN.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(156)))), ((int)(((byte)(116)))));
             this.breakBTN.Image = null;
             this.breakBTN.ImageSize = new System.Drawing.Size(20, 20);
-            this.breakBTN.Location = new System.Drawing.Point(761, 153);
+            this.breakBTN.Location = new System.Drawing.Point(423, 153);
             this.breakBTN.Name = "breakBTN";
             this.breakBTN.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(156)))), ((int)(((byte)(116)))));
             this.breakBTN.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -117,7 +117,7 @@
             this.startBTN.Image = ((System.Drawing.Image)(resources.GetObject("startBTN.Image")));
             this.startBTN.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.startBTN.ImageSize = new System.Drawing.Size(20, 20);
-            this.startBTN.Location = new System.Drawing.Point(294, 487);
+            this.startBTN.Location = new System.Drawing.Point(41, 446);
             this.startBTN.Name = "startBTN";
             this.startBTN.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(156)))), ((int)(((byte)(116)))));
             this.startBTN.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -145,7 +145,7 @@
             this.resetBTN.Image = global::DigitalStudyPlanner_Studee.Properties.Resources.icons8_reset_24;
             this.resetBTN.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.resetBTN.ImageSize = new System.Drawing.Size(20, 20);
-            this.resetBTN.Location = new System.Drawing.Point(1037, 487);
+            this.resetBTN.Location = new System.Drawing.Point(611, 446);
             this.resetBTN.Name = "resetBTN";
             this.resetBTN.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(156)))), ((int)(((byte)(116)))));
             this.resetBTN.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -173,7 +173,7 @@
             this.stopBTN.Image = global::DigitalStudyPlanner_Studee.Properties.Resources.icons8_stop_24;
             this.stopBTN.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.stopBTN.ImageSize = new System.Drawing.Size(20, 20);
-            this.stopBTN.Location = new System.Drawing.Point(659, 487);
+            this.stopBTN.Location = new System.Drawing.Point(327, 446);
             this.stopBTN.Name = "stopBTN";
             this.stopBTN.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(156)))), ((int)(((byte)(116)))));
             this.stopBTN.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -200,7 +200,7 @@
             this.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "UserTimer";
-            this.Size = new System.Drawing.Size(1536, 776);
+            this.Size = new System.Drawing.Size(962, 681);
             this.ResumeLayout(false);
             this.PerformLayout();
 
