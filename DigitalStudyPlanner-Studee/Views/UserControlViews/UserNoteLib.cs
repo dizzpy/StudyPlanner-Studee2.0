@@ -29,7 +29,7 @@ namespace DigitalStudyPlanner_Studee.Views.UserControlViews
         private void InitializeFirestore()
         {
             string projectId = "notelibrarytest2";
-            Environment.SetEnvironmentVariable("GOOGLE_APPLICATION_CREDENTIALS", "C:\\Users\\chenu\\OneDrive\\Documents\\git\\StudyPlanner-Studee2.0\\DigitalStudyPlanner-Studee\\firecred.json");
+            Environment.SetEnvironmentVariable("GOOGLE_APPLICATION_CREDENTIALS", "C:\\Users\\akila\\Desktop\\Studee-Files-New-Final\\Final_1.5\\StudyPlanner-Studee2.0\\DigitalStudyPlanner-Studee\\notelibrarytest2.json");
             db = FirestoreDb.Create(projectId);
         }
 
@@ -105,6 +105,8 @@ namespace DigitalStudyPlanner_Studee.Views.UserControlViews
             }
         }
 
+
+
         private void AddNoteWindow_NoteUpdated(object sender, NoteItem note)
         {
             // Find and update the note in the UI
@@ -118,6 +120,8 @@ namespace DigitalStudyPlanner_Studee.Views.UserControlViews
             }
         }
 
+
+
         private void AddNoteBtn_Click(object sender, EventArgs e)
         {
             using (var addNoteWindow = new AddNoteWindow())
@@ -126,19 +130,8 @@ namespace DigitalStudyPlanner_Studee.Views.UserControlViews
                 addNoteWindow.ShowDialog();
             }
         }
+
+
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-      
 

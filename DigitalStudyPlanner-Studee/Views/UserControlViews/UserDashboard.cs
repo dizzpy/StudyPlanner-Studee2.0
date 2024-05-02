@@ -1,4 +1,6 @@
 ﻿using DigitalStudyPlanner_Studee.Models;
+using DigitalStudyPlanner_Studee.Views.NoteLibrary;
+using System.Collections.Generic;
 using System.Timers;
 using System.Windows.Forms;
 
@@ -17,6 +19,8 @@ namespace DigitalStudyPlanner_Studee.Views.UserControlViews
 
             InitializeTimer();
             UpdateLabels();
+
+            LoadCustomListViews();
         }
 
         private void InitializeTimer()
@@ -45,5 +49,24 @@ namespace DigitalStudyPlanner_Studee.Views.UserControlViews
             }
         }
 
+        private void LoadCustomListViews()
+        {
+            // Clear existing controls in the DashBoardFlowLayout panel
+            DashBoardFlowLayout.Controls.Clear();
+
+            // Add custom list views
+            List<NoteItem> notes = /* Fetch notes from Firestore or any other source */;
+            foreach (NoteItem note in notes)
+            {
+                CustomNoteList customNoteList = new CustomNoteList(note);
+                DashBoardFlowLayout.Controls.Add(customNoteList);
+            }
+        }
+
+
+        private void DashBoardFlowLayout_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

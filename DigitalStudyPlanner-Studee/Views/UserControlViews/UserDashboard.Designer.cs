@@ -30,9 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserDashboard));
-            this.gunaElipsePanel5 = new Guna.UI.WinForms.GunaElipsePanel();
-            this.label10 = new System.Windows.Forms.Label();
-            this.gunaLabel14 = new Guna.UI.WinForms.GunaLabel();
             this.gunaElipsePanel4 = new Guna.UI.WinForms.GunaElipsePanel();
             this.gunaButton7 = new Guna.UI.WinForms.GunaButton();
             this.gunaButton6 = new Guna.UI.WinForms.GunaButton();
@@ -58,51 +55,14 @@
             this.gunaElipsePanel7 = new Guna.UI.WinForms.GunaElipsePanel();
             this.label6 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.gunaElipsePanel6 = new Guna.UI.WinForms.GunaElipsePanel();
-            this.label11 = new System.Windows.Forms.Label();
-            this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
             this.quote1 = new System.Windows.Forms.Timer(this.components);
-            this.gunaElipsePanel5.SuspendLayout();
+            this.DashBoardFlowLayout = new System.Windows.Forms.FlowLayoutPanel();
             this.gunaElipsePanel4.SuspendLayout();
             this.gunaElipsePanel3.SuspendLayout();
             this.gunaElipsePanel2.SuspendLayout();
             this.gunaElipsePanel1.SuspendLayout();
             this.gunaElipsePanel7.SuspendLayout();
-            this.gunaElipsePanel6.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // gunaElipsePanel5
-            // 
-            this.gunaElipsePanel5.BackColor = System.Drawing.Color.Transparent;
-            this.gunaElipsePanel5.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(252)))), ((int)(((byte)(246)))));
-            this.gunaElipsePanel5.Controls.Add(this.label10);
-            this.gunaElipsePanel5.Controls.Add(this.gunaLabel14);
-            this.gunaElipsePanel5.Location = new System.Drawing.Point(519, 366);
-            this.gunaElipsePanel5.Name = "gunaElipsePanel5";
-            this.gunaElipsePanel5.Radius = 20;
-            this.gunaElipsePanel5.Size = new System.Drawing.Size(423, 137);
-            this.gunaElipsePanel5.TabIndex = 35;
-            // 
-            // label10
-            // 
-            this.label10.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(156)))), ((int)(((byte)(116)))));
-            this.label10.Location = new System.Drawing.Point(12, 49);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(400, 66);
-            this.label10.TabIndex = 1;
-            this.label10.Text = resources.GetString("label10.Text");
-            // 
-            // gunaLabel14
-            // 
-            this.gunaLabel14.AutoSize = true;
-            this.gunaLabel14.Font = new System.Drawing.Font("Poppins", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(156)))), ((int)(((byte)(116)))));
-            this.gunaLabel14.Location = new System.Drawing.Point(5, 10);
-            this.gunaLabel14.Name = "gunaLabel14";
-            this.gunaLabel14.Size = new System.Drawing.Size(143, 34);
-            this.gunaLabel14.TabIndex = 0;
-            this.gunaLabel14.Text = "Lorem ipsum";
             // 
             // gunaElipsePanel4
             // 
@@ -477,47 +437,21 @@
             this.label12.TabIndex = 5;
             this.label12.Text = "May 6 , 2024";
             // 
-            // gunaElipsePanel6
+            // DashBoardFlowLayout
             // 
-            this.gunaElipsePanel6.BackColor = System.Drawing.Color.Transparent;
-            this.gunaElipsePanel6.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(252)))), ((int)(((byte)(246)))));
-            this.gunaElipsePanel6.Controls.Add(this.label11);
-            this.gunaElipsePanel6.Controls.Add(this.gunaLabel2);
-            this.gunaElipsePanel6.Location = new System.Drawing.Point(519, 527);
-            this.gunaElipsePanel6.Name = "gunaElipsePanel6";
-            this.gunaElipsePanel6.Radius = 20;
-            this.gunaElipsePanel6.Size = new System.Drawing.Size(423, 137);
-            this.gunaElipsePanel6.TabIndex = 36;
-            // 
-            // label11
-            // 
-            this.label11.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(156)))), ((int)(((byte)(116)))));
-            this.label11.Location = new System.Drawing.Point(12, 49);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(400, 66);
-            this.label11.TabIndex = 1;
-            this.label11.Text = resources.GetString("label11.Text");
-            // 
-            // gunaLabel2
-            // 
-            this.gunaLabel2.AutoSize = true;
-            this.gunaLabel2.Font = new System.Drawing.Font("Poppins", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(156)))), ((int)(((byte)(116)))));
-            this.gunaLabel2.Location = new System.Drawing.Point(5, 10);
-            this.gunaLabel2.Name = "gunaLabel2";
-            this.gunaLabel2.Size = new System.Drawing.Size(143, 34);
-            this.gunaLabel2.TabIndex = 0;
-            this.gunaLabel2.Text = "Lorem ipsum";
+            this.DashBoardFlowLayout.Location = new System.Drawing.Point(517, 366);
+            this.DashBoardFlowLayout.Name = "DashBoardFlowLayout";
+            this.DashBoardFlowLayout.Size = new System.Drawing.Size(425, 298);
+            this.DashBoardFlowLayout.TabIndex = 35;
+            this.DashBoardFlowLayout.Paint += new System.Windows.Forms.PaintEventHandler(this.DashBoardFlowLayout_Paint);
             // 
             // UserDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.gunaElipsePanel6);
+            this.Controls.Add(this.DashBoardFlowLayout);
             this.Controls.Add(this.gunaElipsePanel7);
-            this.Controls.Add(this.gunaElipsePanel5);
             this.Controls.Add(this.gunaElipsePanel4);
             this.Controls.Add(this.gunaLabel13);
             this.Controls.Add(this.gunaLabel12);
@@ -530,8 +464,6 @@
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "UserDashboard";
             this.Size = new System.Drawing.Size(962, 681);
-            this.gunaElipsePanel5.ResumeLayout(false);
-            this.gunaElipsePanel5.PerformLayout();
             this.gunaElipsePanel4.ResumeLayout(false);
             this.gunaElipsePanel4.PerformLayout();
             this.gunaElipsePanel3.ResumeLayout(false);
@@ -542,17 +474,12 @@
             this.gunaElipsePanel1.PerformLayout();
             this.gunaElipsePanel7.ResumeLayout(false);
             this.gunaElipsePanel7.PerformLayout();
-            this.gunaElipsePanel6.ResumeLayout(false);
-            this.gunaElipsePanel6.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private Guna.UI.WinForms.GunaElipsePanel gunaElipsePanel5;
-        private System.Windows.Forms.Label label10;
-        private Guna.UI.WinForms.GunaLabel gunaLabel14;
         private Guna.UI.WinForms.GunaElipsePanel gunaElipsePanel4;
         private Guna.UI.WinForms.GunaButton gunaButton7;
         private Guna.UI.WinForms.GunaButton gunaButton6;
@@ -578,9 +505,7 @@
         private Guna.UI.WinForms.GunaElipsePanel gunaElipsePanel7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label12;
-        private Guna.UI.WinForms.GunaElipsePanel gunaElipsePanel6;
-        private System.Windows.Forms.Label label11;
-        private Guna.UI.WinForms.GunaLabel gunaLabel2;
         private System.Windows.Forms.Timer quote1;
+        private System.Windows.Forms.FlowLayoutPanel DashBoardFlowLayout;
     }
 }
