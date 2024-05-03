@@ -8,13 +8,28 @@ using System.Management.Instrumentation;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using FireSharp.Response;
 using MySql.Data.MySqlClient;
+using FireSharp.Config;
+using FireSharp.Interfaces;
 
 
 namespace DigitalStudyPlanner_Studee.Views.UserControlViews
 {
     public partial class UserControlDays : UserControl
+
+
     {
+        //to set the authentication secret and the base path (firebase)
+        IFirebaseConfig config = new FirebaseConfig
+        {
+            AuthSecret = "wt0ghU5wn2oVMJ4QH1vLmoWrUdGHp41Evp4p3avG",
+            BasePath = "https://calendar-backend-c77aa-default-rtdb.firebaseio.com/ "
+        };
+
+        //creat a variable of firbase client
+        IFirebaseClient client;
+
         String connString = "server=localhost;user id=root;database=calender";
         //static variable
         public static string static_day;
@@ -41,8 +56,12 @@ namespace DigitalStudyPlanner_Studee.Views.UserControlViews
             eventForm.Show();
         }
         
-        private void displayEvent()
+        private async void displayEvent()
         {
+            FirebaseResponse response = await client.GetAsync("tbl_calender/" + UserEvent.static_year + "-" + UserEvent.static_month + "-" + lbdays.Text);
+            Data obj = response.ResultAs<Data>();
+            lbdis.Text = obj.eventname;
+            MessageBox.Show("Event is displayed");
             /*MySqlConnection conn = new MySqlConnection(connString);
             conn.Open();
             string Sql = "SELECT * FROM tbl_calender Where date = ?";

@@ -32,6 +32,7 @@
             this.lbdays = new System.Windows.Forms.Label();
             this.lbevent = new Guna.UI.WinForms.GunaLabel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.lbdis = new Guna.UI.WinForms.GunaLabel();
             this.SuspendLayout();
             // 
             // lbdays
@@ -59,12 +60,22 @@
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick_1);
             // 
+            // lbdis
+            // 
+            this.lbdis.AutoSize = true;
+            this.lbdis.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.lbdis.Location = new System.Drawing.Point(6, 27);
+            this.lbdis.Name = "lbdis";
+            this.lbdis.Size = new System.Drawing.Size(0, 15);
+            this.lbdis.TabIndex = 3;
+            // 
             // UserControlDays
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Controls.Add(this.lbdis);
             this.Controls.Add(this.lbevent);
             this.Controls.Add(this.lbdays);
             this.Margin = new System.Windows.Forms.Padding(2);
@@ -82,5 +93,6 @@
         private System.Windows.Forms.Label lbdays;
         private Guna.UI.WinForms.GunaLabel lbevent;
         private System.Windows.Forms.Timer timer1;
+        private Guna.UI.WinForms.GunaLabel lbdis;
     }
 }
