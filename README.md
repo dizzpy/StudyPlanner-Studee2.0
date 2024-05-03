@@ -6,5 +6,6 @@
 - Add Guna Framwork Plugins
 - Add MySQL Plugins
 - Change Firebase Credentials
+- Setup Xampp Server for login
 - Then Run
 
