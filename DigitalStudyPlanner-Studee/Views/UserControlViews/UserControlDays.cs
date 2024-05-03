@@ -58,7 +58,7 @@ namespace DigitalStudyPlanner_Studee.Views.UserControlViews
         
         private async void displayEvent()
         {
-            FirebaseResponse response = await client.GetAsync("tbl_calender/" + UserEvent.static_year + "-" + UserEvent.static_month + "-" + lbdays.Text);
+            FirebaseResponse response = await client.GetAsync("event/" + UserEvent.static_year + "-" + UserEvent.static_month + "-" + lbdays.Text);
             Data obj = response.ResultAs<Data>();
             lbdis.Text = obj.eventname;
             MessageBox.Show("Event is displayed");
