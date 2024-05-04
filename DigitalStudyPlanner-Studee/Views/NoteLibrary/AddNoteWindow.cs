@@ -21,37 +21,23 @@ namespace DigitalStudyPlanner_Studee.Views.NoteLibrary
     public partial class AddNoteWindow : Form
     {
         private FirestoreDb db;
-        private NoteItem noteToEdit;
+ //       private NoteItem noteToEdit;
         public event EventHandler<NoteItem> AddNoteClicked;
 
         string userLoggedEmail = GlobalVariables.LoggedEmail;
 
 
-        // Event handler delegate for note updated event
-        public delegate void NoteUpdatedEventHandler(object sender, NoteItem note);
-
-        // Event raised when a note is updated
-        public event NoteUpdatedEventHandler NoteUpdated;
-
-        public AddNoteWindow(NoteItem note = null)
+        public AddNoteWindow()
         {
             InitializeComponent();
             InitializeFirestore();
-
-            if (note != null)
-            {
-                noteToEdit = note;
-                NoteTitleTextBox.Text = note.NoteTitle;
-                NoteContentTextBox.Text = note.NoteContent;
-                AddNoteToListView.Text = "Save Changes";
-            }
         }
 
         private void InitializeFirestore()
         {
             // Set up Firestore with your project ID
             string projectId = "notelibrarytest2";
-            Environment.SetEnvironmentVariable("GOOGLE_APPLICATION_CREDENTIALS", "C:\\Users\\akila\\Desktop\\Studee-Files-New-Final\\Final_1.5\\StudyPlanner-Studee2.0\\DigitalStudyPlanner-Studee\\notelibrarytest2.json");
+            Environment.SetEnvironmentVariable("GOOGLE_APPLICATION_CREDENTIALS", "C:\\Users\\akila\\Desktop\\Studee-Files-New-Final\\Final_1.8\\StudyPlanner-Studee2.0\\DigitalStudyPlanner-Studee\\notelibrarytest2.json");
             db = FirestoreDb.Create(projectId);
         }
 
@@ -63,38 +49,31 @@ namespace DigitalStudyPlanner_Studee.Views.NoteLibrary
             return NoteID;
         }
 
-        /*private async void NoteDiscardBtn_Click(object sender, EventArgs e)
-        {
-            Close();
-        }*/
 
         private async void AddNoteToListView_Click(object sender, EventArgs e)
         {
-            // Create a TaskItem object from the form's input fields
-            NoteItem note = new NoteItem
-            {
-                NoteID = GenerateNoteID(), // Generate a unique task ID
-                NoteTitle = NoteTitleTextBox.Text,
-                NoteContent = NoteContentTextBox.Text,
-
-            };
-
-            // Raise the AddTaskClicked event and pass the task data
-            AddNoteClicked?.Invoke(this, note);
-
-            // Create a dictionary to store the task data
-            var noteData = new Dictionary<string, object>
-            {
-                { "NoteID", note.NoteID },
-                { "Title", note.NoteTitle},
-                { "Content", note.NoteContent },
-
-            };
-
             try
             {
-                string noteID = GenerateNoteID();
+                // Create a NoteItem object from the form's input fields
+                NoteItem note = new NoteItem
+                {
+                    NoteID = GenerateNoteID(), // Generate a unique note ID
+                    NoteTitle = NoteTitleTextBox.Text,
+                    NoteContent = NoteContentTextBox.Text,
+                };
 
+                // Raise the AddNoteClicked event and pass the note data
+                AddNoteClicked?.Invoke(this, note);
+
+                // Create a dictionary to store the note data
+                var noteData = new Dictionary<string, object>
+                {
+                    { "NoteID", note.NoteID },
+                    { "Title", note.NoteTitle },
+                    { "Content", note.NoteContent },
+                };
+
+                // Save the note data to Firestore
                 DocumentReference noteDocument = db.Collection(userLoggedEmail).Document(note.NoteID);
                 await noteDocument.SetAsync(noteData);
 
@@ -105,19 +84,10 @@ namespace DigitalStudyPlanner_Studee.Views.NoteLibrary
                 MessageBox.Show("Error adding note: " + ex.Message);
             }
 
-            // Close the form after adding the task
+            // Close the form after adding the note
             this.Close();
         }
-    
-
-        protected virtual void OnNoteUpdated(NoteItem note)
-        {
-            NoteUpdated?.Invoke(this, note);
-        }
-
-
-
-
+   
 
         private void NoteDiscardBtn_Click_1(object sender, EventArgs e)
         {

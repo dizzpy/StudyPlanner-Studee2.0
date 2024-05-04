@@ -70,7 +70,7 @@
             this.AddNoteBtn.TabIndex = 3;
             this.AddNoteBtn.Text = "Add Note";
             this.AddNoteBtn.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.AddNoteBtn.Click += new System.EventHandler(this.AddNoteBtn_Click);
+            this.AddNoteBtn.Click += new System.EventHandler(this.AddNoteBtn_Click_1);
             // 
             // flowLayoutPanel1
             // 

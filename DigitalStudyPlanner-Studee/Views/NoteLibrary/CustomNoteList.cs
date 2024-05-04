@@ -17,23 +17,18 @@ namespace DigitalStudyPlanner_Studee.Views.NoteLibrary
     {
 
         private NoteItem note;
+
+        public object Note { get; internal set; }
+
         public event EventHandler<NoteItem> DeleteNote;
         public event EventHandler<NoteItem> EditNote;
 
-        public NoteItem Note
-        {
-            get { return note; }
-            set
-            {
-                note = value;
-                InitializeTask();
-            }
-        }
 
         public CustomNoteList(NoteItem noteItem)
         {
             InitializeComponent();
-            Note = noteItem;
+            note = noteItem;
+            InitializeNote();
             NotePanel.Click += EditNote_Click;
             CustomnoteContent.Click += EditNote_Click;
             CustomNoteTitle.Click += EditNote_Click;
@@ -47,32 +42,34 @@ namespace DigitalStudyPlanner_Studee.Views.NoteLibrary
 
         protected virtual void OnEditNote()
         {
-            EditNote?.Invoke(this, Note);
+            EditNote?.Invoke(this, note);
         }
 
 
-        private void InitializeTask()
+        private void InitializeNote()
         {
-            CustomNoteTitle.Text = Note.NoteTitle;
-            CustomnoteContent.Text = Note.NoteContent;
+            CustomNoteTitle.Text = note.NoteTitle;
+            CustomnoteContent.Text = note.NoteContent;
         }
 
         private void CustomDeleteIcon_Click(object sender, EventArgs e)
         {
-            OnDeleteNote();
+            OnDeleteNote(note);
         }
 
-        protected virtual void OnDeleteNote()
+        protected virtual void OnDeleteNote(NoteItem noteToDelete)
         {
-            DeleteNote?.Invoke(this, Note);
+            DeleteNote?.Invoke(this,noteToDelete);
         }
 
-        private void CustomNoteList_Load(object sender, EventArgs e)
+
+        /*private void NotePanel_Paint_click(object sender, PaintEventArgs e)
         {
+            AddNoteWindow toDoListItem = new AddNoteWindow();
+            toDoListItem.Show();
+        }*/
 
-        }
-
-        private void NotePanel_Paint(object sender, PaintEventArgs e)
+        private void CustomNoteTitle_Click(object sender, EventArgs e)
         {
 
         }

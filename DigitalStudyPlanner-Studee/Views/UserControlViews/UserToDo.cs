@@ -27,7 +27,7 @@ namespace DigitalStudyPlanner_Studee.Views.UserControlViews
         {
             // Change the credentials file path to the path of your own credentials file
             string projectId = "tsetingsampletodo";
-            Environment.SetEnvironmentVariable("GOOGLE_APPLICATION_CREDENTIALS", "C:\\Users\\chenu\\OneDrive\\Documents\\git\\StudyPlanner-Studee2.0\\DigitalStudyPlanner-Studee\\firecred.json");
+            Environment.SetEnvironmentVariable("GOOGLE_APPLICATION_CREDENTIALS", "C:\\Users\\akila\\Desktop\\Studee-Files-New-Final\\Final_1.8\\StudyPlanner-Studee2.0\\DigitalStudyPlanner-Studee\\firecred.json");
             db = FirestoreDb.Create(projectId);
         }
 

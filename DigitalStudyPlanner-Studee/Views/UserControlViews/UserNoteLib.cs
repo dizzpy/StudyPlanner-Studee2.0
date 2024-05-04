@@ -1,4 +1,5 @@
-﻿using DigitalStudyPlanner_Studee.Views.NoteLibrary;
+﻿using DigitalStudyPlanner_Studee.Models;
+using DigitalStudyPlanner_Studee.Views.NoteLibrary;
 using DigitalStudyPlanner_Studee.Views.ToDoList;
 using Google.Cloud.Firestore;
 using System;
@@ -18,18 +19,21 @@ namespace DigitalStudyPlanner_Studee.Views.UserControlViews
     {
         private FirestoreDb db;
         private List<NoteItem> notes = new List<NoteItem>();
+        private string userLoggedEmail = GlobalVariables.LoggedEmail;
 
         public UserNoteLib()
         {
             InitializeComponent();
+            AddNoteBtn.Click += AddNoteBtn_Click;
             InitializeFirestore();
             LoadNotesFromFirestore();
         }
 
         private void InitializeFirestore()
         {
+            // Set up Firestore with your project ID
             string projectId = "notelibrarytest2";
-            Environment.SetEnvironmentVariable("GOOGLE_APPLICATION_CREDENTIALS", "C:\\Users\\chenu\\OneDrive\\Documents\\git\\StudyPlanner-Studee2.0\\DigitalStudyPlanner-Studee\\firecred.json");
+            Environment.SetEnvironmentVariable("GOOGLE_APPLICATION_CREDENTIALS", "C:\\Users\\akila\\Desktop\\Studee-Files-New-Final\\Final_1.8\\StudyPlanner-Studee2.0\\DigitalStudyPlanner-Studee\\notelibrarytest2.json");
             db = FirestoreDb.Create(projectId);
         }
 
@@ -37,7 +41,7 @@ namespace DigitalStudyPlanner_Studee.Views.UserControlViews
         {
             try
             {
-                CollectionReference noteCollection = db.Collection("Notes");
+                CollectionReference noteCollection = db.Collection(userLoggedEmail);
                 QuerySnapshot querySnapshot = await noteCollection.GetSnapshotAsync();
 
                 foreach (DocumentSnapshot documentSnapshot in querySnapshot.Documents)
@@ -69,7 +73,7 @@ namespace DigitalStudyPlanner_Studee.Views.UserControlViews
             {
                 CustomNoteList item = new CustomNoteList(note);
                 item.DeleteNote += Item_DeleteNote;
-                item.EditNote += Item_EditNote;
+              //  item.EditNote += Item_EditNote;
                 flowLayoutPanel1.Controls.Add(item);
             }
             catch (Exception ex)
@@ -78,24 +82,40 @@ namespace DigitalStudyPlanner_Studee.Views.UserControlViews
             }
         }
 
-        private async void Item_EditNote(object sender, NoteItem note)
+        /* private void Item_EditNote(object sender, NoteItem note)
         {
             using (var addNoteWindow = new AddNoteWindow(note))
             {
                 addNoteWindow.NoteUpdated += AddNoteWindow_NoteUpdated;
                 addNoteWindow.ShowDialog();
             }
-        }
+        } */
+
+        /* private void AddNoteWindow_NoteUpdated(object sender, NoteItem note)
+        {
+            // Find and update the note in the UI
+            foreach (Control control in flowLayoutPanel1.Controls)
+            {
+                if (control is CustomNoteList customNoteList && customNoteList.Note.NoteId == note.NoteID)
+                {
+                    customNoteList.Note = note; // Update the note in the CustomNoteList control
+                    break;
+                }
+            }
+        } */
 
         private async void Item_DeleteNote(object sender, NoteItem note)
         {
             try
             {
-                CustomNoteList cardToRemove = (CustomNoteList)sender;
+                // Remove the note from the notes list
                 notes.Remove(note);
-                flowLayoutPanel1.Controls.Remove(cardToRemove);
 
-                await db.Collection("Notes").Document(note.NoteID).DeleteAsync();
+                // Remove the corresponding CustomNoteList control from the flowLayoutPanel
+                flowLayoutPanel1.Controls.Remove((CustomNoteList)sender);
+
+                // Delete the note document from Firestore
+                await db.Collection(userLoggedEmail).Document(note.NoteID).DeleteAsync();
 
                 MessageBox.Show("Note deleted successfully");
             }
@@ -105,33 +125,31 @@ namespace DigitalStudyPlanner_Studee.Views.UserControlViews
             }
         }
 
-
-
-        private void AddNoteWindow_NoteUpdated(object sender, NoteItem note)
+        /*private void AddNoteBtn_Click(object sender, EventArgs e)
         {
-            // Find and update the note in the UI
-            foreach (Control control in flowLayoutPanel1.Controls)
+            using (var addNoteForm = new AddNoteWindow())
             {
-                if (control is CustomNoteList customNoteList && customNoteList.Note.NoteID == note.NoteID)
-                {
-                    customNoteList.Note = note; // Update the note in the CustomNoteList control
-                    break;
-                }
+                addNoteForm.AddNoteClicked += AddNoteForm_AddNoteClicked;
+                addNoteForm.Show();
             }
+        } */
+
+        private void AddNoteForm_AddNoteClicked(object sender, NoteItem note)
+        {
+            // Add the note to the notes list
+            notes.Add(note);
+            // Display the note on the form
+            AddNoteToListView(note);
         }
 
-
-
-        private void AddNoteBtn_Click(object sender, EventArgs e)
+        private void AddNoteBtn_Click_1(object sender, EventArgs e)
         {
-            using (var addNoteWindow = new AddNoteWindow())
+            using (var addNoteForm = new AddNoteWindow())
             {
-                addNoteWindow.NoteUpdated += AddNoteWindow_NoteUpdated;
-                addNoteWindow.ShowDialog();
+                addNoteForm.AddNoteClicked += AddNoteForm_AddNoteClicked;
+                addNoteForm.Show();
             }
         }
-
-
     }
 }
 
