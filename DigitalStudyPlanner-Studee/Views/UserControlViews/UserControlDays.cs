@@ -29,8 +29,6 @@ namespace DigitalStudyPlanner_Studee.Views.UserControlViews
 
         //creat a variable of firbase client
         IFirebaseClient client;
-
-        String connString = "server=localhost;user id=root;database=calender";
         //static variable
         public static string static_day;
         public UserControlDays()
@@ -50,26 +48,56 @@ namespace DigitalStudyPlanner_Studee.Views.UserControlViews
         private void UserControlDays_Click(object sender, EventArgs e)
         {
             static_day = lbdays.Text;
-            //start timer if usercontroldays is clicked
-            timer1.Start();
             EventForm eventForm = new EventForm();
             eventForm.Show();
         }
         
         private async void displayEvent()
         {
-           /* FirebaseResponse response = await client.GetAsync("event/" + lbdays.Text);
-            Data obj = response.ResultAs<Data>();
-            lbdis.Text = obj.eventname;
-            MessageBox.Show("Event is displayed");
-            */
+            // Ensure static_day has a valid value
+            if (string.IsNullOrEmpty(static_day))
+                return;
+
+            try
+            {
+                // Firebase configuration
+                IFirebaseConfig config = new FirebaseConfig
+                {
+                    AuthSecret = "wt0ghU5wn2oVMJ4QH1vLmoWrUdGHp41Evp4p3avG",
+                    BasePath = "https://calendar-backend-c77aa-default-rtdb.firebaseio.com/"
+                };
+
+                // Initialize Firebase client
+                IFirebaseClient client = new FireSharp.FirebaseClient(config);
+
+                // Fetch event data for the current day (static_day)
+                FirebaseResponse response = await client.GetAsync("Event/" + static_day);
+
+                if (response.Body != "null")
+                {
+                    Data eventData = response.ResultAs<Data>();
+
+                    // Update the label with the retrieved event name
+                    lbdis.Text = eventData.eventname;
+                }
+                else
+                {
+                    // Clear the label if no event is found for the current day
+                    lbdis.Text = "No event scheduled for this day";
+                }
+            }
+            catch (Exception ex)
+            {
+                // Handle any exceptions (e.g., network issues, Firebase errors)
+                MessageBox.Show("Error retrieving event: " + ex.Message);
+            }
         }
 
-        
+
         //creat a timer for auto display event if new event is added
         private void timer1_Tick_1(object sender, EventArgs e)
         {
-            //call the display event
+            // Call the displayEvent method on every timer tick
             displayEvent();
         }
     }

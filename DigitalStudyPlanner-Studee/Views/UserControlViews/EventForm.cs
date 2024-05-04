@@ -51,41 +51,41 @@ namespace DigitalStudyPlanner_Studee.Views.UserControlViews
 
         private async void AddEvent_Click(object sender, EventArgs e)
         {
-            try
-            {
-                string id = Guid.NewGuid().ToString(); // Generate a unique ID
-                var data = new Data
-                {
-                    id = id,
-                    date = txdate.Text,
-                    eventname = txevent.Text
-                };
+            /* try
+             {
+                 string id = Guid.NewGuid().ToString(); // Generate a unique ID
+                 var data = new Data
+                 {
+                     id = id,
+                     date = txdate.Text,
+                     eventname = txevent.Text
+                 };
 
-                // Assuming `client` is your Firebase client instance
-                SetResponse response = await client.SetAsync("Event/" + id, data);
-                Data result = response.ResultAs<Data>(); // Deserialize Firebase response if needed
+                 // Assuming `client` is your Firebase client instance
+                 SetResponse response = await client.SetAsync("Event/" + id, data);
+                 Data result = response.ResultAs<Data>(); // Deserialize Firebase response if needed
 
-                MessageBox.Show("Event Saved with ID: " + id);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error saving event: " + ex.Message);
-            }
-
-            /*
-            var data = new Data
-            {
-                id = id,
-                date = txdate.Text,
-                eventname = txevent.Text
-            };
-            //for sending data to c# to firebase
-
-            SetResponse response = await client.SetAsync("Event/" + txdate.Text, data);
-            Data result = response.ResultAs<Data>();
-
-            MessageBox.Show("Event Saved");
+                 MessageBox.Show("Event Saved with ID: " + id);
+             }
+             catch (Exception ex)
+             {
+                 MessageBox.Show("Error saving event: " + ex.Message);
+             }
             */
+             
+             var data = new Data
+             {
+  
+                 date = txdate.Text,
+                 eventname = txevent.Text
+             };
+             //for sending data to c# to firebase
+
+             SetResponse response = await client.SetAsync("Event/" + txdate.Text, data);
+             Data result = response.ResultAs<Data>();
+
+             MessageBox.Show("Event Saved");
+             
 
 
             this.Hide();

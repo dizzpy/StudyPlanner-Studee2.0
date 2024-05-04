@@ -29,10 +29,11 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.Timer timer1;
             this.lbdays = new System.Windows.Forms.Label();
             this.lbevent = new Guna.UI.WinForms.GunaLabel();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.lbdis = new Guna.UI.WinForms.GunaLabel();
+            timer1 = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // lbdays
@@ -50,7 +51,7 @@
             // 
             this.lbevent.AutoSize = true;
             this.lbevent.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbevent.Location = new System.Drawing.Point(6, 27);
+            this.lbevent.Location = new System.Drawing.Point(6, 26);
             this.lbevent.Name = "lbevent";
             this.lbevent.Size = new System.Drawing.Size(0, 13);
             this.lbevent.TabIndex = 2;
@@ -58,13 +59,14 @@
             // 
             // timer1
             // 
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick_1);
+            timer1.Enabled = true;
+            timer1.Tick += new System.EventHandler(this.timer1_Tick_1);
             // 
             // lbdis
             // 
             this.lbdis.AutoSize = true;
             this.lbdis.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.lbdis.Location = new System.Drawing.Point(6, 27);
+            this.lbdis.Location = new System.Drawing.Point(6, 26);
             this.lbdis.Name = "lbdis";
             this.lbdis.Size = new System.Drawing.Size(0, 15);
             this.lbdis.TabIndex = 3;
@@ -92,7 +94,6 @@
 
         private System.Windows.Forms.Label lbdays;
         private Guna.UI.WinForms.GunaLabel lbevent;
-        private System.Windows.Forms.Timer timer1;
         private Guna.UI.WinForms.GunaLabel lbdis;
     }
 }
