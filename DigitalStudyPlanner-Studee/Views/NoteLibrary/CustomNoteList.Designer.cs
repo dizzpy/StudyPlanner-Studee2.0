@@ -47,9 +47,8 @@
             this.NotePanel.Location = new System.Drawing.Point(0, 0);
             this.NotePanel.Name = "NotePanel";
             this.NotePanel.Radius = 23;
-            this.NotePanel.Size = new System.Drawing.Size(359, 167);
+            this.NotePanel.Size = new System.Drawing.Size(288, 135);
             this.NotePanel.TabIndex = 0;
-            this.NotePanel.Paint += new System.Windows.Forms.PaintEventHandler(this.NotePanel_Paint);
             // 
             // CustomDeleteIcon
             // 
@@ -63,7 +62,7 @@
             this.CustomDeleteIcon.ForeColor = System.Drawing.Color.White;
             this.CustomDeleteIcon.Image = global::DigitalStudyPlanner_Studee.Properties.Resources.DeleteImgWhite;
             this.CustomDeleteIcon.ImageSize = new System.Drawing.Size(20, 20);
-            this.CustomDeleteIcon.Location = new System.Drawing.Point(308, 9);
+            this.CustomDeleteIcon.Location = new System.Drawing.Point(241, 8);
             this.CustomDeleteIcon.Name = "CustomDeleteIcon";
             this.CustomDeleteIcon.OnHoverBaseColor = System.Drawing.Color.Transparent;
             this.CustomDeleteIcon.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -78,9 +77,9 @@
             // 
             this.CustomnoteContent.Font = new System.Drawing.Font("Poppins Light", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CustomnoteContent.ForeColor = System.Drawing.Color.White;
-            this.CustomnoteContent.Location = new System.Drawing.Point(24, 54);
+            this.CustomnoteContent.Location = new System.Drawing.Point(12, 54);
             this.CustomnoteContent.Name = "CustomnoteContent";
-            this.CustomnoteContent.Size = new System.Drawing.Size(319, 95);
+            this.CustomnoteContent.Size = new System.Drawing.Size(252, 63);
             this.CustomnoteContent.TabIndex = 1;
             this.CustomnoteContent.Text = resources.GetString("CustomnoteContent.Text");
             // 
@@ -93,6 +92,7 @@
             this.CustomNoteTitle.Size = new System.Drawing.Size(226, 36);
             this.CustomNoteTitle.TabIndex = 0;
             this.CustomNoteTitle.Text = "Lorem ipsum";
+            this.CustomNoteTitle.Click += new System.EventHandler(this.CustomNoteTitle_Click);
             // 
             // CustomNoteList
             // 
@@ -100,8 +100,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.NotePanel);
             this.Name = "CustomNoteList";
-            this.Size = new System.Drawing.Size(359, 167);
-            this.Load += new System.EventHandler(this.CustomNoteList_Load);
+            this.Size = new System.Drawing.Size(288, 135);
             this.NotePanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
