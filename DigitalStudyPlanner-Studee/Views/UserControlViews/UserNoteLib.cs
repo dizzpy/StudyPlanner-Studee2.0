@@ -24,7 +24,7 @@ namespace DigitalStudyPlanner_Studee.Views.UserControlViews
         public UserNoteLib()
         {
             InitializeComponent();
-            AddNoteBtn.Click += AddNoteBtn_Click;
+            AddNoteBtn.Click += AddNoteBtn_Click_1;
             InitializeFirestore();
             LoadNotesFromFirestore();
         }
@@ -73,7 +73,7 @@ namespace DigitalStudyPlanner_Studee.Views.UserControlViews
             {
                 CustomNoteList item = new CustomNoteList(note);
                 item.DeleteNote += Item_DeleteNote;
-              //  item.EditNote += Item_EditNote;
+            //  item.EditNote += Item_EditNote;
                 flowLayoutPanel1.Controls.Add(item);
             }
             catch (Exception ex)
@@ -81,6 +81,7 @@ namespace DigitalStudyPlanner_Studee.Views.UserControlViews
                 MessageBox.Show("Error adding note to UI: " + ex.Message);
             }
         }
+
 
         /* private void Item_EditNote(object sender, NoteItem note)
         {
@@ -104,6 +105,8 @@ namespace DigitalStudyPlanner_Studee.Views.UserControlViews
             }
         } */
 
+
+
         private async void Item_DeleteNote(object sender, NoteItem note)
         {
             try
@@ -125,14 +128,6 @@ namespace DigitalStudyPlanner_Studee.Views.UserControlViews
             }
         }
 
-        /*private void AddNoteBtn_Click(object sender, EventArgs e)
-        {
-            using (var addNoteForm = new AddNoteWindow())
-            {
-                addNoteForm.AddNoteClicked += AddNoteForm_AddNoteClicked;
-                addNoteForm.Show();
-            }
-        } */
 
         private void AddNoteForm_AddNoteClicked(object sender, NoteItem note)
         {
@@ -142,14 +137,17 @@ namespace DigitalStudyPlanner_Studee.Views.UserControlViews
             AddNoteToListView(note);
         }
 
+
         private void AddNoteBtn_Click_1(object sender, EventArgs e)
         {
             using (var addNoteForm = new AddNoteWindow())
             {
                 addNoteForm.AddNoteClicked += AddNoteForm_AddNoteClicked;
-                addNoteForm.Show();
+                addNoteForm.ShowDialog();
             }
         }
+
+
     }
 }
 
