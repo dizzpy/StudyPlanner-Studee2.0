@@ -1,4 +1,5 @@
-﻿using DigitalStudyPlanner_Studee.Models;
+﻿using Google.Cloud.Firestore;
+using DigitalStudyPlanner_Studee.Models;
 using DigitalStudyPlanner_Studee.Views.NoteLibrary;
 using System;
 using System.Collections.Generic;
@@ -13,6 +14,11 @@ namespace DigitalStudyPlanner_Studee.Views.UserControlViews
         private System.Timers.Timer timer ;
         private int currentIndex = 0;
 
+        //For Note
+        private FirestoreDb db;
+        private List<NoteItem> notes = new List<NoteItem>();
+        private string userLoggedEmail = GlobalVariables.LoggedEmail;
+
         public UserDashboard()
         {
             InitializeComponent();
@@ -22,6 +28,10 @@ namespace DigitalStudyPlanner_Studee.Views.UserControlViews
             UpdateLabels();
 
             LoadCustomListViews();
+
+            //For Note
+            InitializeFirestore();
+            LoadNotesFromFirestore();
         }
 
         private void InitializeTimer()
@@ -136,6 +146,59 @@ namespace DigitalStudyPlanner_Studee.Views.UserControlViews
 
         }
 
+
+        //For Note
+        private void InitializeFirestore()
+        {
+            // Set up Firestore with your project ID
+            string projectId = "notelibrarytest2";
+            Environment.SetEnvironmentVariable("GOOGLE_APPLICATION_CREDENTIALS", "C:\\Users\\akila\\Desktop\\Studee-Files-New-Final\\Final_1.8\\StudyPlanner-Studee2.0\\DigitalStudyPlanner-Studee\\notelibrarytest2.json");
+            db = FirestoreDb.Create(projectId);
+        }
+
+        private async void LoadNotesFromFirestore()
+        {
+            try
+            {
+                CollectionReference noteCollection = db.Collection(userLoggedEmail);
+                QuerySnapshot querySnapshot = await noteCollection.GetSnapshotAsync();
+
+                foreach (DocumentSnapshot documentSnapshot in querySnapshot.Documents)
+                {
+                    Dictionary<string, object> noteData = documentSnapshot.ToDictionary();
+
+                    NoteItem note = new NoteItem
+                    {
+                        NoteID = documentSnapshot.Id,
+                        NoteTitle = noteData["Title"].ToString(),
+                        NoteContent = noteData["Content"].ToString(),
+                    };
+
+                    notes.Add(note);
+                    AddNoteToListView(note);
+                }
+
+                MessageBox.Show("Data loaded successfully");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error loading data from Firestore: " + ex.Message);
+            }
+        }
+
+        private void AddNoteToListView(NoteItem note)
+        {
+            try
+            {
+                CustomNoteList item = new CustomNoteList(note);
+                //  item.EditNote += Item_EditNote;
+                DashBoardFlowLayout.Controls.Add(item);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error adding note to UI: " + ex.Message);
+            }
+        }
 
     }
 }
