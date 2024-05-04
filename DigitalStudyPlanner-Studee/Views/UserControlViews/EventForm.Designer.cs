@@ -39,8 +39,9 @@
             // 
             // txevent
             // 
-            this.txevent.BaseColor = System.Drawing.Color.White;
-            this.txevent.BorderColor = System.Drawing.Color.White;
+            this.txevent.BackColor = System.Drawing.Color.Transparent;
+            this.txevent.BaseColor = System.Drawing.Color.Transparent;
+            this.txevent.BorderColor = System.Drawing.Color.Silver;
             this.txevent.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txevent.FocusedBaseColor = System.Drawing.Color.White;
             this.txevent.FocusedBorderColor = System.Drawing.Color.Black;
@@ -50,6 +51,7 @@
             this.txevent.Margin = new System.Windows.Forms.Padding(2);
             this.txevent.Name = "txevent";
             this.txevent.PasswordChar = '\0';
+            this.txevent.Radius = 6;
             this.txevent.SelectedText = "";
             this.txevent.Size = new System.Drawing.Size(392, 49);
             this.txevent.TabIndex = 22;

@@ -56,12 +56,12 @@ namespace DigitalStudyPlanner_Studee.Views.UserControlViews
             DashBoardFlowLayout.Controls.Clear();
 
             // Add custom list views
-            List<NoteItem> notes = /* Fetch notes from Firestore or any other source */
-            foreach (NoteItem note in notes)
+            /*List<NoteItem> notes = /* Fetch notes from Firestore or any other source */
+            /*foreach (NoteItem note in notes)
             {
                 CustomNoteList customNoteList = new CustomNoteList(note);
                 DashBoardFlowLayout.Controls.Add(customNoteList);
-            }
+            }*/
         }
 
 
@@ -70,7 +70,7 @@ namespace DigitalStudyPlanner_Studee.Views.UserControlViews
 
         }
 
-        System.Timers.Timer timer1;
+        //System.Timers.Timer timer1;
         int h, m, s, ms;
 
 

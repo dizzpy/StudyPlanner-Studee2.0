@@ -8,7 +8,6 @@ using System.Management.Instrumentation;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using MySql.Data.MySqlClient;
 using FireSharp.Config;
 using FireSharp.Interfaces;
 using FireSharp.Response;
@@ -87,18 +86,6 @@ namespace DigitalStudyPlanner_Studee.Views.UserControlViews
 
             MessageBox.Show("Event Saved");
             */
-
-            /*MySqlConnection conn = new MySqlConnection(connString);
-            conn.Open();
-            String Sql = "INSERT INTO tbl_calender(date,event)values (?,?)";
-            MySqlCommand cmd = conn.CreateCommand();
-            cmd.CommandText = Sql;
-            cmd.Parameters.AddWithValue("date", txdate.Text);
-            cmd.Parameters.AddWithValue("event", txevent.Text);
-            cmd.ExecuteNonQuery();
-            MessageBox.Show("Event Saved");
-            cmd.Dispose();
-            conn.Close();*/
 
 
             this.Hide();

@@ -80,7 +80,7 @@
             this.Controls.Add(this.lbdays);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "UserControlDays";
-            this.Size = new System.Drawing.Size(94, 52);
+            this.Size = new System.Drawing.Size(94, 53);
             this.Load += new System.EventHandler(this.UserControlDays_Load);
             this.Click += new System.EventHandler(this.UserControlDays_Click);
             this.ResumeLayout(false);

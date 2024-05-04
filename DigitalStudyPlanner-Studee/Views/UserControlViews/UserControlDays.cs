@@ -58,26 +58,11 @@ namespace DigitalStudyPlanner_Studee.Views.UserControlViews
         
         private async void displayEvent()
         {
-            FirebaseResponse response = await client.GetAsync("event/" + UserEvent.static_year + "-" + UserEvent.static_month + "-" + lbdays.Text);
+           /* FirebaseResponse response = await client.GetAsync("event/" + lbdays.Text);
             Data obj = response.ResultAs<Data>();
             lbdis.Text = obj.eventname;
             MessageBox.Show("Event is displayed");
-            /*MySqlConnection conn = new MySqlConnection(connString);
-            conn.Open();
-            string Sql = "SELECT * FROM tbl_calender Where date = ?";
-            MySqlCommand cmd = conn.CreateCommand();
-            cmd.CommandText = Sql;
-            cmd.Parameters.AddWithValue("date", UserEvent.static_year + "-" + UserEvent.static_year + "-" + lbdays.Text);
-            MySqlDataReader reader = cmd.ExecuteReader();
-            if (reader.Read())
-            {
-                lbevent.Text = reader["event"].ToString();
-
-            }
-
-            reader.Dispose();
-            cmd.Dispose();
-            conn.Close();*/ 
+            */
         }
 
         
