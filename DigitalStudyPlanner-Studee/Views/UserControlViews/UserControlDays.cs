@@ -31,6 +31,8 @@ namespace DigitalStudyPlanner_Studee.Views.UserControlViews
         IFirebaseClient client;
         //static variable
         public static string static_day;
+
+
         public UserControlDays()
         {
             InitializeComponent();
@@ -45,8 +47,35 @@ namespace DigitalStudyPlanner_Studee.Views.UserControlViews
             lbdays.Text = numday + "";
         }
 
-        private void UserControlDays_Click(object sender, EventArgs e)
+        private async void UserControlDays_Click(object sender, EventArgs e)
         {
+            string selectedDate = $"{UserEvent.static_year}-{UserEvent.static_month}-{lbdays.Text}";
+
+            try
+            {
+                // Initialize Firebase client
+                client = new FireSharp.FirebaseClient(config);
+
+                // Query Firebase for event data based on the selected date
+                FirebaseResponse response = await client.GetAsync($"Event/{selectedDate}");
+
+                if (response.Body != "null")
+                {
+                    Data eventData = response.ResultAs<Data>();
+
+                    // Update the label with the retrieved event name
+                    lbdis.Text = eventData.eventname;
+                }
+                else
+                {
+                    // Clear the label if no event is found for the selected date
+                    lbdis.Text = "No event scheduled for this day";
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error retrieving event: " + ex.Message);
+            }
             static_day = lbdays.Text;
             EventForm eventForm = new EventForm();
             eventForm.Show();
@@ -54,7 +83,7 @@ namespace DigitalStudyPlanner_Studee.Views.UserControlViews
         
         private async void displayEvent()
         {
-            // Ensure static_day has a valid value
+           /* // Ensure static_day has a valid value
             if (string.IsNullOrEmpty(static_day))
                 return;
 
@@ -90,9 +119,9 @@ namespace DigitalStudyPlanner_Studee.Views.UserControlViews
             {
                 // Handle any exceptions (e.g., network issues, Firebase errors)
                 MessageBox.Show("Error retrieving event: " + ex.Message);
-            }
+            }*/
         }
-
+        
 
         //creat a timer for auto display event if new event is added
         private void timer1_Tick_1(object sender, EventArgs e)
