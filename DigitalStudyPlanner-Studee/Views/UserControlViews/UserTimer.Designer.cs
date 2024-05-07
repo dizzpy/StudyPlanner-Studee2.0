@@ -50,6 +50,7 @@
             this.gunaLabel1.TabIndex = 10;
             this.gunaLabel1.Text = "00:00:00:00";
             this.gunaLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.gunaLabel1.Click += new System.EventHandler(this.gunaLabel1_Click);
             // 
             // ongoingBTN
             // 

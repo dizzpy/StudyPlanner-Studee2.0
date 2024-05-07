@@ -44,8 +44,8 @@
             this.MotiQuoteLabel = new System.Windows.Forms.Label();
             this.gunaLabel9 = new Guna.UI.WinForms.GunaLabel();
             this.gunaElipsePanel2 = new Guna.UI.WinForms.GunaElipsePanel();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.lbevent = new System.Windows.Forms.Label();
+            this.lbdate = new System.Windows.Forms.Label();
             this.gunaElipsePanel1 = new Guna.UI.WinForms.GunaElipsePanel();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -53,8 +53,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.gunaElipsePanel7 = new Guna.UI.WinForms.GunaElipsePanel();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
+            this.lbevent2 = new System.Windows.Forms.Label();
+            this.lbdate2 = new System.Windows.Forms.Label();
             this.quote1 = new System.Windows.Forms.Timer(this.components);
             this.DashBoardFlowLayout = new System.Windows.Forms.FlowLayoutPanel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
@@ -308,34 +308,35 @@
             // 
             this.gunaElipsePanel2.BackColor = System.Drawing.Color.Transparent;
             this.gunaElipsePanel2.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(156)))), ((int)(((byte)(116)))));
-            this.gunaElipsePanel2.Controls.Add(this.label7);
-            this.gunaElipsePanel2.Controls.Add(this.label5);
+            this.gunaElipsePanel2.Controls.Add(this.lbevent);
+            this.gunaElipsePanel2.Controls.Add(this.lbdate);
             this.gunaElipsePanel2.Location = new System.Drawing.Point(14, 48);
             this.gunaElipsePanel2.Name = "gunaElipsePanel2";
             this.gunaElipsePanel2.Radius = 18;
             this.gunaElipsePanel2.Size = new System.Drawing.Size(461, 99);
             this.gunaElipsePanel2.TabIndex = 29;
+            this.gunaElipsePanel2.Paint += new System.Windows.Forms.PaintEventHandler(this.gunaElipsePanel2_Paint);
             // 
-            // label7
+            // lbevent
             // 
-            this.label7.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(252)))), ((int)(((byte)(246)))));
-            this.label7.Location = new System.Drawing.Point(219, 26);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(207, 50);
-            this.label7.TabIndex = 7;
-            this.label7.Text = "Reading and book signing:Jane Mushabac\'s \r\nnew novel His Hundred Years, A Tale\r\n";
+            this.lbevent.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbevent.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(252)))), ((int)(((byte)(246)))));
+            this.lbevent.Location = new System.Drawing.Point(219, 26);
+            this.lbevent.Name = "lbevent";
+            this.lbevent.Size = new System.Drawing.Size(207, 50);
+            this.lbevent.TabIndex = 7;
+            this.lbevent.Text = "Reading and book signing:Jane Mushabac\'s \r\nnew novel His Hundred Years, A Tale\r\n";
             // 
-            // label5
+            // lbdate
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(252)))), ((int)(((byte)(246)))));
-            this.label5.Location = new System.Drawing.Point(25, 37);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(111, 28);
-            this.label5.TabIndex = 5;
-            this.label5.Text = "May 6 , 2024";
+            this.lbdate.AutoSize = true;
+            this.lbdate.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbdate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(252)))), ((int)(((byte)(246)))));
+            this.lbdate.Location = new System.Drawing.Point(25, 37);
+            this.lbdate.Name = "lbdate";
+            this.lbdate.Size = new System.Drawing.Size(111, 28);
+            this.lbdate.TabIndex = 5;
+            this.lbdate.Text = "May 6 , 2024";
             // 
             // gunaElipsePanel1
             // 
@@ -412,34 +413,35 @@
             // 
             this.gunaElipsePanel7.BackColor = System.Drawing.Color.Transparent;
             this.gunaElipsePanel7.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(156)))), ((int)(((byte)(116)))));
-            this.gunaElipsePanel7.Controls.Add(this.label6);
-            this.gunaElipsePanel7.Controls.Add(this.label12);
+            this.gunaElipsePanel7.Controls.Add(this.lbevent2);
+            this.gunaElipsePanel7.Controls.Add(this.lbdate2);
             this.gunaElipsePanel7.Location = new System.Drawing.Point(481, 48);
             this.gunaElipsePanel7.Name = "gunaElipsePanel7";
             this.gunaElipsePanel7.Radius = 18;
             this.gunaElipsePanel7.Size = new System.Drawing.Size(461, 99);
             this.gunaElipsePanel7.TabIndex = 30;
+            this.gunaElipsePanel7.Paint += new System.Windows.Forms.PaintEventHandler(this.gunaElipsePanel7_Paint);
             // 
-            // label6
+            // lbevent2
             // 
-            this.label6.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(252)))), ((int)(((byte)(246)))));
-            this.label6.Location = new System.Drawing.Point(219, 26);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(207, 50);
-            this.label6.TabIndex = 7;
-            this.label6.Text = "Reading and book signing:Jane Mushabac\'s \r\nnew novel His Hundred Years, A Tale\r\n";
+            this.lbevent2.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbevent2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(252)))), ((int)(((byte)(246)))));
+            this.lbevent2.Location = new System.Drawing.Point(219, 26);
+            this.lbevent2.Name = "lbevent2";
+            this.lbevent2.Size = new System.Drawing.Size(207, 50);
+            this.lbevent2.TabIndex = 7;
+            this.lbevent2.Text = "Reading and book signing:Jane Mushabac\'s \r\nnew novel His Hundred Years, A Tale\r\n";
             // 
-            // label12
+            // lbdate2
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(252)))), ((int)(((byte)(246)))));
-            this.label12.Location = new System.Drawing.Point(25, 37);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(111, 28);
-            this.label12.TabIndex = 5;
-            this.label12.Text = "May 6 , 2024";
+            this.lbdate2.AutoSize = true;
+            this.lbdate2.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbdate2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(252)))), ((int)(((byte)(246)))));
+            this.lbdate2.Location = new System.Drawing.Point(25, 37);
+            this.lbdate2.Name = "lbdate2";
+            this.lbdate2.Size = new System.Drawing.Size(111, 28);
+            this.lbdate2.TabIndex = 5;
+            this.lbdate2.Text = "May 6 , 2024";
             // 
             // DashBoardFlowLayout
             // 
@@ -502,8 +504,8 @@
         private System.Windows.Forms.Label MotiQuoteLabel;
         private Guna.UI.WinForms.GunaLabel gunaLabel9;
         private Guna.UI.WinForms.GunaElipsePanel gunaElipsePanel2;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lbevent;
+        private System.Windows.Forms.Label lbdate;
         private Guna.UI.WinForms.GunaElipsePanel gunaElipsePanel1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
@@ -511,8 +513,8 @@
         private System.Windows.Forms.Label label1;
         private Guna.UI.WinForms.GunaLabel gunaLabel1;
         private Guna.UI.WinForms.GunaElipsePanel gunaElipsePanel7;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label lbevent2;
+        private System.Windows.Forms.Label lbdate2;
         private System.Windows.Forms.Timer quote1;
         private System.Windows.Forms.FlowLayoutPanel DashBoardFlowLayout;
         private System.Windows.Forms.Timer timer1;

@@ -83,43 +83,45 @@ namespace DigitalStudyPlanner_Studee.Views.UserControlViews
         
         private async void displayEvent()
         {
-           /* // Ensure static_day has a valid value
-            if (string.IsNullOrEmpty(static_day))
-                return;
+            
+            
+            /* // Ensure static_day has a valid value
+             if (string.IsNullOrEmpty(static_day))
+                 return;
 
-            try
-            {
-                // Firebase configuration
-                IFirebaseConfig config = new FirebaseConfig
-                {
-                    AuthSecret = "wt0ghU5wn2oVMJ4QH1vLmoWrUdGHp41Evp4p3avG",
-                    BasePath = "https://calendar-backend-c77aa-default-rtdb.firebaseio.com/"
-                };
+             try
+             {
+                 // Firebase configuration
+                 IFirebaseConfig config = new FirebaseConfig
+                 {
+                     AuthSecret = "wt0ghU5wn2oVMJ4QH1vLmoWrUdGHp41Evp4p3avG",
+                     BasePath = "https://calendar-backend-c77aa-default-rtdb.firebaseio.com/"
+                 };
 
-                // Initialize Firebase client
-                IFirebaseClient client = new FireSharp.FirebaseClient(config);
+                 // Initialize Firebase client
+                 IFirebaseClient client = new FireSharp.FirebaseClient(config);
 
-                // Fetch event data for the current day (static_day)
-                FirebaseResponse response = await client.GetAsync("Event/" + static_day);
+                 // Fetch event data for the current day (static_day)
+                 FirebaseResponse response = await client.GetAsync("Event/" + static_day);
 
-                if (response.Body != "null")
-                {
-                    Data eventData = response.ResultAs<Data>();
+                 if (response.Body != "null")
+                 {
+                     Data eventData = response.ResultAs<Data>();
 
-                    // Update the label with the retrieved event name
-                    lbdis.Text = eventData.eventname;
-                }
-                else
-                {
-                    // Clear the label if no event is found for the current day
-                    lbdis.Text = "No event scheduled for this day";
-                }
-            }
-            catch (Exception ex)
-            {
-                // Handle any exceptions (e.g., network issues, Firebase errors)
-                MessageBox.Show("Error retrieving event: " + ex.Message);
-            }*/
+                     // Update the label with the retrieved event name
+                     lbdis.Text = eventData.eventname;
+                 }
+                 else
+                 {
+                     // Clear the label if no event is found for the current day
+                     lbdis.Text = "No event scheduled for this day";
+                 }
+             }
+             catch (Exception ex)
+             {
+                 // Handle any exceptions (e.g., network issues, Firebase errors)
+                 MessageBox.Show("Error retrieving event: " + ex.Message);
+             }*/
         }
         
 

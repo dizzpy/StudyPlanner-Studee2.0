@@ -33,6 +33,11 @@ namespace DigitalStudyPlanner_Studee.Views.UserControlViews
             timer.Start();
         }
 
+        private void gunaLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void stopBTN_Click(object sender, EventArgs e)
         {
             timer.Stop();

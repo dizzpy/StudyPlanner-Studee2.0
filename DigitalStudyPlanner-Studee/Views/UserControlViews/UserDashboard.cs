@@ -5,11 +5,29 @@ using System;
 using System.Collections.Generic;
 using System.Timers;
 using System.Windows.Forms;
+using FireSharp.Config;
+using FireSharp.Interfaces;
+using FireSharp.Response;
+using System.Linq;
 
 namespace DigitalStudyPlanner_Studee.Views.UserControlViews
 {
     public partial class UserDashboard : UserControl
     {
+        IFirebaseConfig config = new FirebaseConfig
+        {
+            AuthSecret = "wt0ghU5wn2oVMJ4QH1vLmoWrUdGHp41Evp4p3avG",
+            BasePath = "https://calendar-backend-c77aa-default-rtdb.firebaseio.com/ "
+        };
+
+        IFirebaseClient client;
+
+        public static string static_day;
+
+        private List<DateTime> availableDates;
+        private int currentDateIndex = 0;
+        
+
         private Quotes quotesObject;
         private System.Timers.Timer timer ;
         private int currentIndex = 0;
@@ -19,6 +37,8 @@ namespace DigitalStudyPlanner_Studee.Views.UserControlViews
         private FirestoreDb db;
         private List<NoteItem> notes = new List<NoteItem>();
         private string userLoggedEmail = GlobalVariables.LoggedEmail;
+
+        
 
         public UserDashboard()
         {
@@ -34,6 +54,7 @@ namespace DigitalStudyPlanner_Studee.Views.UserControlViews
             InitializeFirestore();
             LoadNotesFromFirestore();
         }
+
 
         private void InitializeTimer()
         {
@@ -76,9 +97,38 @@ namespace DigitalStudyPlanner_Studee.Views.UserControlViews
         }
 
 
-        private void DashBoardFlowLayout_Paint(object sender, PaintEventArgs e)
+        private async void DashBoardFlowLayout_Paint(object sender, PaintEventArgs e)
         {
+            try
+            {
+                // Initialize Firebase client
+                client = new FireSharp.FirebaseClient(config);
 
+                // Query Firebase to get the latest event
+                FirebaseResponse response = await client.GetAsync("Event");
+
+                if (response.Body != "null")
+                {
+                    // Deserialize the response into a dictionary of events
+                    Dictionary<string, Data> eventData = response.ResultAs<Dictionary<string, Data>>();
+
+                    // Find the latest event (assuming events are stored with unique IDs)
+                    var latestEvent = eventData.LastOrDefault().Value;
+
+                    // Update the label with the retrieved event name
+                    lbevent.Text = latestEvent.eventname;
+                    lbdate.Text = latestEvent.date;
+                }
+                else
+                {
+                    // Clear the label if no events are found
+                    lbevent.Text = "No events scheduled";
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error retrieving event: " + ex.Message);
+            }
         }
 
 
@@ -140,6 +190,48 @@ namespace DigitalStudyPlanner_Studee.Views.UserControlViews
                 gunaLabel1.Text = string.Format("{0}:{1}:{2}:{3}", h.ToString().ToString().PadLeft(2, '0'), m.ToString().ToString().PadLeft(2, '0'), s.ToString().ToString().PadLeft(2, '0'), ms.ToString().ToString().PadLeft(2, '0'));
 
             }));
+
+
+        }
+
+        private void gunaElipsePanel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private async void gunaElipsePanel7_Paint(object sender, PaintEventArgs e)
+        {
+
+            try
+            {
+                // Initialize Firebase client
+                client = new FireSharp.FirebaseClient(config);
+
+                // Query Firebase to get the latest event
+                FirebaseResponse response = await client.GetAsync("Event");
+
+                if (response.Body != "null")
+                {
+                    // Deserialize the response into a dictionary of events
+                    Dictionary<string, Data> eventData = response.ResultAs<Dictionary<string, Data>>();
+
+                    // Find the latest event (assuming events are stored with unique IDs)
+                    var latestEvent = eventData.LastOrDefault().Value;
+
+                    // Update the label with the retrieved event name
+                    lbevent2.Text = latestEvent.eventname;
+                    lbdate2.Text = latestEvent.date;
+                }
+                else
+                {
+                    // Clear the label if no events are found
+                    lbevent.Text = "No events scheduled";
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error retrieving event: " + ex.Message);
+            }
 
 
         }
