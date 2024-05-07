@@ -93,7 +93,7 @@
       <HintPath>..\packages\Grpc.Net.Common.2.60.0\lib\netstandard2.0\Grpc.Net.Common.dll</HintPath>
     </Reference>
     <Reference Include="Guna.UI">
-      <HintPath>..\..\..\..\..\Downloads\Guna Ui\Guna_UI_Framework_Ultimate_2\Guna UI Framework Ultimate v2.0.0.1 Lib-Master\Guna.UI WinForms\.net 4.0\Guna.UI.dll</HintPath>
+      <HintPath>..\..\..\..\Downloads\Telegram Desktop\Guna Ui\Guna Ui\Guna_UI_Framework_Ultimate_2\Guna UI Framework Ultimate v2.0.0.1 Lib-Master\Guna.UI WinForms\.net 4.0\Guna.UI.dll</HintPath>
     </Reference>
     <Reference Include="Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
       <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.6\lib\net472\Guna.UI2.dll</HintPath>

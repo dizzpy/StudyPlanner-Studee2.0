@@ -37,7 +37,7 @@ namespace DigitalStudyPlanner_Studee.Views.NoteLibrary
         {
             // Set up Firestore with your project ID
             string projectId = "notelibrarytest2";
-            Environment.SetEnvironmentVariable("GOOGLE_APPLICATION_CREDENTIALS", "C:\\Users\\akila\\Desktop\\Studee-Files-New-Final\\Final_1.8\\StudyPlanner-Studee2.0\\DigitalStudyPlanner-Studee\\notelibrarytest2.json");
+            Environment.SetEnvironmentVariable("GOOGLE_APPLICATION_CREDENTIALS", "C:\\Users\\User\\Desktop\\New folder (2)\\StudyPlanner-Studee2.0\\DigitalStudyPlanner-Studee\\notelibrarytest2.json");
             db = FirestoreDb.Create(projectId);
         }
 

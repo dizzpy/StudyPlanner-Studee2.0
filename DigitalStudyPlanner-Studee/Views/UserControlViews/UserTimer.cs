@@ -16,20 +16,29 @@ namespace DigitalStudyPlanner_Studee.Views.UserControlViews
         System.Timers.Timer timer;
         int h, m, s, ms;
 
+        public UserTimer()
+        {
+            InitializeComponent();
+        }
 
-        private void startBTN_Click_1(object sender, EventArgs e)
+        private void UserTimer_Load(object sender, EventArgs e)
+        {
+            timer = new System.Timers.Timer();
+            timer.Interval = 1;
+            timer.Elapsed += OnTimeEvent;
+        }
+
+        private void startBTN_Click(object sender, EventArgs e)
         {
             timer.Start();
-
         }
 
         private void stopBTN_Click(object sender, EventArgs e)
         {
             timer.Stop();
-
         }
 
-        private void resetBTN_Click_1(object sender, EventArgs e)
+        private void resetBTN_Click(object sender, EventArgs e)
         {
             timer.Stop();
             h = 0;
@@ -37,20 +46,6 @@ namespace DigitalStudyPlanner_Studee.Views.UserControlViews
             s = 0;
             ms = 0;
             gunaLabel1.Text = "00:00:00:00";
-
-        }
-        public UserTimer()
-        {
-            InitializeComponent();
-        }
-
-        private void UserTimer_Load_1(object sender, EventArgs e)
-        {
-
-            timer = new System.Timers.Timer();
-            timer.Interval = 1;
-            timer.Elapsed += OnTimeEvent;
-
         }
 
         private void OnTimeEvent(object sender, ElapsedEventArgs e)

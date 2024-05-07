@@ -13,6 +13,7 @@ namespace DigitalStudyPlanner_Studee.Views.UserControlViews
         private Quotes quotesObject;
         private System.Timers.Timer timer ;
         private int currentIndex = 0;
+        int h, m, s, ms;
 
         //For Note
         private FirestoreDb db;
@@ -80,32 +81,9 @@ namespace DigitalStudyPlanner_Studee.Views.UserControlViews
 
         }
 
-        //System.Timers.Timer timer1;
-        int h, m, s, ms;
 
 
-        private void startBTN_Click_1(object sender, EventArgs e)
-        {
-            timer.Start();
-
-        }
-
-        private void stopBTN_Click(object sender, EventArgs e)
-        {
-            timer.Stop();
-
-        }
-
-        private void resetBTN_Click_1(object sender, EventArgs e)
-        {
-            timer.Stop();
-            h = 0;
-            m = 0;
-            s = 0;
-            ms = 0;
-            label18.Text = "00:00:00:00";
-
-        }
+        
 
         private void UserDashboard_Load_1(object sender, EventArgs e)
         {
@@ -114,6 +92,26 @@ namespace DigitalStudyPlanner_Studee.Views.UserControlViews
             timer.Interval = 1;
             timer.Elapsed += OnTimeEvent;
 
+        }
+
+        private void startBTN_Click(object sender, EventArgs e)
+        {
+            timer.Start();
+        }
+
+        private void stopBTN_Click(object sender, EventArgs e)
+        {
+            timer.Stop();
+        }
+
+        private void resetBTN_Click(object sender, EventArgs e)
+        {
+            timer.Stop();
+            h = 0;
+            m = 0;
+            s = 0;
+            ms = 0;
+            label18.Text = "00:00:00:00";
         }
 
         private void OnTimeEvent(object sender, ElapsedEventArgs e)
@@ -139,7 +137,7 @@ namespace DigitalStudyPlanner_Studee.Views.UserControlViews
                     h += 1;
                 }
 
-                label18.Text = string.Format("{0}:{1}:{2}:{3}", h.ToString().ToString().PadLeft(2, '0'), m.ToString().ToString().PadLeft(2, '0'), s.ToString().ToString().PadLeft(2, '0'), ms.ToString().ToString().PadLeft(2, '0'));
+                gunaLabel1.Text = string.Format("{0}:{1}:{2}:{3}", h.ToString().ToString().PadLeft(2, '0'), m.ToString().ToString().PadLeft(2, '0'), s.ToString().ToString().PadLeft(2, '0'), ms.ToString().ToString().PadLeft(2, '0'));
 
             }));
 

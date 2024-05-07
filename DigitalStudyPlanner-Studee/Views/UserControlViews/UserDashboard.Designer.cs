@@ -108,6 +108,7 @@
             this.resetBTN.Text = "Reset";
             this.resetBTN.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.resetBTN.UseTransfarantBackground = true;
+            this.resetBTN.Click += new System.EventHandler(this.resetBTN_Click);
             // 
             // stopBTN
             // 
@@ -136,6 +137,7 @@
             this.stopBTN.Text = "Stop";
             this.stopBTN.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.stopBTN.UseTransfarantBackground = true;
+            this.stopBTN.Click += new System.EventHandler(this.stopBTN_Click);
             // 
             // startBTN
             // 
@@ -164,6 +166,7 @@
             this.startBTN.Text = "Start";
             this.startBTN.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.startBTN.UseTransfarantBackground = true;
+            this.startBTN.Click += new System.EventHandler(this.startBTN_Click);
             // 
             // gunaButton4
             // 
@@ -196,9 +199,9 @@
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Poppins", 34.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(156)))), ((int)(((byte)(116)))));
-            this.label18.Location = new System.Drawing.Point(51, 86);
+            this.label18.Location = new System.Drawing.Point(89, 92);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(387, 101);
+            this.label18.Size = new System.Drawing.Size(314, 81);
             this.label18.TabIndex = 6;
             this.label18.Text = "00:00:00:00";
             this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -237,7 +240,7 @@
             this.gunaLabel13.Location = new System.Drawing.Point(512, 327);
             this.gunaLabel13.Margin = new System.Windows.Forms.Padding(80, 0, 61, 0);
             this.gunaLabel13.Name = "gunaLabel13";
-            this.gunaLabel13.Size = new System.Drawing.Size(144, 36);
+            this.gunaLabel13.Size = new System.Drawing.Size(117, 28);
             this.gunaLabel13.TabIndex = 33;
             this.gunaLabel13.Text = "Recent Notes";
             // 
@@ -249,7 +252,7 @@
             this.gunaLabel12.Location = new System.Drawing.Point(14, 327);
             this.gunaLabel12.Margin = new System.Windows.Forms.Padding(80, 0, 61, 0);
             this.gunaLabel12.Name = "gunaLabel12";
-            this.gunaLabel12.Size = new System.Drawing.Size(71, 36);
+            this.gunaLabel12.Size = new System.Drawing.Size(57, 28);
             this.gunaLabel12.TabIndex = 32;
             this.gunaLabel12.Text = "Timer";
             // 
@@ -274,7 +277,7 @@
             this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(156)))), ((int)(((byte)(116)))));
             this.label9.Location = new System.Drawing.Point(1269, 79);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(66, 30);
+            this.label9.Size = new System.Drawing.Size(56, 25);
             this.label9.TabIndex = 13;
             this.label9.Text = "-PELE-";
             // 
@@ -297,7 +300,7 @@
             this.gunaLabel9.Location = new System.Drawing.Point(14, 158);
             this.gunaLabel9.Margin = new System.Windows.Forms.Padding(80, 0, 61, 0);
             this.gunaLabel9.Name = "gunaLabel9";
-            this.gunaLabel9.Size = new System.Drawing.Size(314, 36);
+            this.gunaLabel9.Size = new System.Drawing.Size(251, 28);
             this.gunaLabel9.TabIndex = 30;
             this.gunaLabel9.Text = "Motivational Quote Of the Day";
             // 
@@ -330,7 +333,7 @@
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(252)))), ((int)(((byte)(246)))));
             this.label5.Location = new System.Drawing.Point(25, 37);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(140, 36);
+            this.label5.Size = new System.Drawing.Size(111, 28);
             this.label5.TabIndex = 5;
             this.label5.Text = "May 6 , 2024";
             // 
@@ -359,7 +362,7 @@
             this.label4.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(238, 49);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(350, 30);
+            this.label4.Size = new System.Drawing.Size(288, 25);
             this.label4.TabIndex = 13;
             this.label4.Text = "BWRC Breakfast Talk with Sam Schwartz";
             // 
@@ -369,7 +372,7 @@
             this.label3.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(229, 12);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(170, 36);
+            this.label3.Size = new System.Drawing.Size(134, 28);
             this.label3.TabIndex = 6;
             this.label3.Text = "Register Today";
             // 
@@ -379,7 +382,7 @@
             this.label2.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(20, 48);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(168, 30);
+            this.label2.Size = new System.Drawing.Size(137, 25);
             this.label2.TabIndex = 5;
             this.label2.Text = "8.30am - 10.00am";
             // 
@@ -389,7 +392,7 @@
             this.label1.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(19, 12);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(140, 36);
+            this.label1.Size = new System.Drawing.Size(111, 28);
             this.label1.TabIndex = 4;
             this.label1.Text = "May 6 , 2024";
             // 
@@ -401,7 +404,7 @@
             this.gunaLabel1.Location = new System.Drawing.Point(14, 9);
             this.gunaLabel1.Margin = new System.Windows.Forms.Padding(80, 0, 61, 0);
             this.gunaLabel1.Name = "gunaLabel1";
-            this.gunaLabel1.Size = new System.Drawing.Size(189, 36);
+            this.gunaLabel1.Size = new System.Drawing.Size(150, 28);
             this.gunaLabel1.TabIndex = 27;
             this.gunaLabel1.Text = "Upcoming Events";
             // 
@@ -434,7 +437,7 @@
             this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(252)))), ((int)(((byte)(246)))));
             this.label12.Location = new System.Drawing.Point(25, 37);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(140, 36);
+            this.label12.Size = new System.Drawing.Size(111, 28);
             this.label12.TabIndex = 5;
             this.label12.Text = "May 6 , 2024";
             // 
@@ -452,7 +455,7 @@
             // 
             // UserDashboard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 28F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.DashBoardFlowLayout);
